@@ -1,0 +1,11 @@
+--- t/getdate.t	2009-12-12 07:30:06.000000000 -0500
++++ t/getdate.t	2020-07-01 01:03:54.805267000 -0400
+@@ -156,7 +156,7 @@ Jul 22 10:00:00 UTC 2002	     ;102733200
+ !;
+ 
+ require Time::Local;
+-my $offset = Time::Local::timegm(0,0,0,1,0,70);
++my $offset = Time::Local::timegm(0,0,0,1,0,1970);
+ 
+ @data = split(/\n/, $data);
+ 

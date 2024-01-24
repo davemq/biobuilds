@@ -1,0 +1,13 @@
+# Target labels
+ libstadenio
+# Source files and their labels
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libstadenio
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libstadenio.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libstadenio-complete.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-install.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-mkdir.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-download.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-update.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-patch.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-configure.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libstadenio-prefix/src/libstadenio-stamp/libstadenio-build.rule

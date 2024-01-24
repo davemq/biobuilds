@@ -10,7 +10,6 @@ source:
   url:
     - "http://cran.r-project.org/src/contrib/{{ name }}_{{ version }}.tar.gz"
     - "http://cran.r-project.org/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-{{ name|lower }}_{{ version }}.tar.gz"
   sha256: "8d9b6c962ae81b96c96ada9614c6a1ffb9eda12dd407e2aff634f7d335e7b9f4"
 
 build:
@@ -23,7 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
 
   run:
     - r-base

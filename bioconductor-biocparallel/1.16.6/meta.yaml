@@ -1,0 +1,39 @@
+package:
+  name: bioconductor-biocparallel
+  version: "1.16.6"
+
+source:
+  fn: "BiocParallel_1.16.6.tar.gz"
+  url: "http://bioconductor.org/packages/3.8/bioc/src/contrib/BiocParallel_1.16.6.tar.gz"
+  md5: bd95c6d6202bd09612b448e5da49bd2a
+
+requirements:
+  build:
+    - r-base=3.6.1
+    - r-bh
+    - r-codetools
+    - r-futile.logger
+    - r-snow
+  run:
+    - r-base=3.6.1
+    - r-bh
+    - r-codetools
+    - r-futile.logger
+    - r-snow
+
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+  detect_binary_files_with_prefix: true
+
+test:
+  commands:
+    - $R -e "library('BiocParallel')"            # [not win]
+    - "\"%R%\" -e \"library('BiocParallel')\""   # [win]
+
+about:
+  home: "https://bioconductor.org/packages/release/bioc/html/BiocParallel.html"
+  license: "Artistic 2.0"
+  summary: "Bioconductor facilities for parallel evaluation"

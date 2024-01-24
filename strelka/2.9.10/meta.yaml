@@ -1,0 +1,36 @@
+{% set version = "2.9.10" %}
+{% set sha256 = "4dcdb653beb44a6b6300f5ffce49dacef11ee019c4032933996060509a399055" %}
+
+package:
+  name: strelka
+  version: '{{ version }}'
+
+source:
+  url: file:////gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-{{ version }}.ppc64le.tar.bz2
+  sha256: '{{ sha256 }}'
+
+build:
+  number: 2
+#  skip: true # [osx]
+
+requirements:
+  host:
+     - python 2.7
+  run:
+
+test:
+  commands:
+#    - configureStrelkaGermlineWorkflow.py -h
+#    - configureStrelkaSomaticWorkflow.py -h
+
+about:
+  home: https://github.com/Illumina/strelka
+  license: GPL-3.0
+  license_family: GPL
+  summary: Strelka calls somatic and germline small variants from mapped sequencing reads
+
+extra:
+  identifiers:
+    - biotools:strelka
+  skip-lints:
+    - should_be_noarch_generic

@@ -4,10 +4,8 @@ package:
 
 requirements:
   build:
-    - biobuilds-build
     - zlib
   run:
-    - biobuilds-opt   # [opt]
     - zlib
 
 source:
@@ -21,10 +19,6 @@ source:
 
 build:
   number: 1
-  features:
-    - opt     # [opt]
-  script_env:
-    - MAKE_JOBS
 
 about:
   home: http://bedtools.readthedocs.org/

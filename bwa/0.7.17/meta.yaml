@@ -6,16 +6,10 @@ package:
 
 requirements:
   build:
-    - biobuilds-build
     - pkg-config
-    - {{ compiler('c') }}       # [toolchain == 'default']
-    - {{ toolchain }}-build     # [toolchain != 'default']
-    - veclib-headers            # [toolchain == 'ibm-at10.0']
   host:
-    - biobuilds-opt             # [toolchain != 'default']
     - zlib {{ zlib }}           # [toolchain != 'ibm-at10.0']
   run:
-    - {{ toolchain }}-runtime   # [toolchain != 'default']
     - zlib                      # [toolchain != 'ibm-at10.0']
 
 source:
@@ -25,17 +19,13 @@ source:
     - "http://download.lab7.io/sources/bwa-{{ version }}.tar.bz2"
   sha256: "de1b4d4e745c0b7fc3e107b5155a51ac063011d33a5d82696331ecf4bed8d0fd"
   patches:
-    - makefile-flags.patch
-    - ppc64le-support.patch     # [toolchain == 'ibm-at10.0']
+    - makefile-flags.patch   # [ppc64le]
 
 build:
   number: 2
-  features:
-    - opt                       # [toolchain != 'default']
 
 test:
   requires:
-    - biobuilds-opt             # [toolchain != 'default']
     - mapper-test-data
 
 about:

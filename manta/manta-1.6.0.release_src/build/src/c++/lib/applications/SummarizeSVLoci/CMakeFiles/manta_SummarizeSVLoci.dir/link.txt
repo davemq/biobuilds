@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_SummarizeSVLoci.a  CMakeFiles/manta_SummarizeSVLoci.dir/SSLOptions.cpp.o CMakeFiles/manta_SummarizeSVLoci.dir/SummarizeSVLoci.cpp.o
+/opt/at12.0/bin/ranlib libmanta_SummarizeSVLoci.a

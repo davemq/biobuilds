@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libcereal"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libcereal.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libcereal-complete.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-install.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-mkdir.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-download.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-update.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-patch.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-configure.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-build.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libcereal-prefix/src/libcereal-stamp/libcereal-makedir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libcereal"
+		],
+		"name" : "libcereal"
+	}
+}

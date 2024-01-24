@@ -1,0 +1,6 @@
+2020-06-28 22:07:02	-	determined_keller	-	bce378e09de25bb26c388b917f93f84806d3ba27	a1d5bd4a-4f46-4b32-9544-9a368158c24d	nextflow run nf-core/sarek --help
+2020-06-28 22:09:52	-	hungry_coulomb	-	bce378e09de25bb26c388b917f93f84806d3ba27	81fc3a9a-cf46-406e-b304-a9d553bc7e7e	nextflow run nf-core/sarek -profile conda
+2020-06-28 22:11:50	-	ridiculous_ampere	-	bce378e09de25bb26c388b917f93f84806d3ba27	cda31fe7-1d0a-4de1-bde1-cd85795bb25d	nextflow run nf-core/sarek -profile conda --tools Mutect2
+2020-06-28 22:12:12	-	berserk_lamarr	-	bce378e09de25bb26c388b917f93f84806d3ba27	86f8aef6-892d-431b-8597-592ab378d372	nextflow run nf-core/sarek --help
+2020-06-28 22:13:48	-	cheesy_carson	-	bce378e09de25bb26c388b917f93f84806d3ba27	b766dcac-2b03-4a7c-bba6-2ab55c5de81d	nextflow run nf-core/sarek --bwa
+2020-06-28 22:15:53	-	golden_wozniak	-	bce378e09de25bb26c388b917f93f84806d3ba27	51e2fda0-8c34-412f-b4a9-3ae15c927272	nextflow run nf-core/sarek

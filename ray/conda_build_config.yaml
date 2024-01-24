@@ -1,0 +1,29 @@
+c_compiler: gcc
+c_compiler_version: '8'
+channel_sources: conda-forge, defaults, powerai, https://public.dhe.ibm.com/ibmdl/export/pub/software/server/ibm-ai/conda/
+channel_targets: powerai main
+cpu_optimization_target: nocona
+cran_mirror: https://cran.r-project.org
+cxx_compiler: gxx
+docker_image: condaforge/linux-anvil-ppc64le
+extend_keys:
+- ignore_build_only_deps
+- pin_run_as_build
+- ignore_version
+- extend_keys
+fortran_compiler: gfortran
+ignore_build_only_deps:
+- python
+- numpy
+lua: '5'
+numpy: '1.19'
+perl: 5.26.2
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  r-base:
+    min_pin: x.x
+    max_pin: x.x
+python: '3.7'
+target_platform: linux-ppc64le

@@ -1,0 +1,7 @@
+/opt/anaconda1anaconda2anaconda3 text bin/cnv_annotate.py
+/opt/anaconda1anaconda2anaconda3 text bin/cnv_updater.py
+/opt/anaconda1anaconda2anaconda3 text bin/cnv_ztest.py
+/opt/anaconda1anaconda2anaconda3 text bin/cnvkit.py
+/opt/anaconda1anaconda2anaconda3 text bin/guess_baits.py
+/opt/anaconda1anaconda2anaconda3 text bin/reference2targets.py
+/opt/anaconda1anaconda2anaconda3 text bin/skg_convert.py

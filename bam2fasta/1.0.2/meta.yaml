@@ -1,0 +1,55 @@
+{% set version = "1.0.2" %}
+
+package:
+  name: bam2fasta
+  version: {{ version }}
+
+source:
+  url: file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/bam2fasta/bam2fasta-{{ version }}.tar.gz
+  sha256: 6192c65344b4b4dbc2be9bf7bc5f6d95163f6a421a6383033912a052254c2fe2
+
+build:
+  entry_points:
+    - bam2fasta = bam2fasta.__main__:main
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+
+requirements:
+  build:
+  host:
+    - python==3.7.6
+    - pip
+    - setuptools >=38.6.0
+    - cython >=0.25.2
+    - setuptools_scm
+    - setuptools_scm_git_archive
+    - numpy==1.17.5
+  run:
+    - python==3.7.6
+    - pathos
+    - pysam ==0.15.3
+    - screed>=1.0
+    - tqdm==4.36.1
+    - numpy==1.17.5
+
+test:
+  imports:
+    - bam2fasta
+
+  commands:
+    - bam2fasta --help
+    - bam2fasta info
+
+about:
+  home: https://github.com/czbiohub/bam2fasta
+  license: MIT License
+  license_file: LICENSE
+  summary: 'bam2fasta: cli tool to convert bam to fastas'
+  license_family: MIT
+  dev_url: https://github.com/czbiohub/bam2fasta
+
+extra:
+  recipe-maintainers:
+    - pranathi7
+  identifiers:
+    - biotools:bam2fasta

@@ -1,0 +1,27 @@
+{% set version = "1.6.0" %}
+
+package:
+  name: manta
+  version: '{{ version }}'
+source:
+  url: file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/manta/manta-{{ version }}.ppc64le.tar.bz2
+  sha256: "3566993145036ccd289309b802d25f3323fa00a4be90632162399ef13965544b"
+build:
+  number: 2
+  string: py37_6
+requirements:
+  run:
+
+test:
+  commands:
+#    - configManta.py -h
+about:
+  home: https://github.com/Illumina/manta
+  license: GPLv3
+  summary: Structural variant and indel caller for mapped sequencing data
+
+extra:
+  identifiers:
+    - biotools:Manta9235
+  skip-lints:
+    - should_be_noarch_generic

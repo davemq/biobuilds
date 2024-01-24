@@ -1,0 +1,31 @@
+{% set version = "1.7" %}
+{% set sha256 = "02cfde4f6aca6f7453edb93ba70d36d08081f5ebad8b023188da6379ff1d4a75" %}
+
+package:
+  name: perl-bloom-faster
+  version: {{ version }}
+
+source:
+  url: http://cpan.metacpan.org/authors/id/P/PA/PALVARO/Bloom-Faster-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - perl==5.26.2
+
+  run:
+    - perl==5.26.2
+
+test:
+  imports:
+    - Bloom::Faster
+
+about:
+  home: http://metacpan.org/pod/Bloom-Faster
+  license: unknown
+  summary: 'Perl extension for the c library libbloom.'

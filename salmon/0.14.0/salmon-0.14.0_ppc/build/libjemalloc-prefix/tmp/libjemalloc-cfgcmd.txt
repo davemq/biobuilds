@@ -1,0 +1,1 @@
+cmd='sh;-c;CC=/opt/at12.0/bin/cc ./autogen.sh --disable-debug --prefix=<INSTALL_DIR>'

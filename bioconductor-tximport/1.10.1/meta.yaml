@@ -1,0 +1,42 @@
+{% set version = "1.10.1" %}
+{% set name = "tximport" %}
+{% set bioc = "3.8" %}
+
+package:
+  name: 'bioconductor-{{ name|lower }}'
+  version: '{{ version }}'
+source:
+  url:
+    - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
+    - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
+    - 'https://depot.galaxyproject.org/software/bioconductor-{{ name }}/bioconductor-{{ name }}_{{ version }}_src_all.tar.gz'
+  sha256: '9490d6dc5d4ff9ffa4427597a2c8c247b18896a3af5a005825eb32505b02979b'
+build:
+  number: 1
+  rpaths:
+    - lib/R/lib/
+    - lib/
+  noarch: generic
+# Suggests: knitr, rmarkdown, testthat, tximportData, TxDb.Hsapiens.UCSC.hg19.knownGene, readr (>= 0.2.2), limma, edgeR, DESeq2 (>= 1.11.6), rhdf5, jsonlite, matrixStats, Matrix
+requirements:
+  host:
+    - r-base=3.6.1
+  run:
+    - r-base
+test:
+  commands:
+    - '$R -e "library(''{{ name }}'')"'
+about:
+  home: 'https://bioconductor.org/packages/{{ bioc }}/bioc/html/{{ name }}.html'
+  license: 'GPL (>=2)'
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  summary: 'Import and summarize transcript-level estimates for transcript and gene-level analysis'
+extra:
+  identifiers:
+    - biotools:tximport
+  parent_recipe:
+    name: bioconductor-tximport
+    path: recipes/bioconductor-tximport
+    version: 1.8.0
+  recipe-maintainers:
+    - roryk

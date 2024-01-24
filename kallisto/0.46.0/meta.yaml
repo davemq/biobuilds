@@ -1,0 +1,40 @@
+{% set version = "0.46.0" %}
+
+package:
+  name: kallisto
+  version: {{ version }}
+
+source:
+  url: https://github.com/pachterlab/kallisto/archive/v{{ version }}.tar.gz
+  sha256: af4778cf121cdb9f732b355fc0ce44c6708caddf22d9560ba7f4b5d5b9795be1
+#  patches:
+#    - power9-static.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - cmake
+    - autoconf
+    - automake
+  host:
+    - zlib
+    - hdf5 ==1.8.16
+
+test:
+  files:
+    - t.fa
+    - t.fq
+  commands:
+    - kallisto version
+
+about:
+  home: "http://pachterlab.github.io/kallisto"
+  license: BSD_2_Clause
+  summary: Quantifying abundances of transcripts from RNA-Seq data, or more generally of target sequences using high-throughput sequencing reads.
+
+extra:
+  identifiers:
+    - biotools:kallisto
+    - doi:10.1038/nbt.3519

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libgff"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libgff.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libgff-complete.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-install.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-mkdir.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-download.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-update.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-patch.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-configure.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-build.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libgff-prefix/src/libgff-stamp/libgff-makedir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libgff"
+		],
+		"name" : "libgff"
+	}
+}

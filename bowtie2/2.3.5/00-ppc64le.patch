@@ -1,0 +1,42 @@
+--- Makefile	2019-04-16 22:40:25.000000000 -0400
++++ Makefile	2019-08-02 15:05:13.712553990 -0400
+@@ -28,13 +28,16 @@
+ GCC_PREFIX := $(shell dirname `which gcc`)
+ GCC_SUFFIX :=
+ CC ?= $(GCC_PREFIX)/gcc$(GCC_SUFFIX)
+-CPP ?= $(GCC_PREFIX)/g++$(GCC_SUFFIX)
+-CXX ?= $(CPP)
++CXX ?= $(GCC_PREFIX)/g++$(GCC_SUFFIX)
+ CXXFLAGS += -std=c++98
+ ifeq (aarch64,$(shell uname -m))
+ 	CXXFLAGS += -fopenmp-simd
+ 	CPPFLAGS += -Ithird_party/simde
+ endif
++ifeq (ppc64le,$(shell uname -m))
++        CXXFLAGS += -fopenmp -DNO_WARN_X86_INTRINSICS
++        CPPFLAGS += -DNO_WARN_X86_INTRINSICS
++endif
+ 
+ HEADERS := $(wildcard *.h)
+ BOWTIE_MM := 1
+@@ -115,7 +118,8 @@
+ 		LDLIBS += -ldl
+ 	endif
+ 	else
+-		LDLIBS += -ltbbmalloc_proxy
++#		LDLIBS += -ltbbmalloc_proxy
++		LDLIBS += -ltbbmalloc
+ 	endif
+ 	CXXFLAGS += -DWITH_TBB
+ else
+@@ -223,6 +227,10 @@
+ 	SSE_FLAG =
+ 	M64_FLAG =
+ endif
++ifeq (ppc64le,$(shell uname -m))
++	SSE_FLAG =
++	M64_FLAG =
++endif
+ 
+ DEBUG_FLAGS    := -O0 -g3 $(M64_FLAG) $(SSE_FLAG)
+ RELEASE_FLAGS  := -O3 $(M64_FLAG) $(SSE_FLAG) -funroll-loops -g3

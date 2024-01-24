@@ -1,0 +1,66 @@
+{% set name = "getopt" %}
+{% set version = "1.20.2" %}
+
+package:
+  name: "r-{{ name }}"
+  version: "{{ version }}"
+
+source:
+  fn: "r-{{ name }}_{{ version }}.tar.gz"
+  url:
+    - "https://cran.r-project.org/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz"
+  sha256: "3d6c12d32d6cd4b2909be626e570e158b3ed960e4739510e3a251e7f172de38e"
+
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+
+requirements:
+  build:
+    - r-base {{ r_base }}
+    - autoconf
+    - automake
+    - pkg-config
+
+  run:
+    - r-base
+
+test:
+  commands:
+    - $R -e "library('{{ name }}')"          # [not win]
+    - "\"%R%\" -e \"library('{{ name }}')\"" # [win]
+
+about:
+  home: https://anaconda.org/bioconda/r-optparse
+  license: GPLv2
+  summary: A command line parser inspired by Python's 'optparse' library to be used with Rscript to write "#!" shebang scripts that accept short and long flag/options.
+
+
+#----------------------------------------------------------------------
+# The original CRAN metadata for this package was:
+#
+# Package: xml
+# Version: 3.98-1.11
+# Title: Parse XML
+# Description: Work with XML files using a simple, consistent interface. Built on top of the 'libxml2' C library.
+# Authors@R: c( person("Hadley", "Wickham", , "hadley@rstudio.com", "aut"), person("James", "Hester", , "james.hester@rstudio.com", c("aut", "cre")), person("Jeroen", "Ooms", role = "aut"), person("RStudio", role = "cph"), person("R Foundation", role = "ctb", comment = "Copy of R-project homepage cached as example") )
+# URL: https://github.com/hadley/xml2/
+# BugReports: https://github.com/hadley/xml2/issues/
+# Depends: R (>= 3.1.0)
+# Imports: Rcpp
+# LinkingTo: Rcpp (>= 0.11.4.6), BH
+# Suggests: testthat, curl, covr, knitr, rmarkdown, magrittr, httr
+# SystemRequirements: libxml2: libxml2-dev (deb), libxml2-devel (rpm)
+# License: GPL (>= 2)
+# RoxygenNote: 5.0.1.9000
+# VignetteBuilder: knitr
+# Collate: 'RcppExports.R' 'as_list.R' 'xml_parse.R' 'as_xml_document.R' 'classes.R' 'paths.R' 'utils.R' 'xml_attr.R' 'xml_children.R' 'xml_find.R' 'xml_modify.R' 'xml_name.R' 'xml_namespaces.R' 'xml_path.R' 'xml_schema.R' 'xml_serialize.R' 'xml_structure.R' 'xml_text.R' 'xml_type.R' 'xml_url.R' 'xml_write.R' 'zzz.R'
+# NeedsCompilation: yes
+# Packaged: 2017-01-23 18:59:10 UTC; jhester
+# Author: Hadley Wickham [aut], James Hester [aut, cre], Jeroen Ooms [aut], RStudio [cph], R Foundation [ctb] (Copy of R-project homepage cached as example)
+# Maintainer: James Hester <james.hester@rstudio.com>
+# Repository: CRAN
+# Date/Publication: 2017-01-24 08:12:30
+#----------------------------------------------------------------------

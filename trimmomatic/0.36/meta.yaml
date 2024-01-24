@@ -6,7 +6,6 @@ source:
   fn: "trimmomatic-0.36.zip"
   url:
     - "http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.36.zip"
-    - "http://download.lab7.io/sources/trimmomatic-0.36.zip"
   md5: "8549130d86b6f0382b1a71a2eb45de39"
 
 build:

@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_GetRegionDepth.a  CMakeFiles/strelka_GetRegionDepth.dir/GetRegionDepth.cpp.o CMakeFiles/strelka_GetRegionDepth.dir/ReadRegionDepthUtil.cpp.o CMakeFiles/strelka_GetRegionDepth.dir/RegionDepthOptions.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_GetRegionDepth.a

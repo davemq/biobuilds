@@ -1,0 +1,120 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/openmm/7.5.0
+# ------------------------------------------------
+
+package:
+    name: openmm
+    version: 7.5.0
+source:
+    git_depth: '0'
+    git_url: https://github.com/openmm/openmm.git
+build:
+    number: '0'
+    script_env:
+        - CUDAPATH
+        - CUDA_SHORT_VERSION
+        - CUDA_VERSION
+    string: py37_cuda102_0
+requirements:
+    build:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 0_gnu
+        - binutils_impl_linux-ppc64le 2.34 h0f24833_5
+        - binutils_linux-ppc64le 2.34 heaf459e_20
+        - bzip2 1.0.8 h6eb9509_2
+        - ca-certificates 2020.4.5.2  hecda079_0
+        - cmake 3.17.0 hfb1cb51_0
+        - expat 2.2.9 hb209c28_2
+        - gcc_impl_linux-ppc64le 8.4.0 h8635c71_6 
+        - gcc_linux-ppc64le 8.4.0 h96fe1e1_20
+        - gxx_impl_linux-ppc64le 8.4.0 h822a55f_6
+        - gxx_linux-ppc64le 8.4.0 h96fe1e1_20
+        - krb5 1.17.1 h41979e3_0
+        - ld_impl_linux-ppc64le 2.34 h0f24833_5 
+        - libcurl 7.69.1 h76d47d4_0
+        - libdrm-cos6-x86_64 2.4.65 hd39d64f_0
+        - libedit 3.1.20191231 h01e2fff_0
+        - libgcc-ng 8.4.0 hdd5993f_6
+        - libgomp 8.4.0 hdd5993f_6
+        - libssh2 1.9.0 h1ba5d50_1
+        - libstdcxx-ng 8.4.0 h822a55f_6
+        - libuv 1.38.0 h6eb9509_0
+        - libx11-common-cos6-x86_64 1.6.4 h023ea50_0
+        - libx11-cos6-x86_64 1.6.4 h64a1553_0
+        - mesa-libgl-cos6-x86_64 11.0.7 h045e36e_0
+        - mesa-libgl-devel-cos6-x86_64 11.0.7 h5a2c0ac_0
+        - ncurses 6.1 hf484d3e_1002
+        - openssl 1.1.1g h6eb9509_0
+        - rhash 1.3.6 h14c3975_1001
+        - tk 8.6.10 h151fe60_0
+        - xz 5.2.5 h6eb9509_0
+        - zlib 1.2.11 h6eb9509_1006
+    host:
+        - _libgcc_mutex 0.1 conda_forge
+        - _openmp_mutex 4.5 1_llvm
+        - ca-certificates 2020.4.5.2 hecda079_0
+        - cython 0.29.20 py37hb809cae_0
+        - doxygen 1.8.14 habb8814_1
+        - fftw 3.3.8 h7b6447c_3
+        - icu 67.1 hb209c28_0
+        - ld_impl_linux-ppc64le 2.34 h0f24833_5 
+        - libffi 3.2.1 hf484d3e_1005
+        - libgcc-ng 8.4.0 hdd5993f_6
+        - libgfortran-ng 7.3.0 h822a55f_1
+        - libgfortran-ng
+        - libiconv 1.15 h6eb9509_1006
+        - libopenblas 0.3.6 h5a2b251_1
+        - libstdcxx-ng 8.4.0 h822a55f_6
+        - libxml2 2.9.10 h5e8a603_1
+        - libxslt 1.1.33 hbbfe44f_1
+        - llvm-openmp 10.0.0 h1bb5118_0
+        - lxml 4.5.1 py37h689629f_0
+        - ncurses 6.1 hf484d3e_1002
+        - numpy 1.14.6 py37hec00662_4
+        - numpy-base 1.14.6 py37h2f8d375_4
+        - openssl 1.1.1g h6eb9509_0
+        - pcre 8.44 hb209c28_0
+        - pthread-stubs 0.4 h14c3975_1001
+        - python 3.7.6 
+        - python_abi 3.7 1_cp37m
+        - readline 8.0 hf8c457e_0
+        - sqlite 3.30.1 hd61ad8c_0
+        - swig 4.0.2 hb209c28_0
+        - tk 8.6.10 h151fe60_0
+        - xz 5.2.5 h6eb9509_0
+        - zlib 1.2.11 h6eb9509_1006
+    run:
+        - fftw ==3.3.8
+        - libgcc-ng >=8.4.0
+        - libstdcxx-ng >=8.4.0
+        - numpy ==1.14.6
+        - python >=3.7,<3.8.0a0
+        - python_abi 3.7.* *_cp37m
+test:
+#    commands:
+#        - python -c "import simtk.openmm as mm; print(*mm.pluginLoadedLibNames, *mm.Platform.getPluginLoadFailures(),
+#            sep='\n')"
+#        - python -c "import os, simtk.openmm.version as v; print(v.openmm_library_path);
+#            assert os.path.isdir(v.openmm_library_path), 'Directory does not exist'"
+#        - python -m simtk.testInstallation
+#        - test -f $PREFIX/lib/libOpenMM$SHLIB_EXT
+#        - test -f $PREFIX/lib/plugins/libOpenMMCPU$SHLIB_EXT
+#        - test -f $PREFIX/lib/plugins/libOpenMMOpenCL$SHLIB_EXT
+#        - test -f $PREFIX/lib/plugins/libOpenMMCUDA$SHLIB_EXT
+#        - cd $CONDA_PREFIX/share/openmm/examples
+#        - python benchmark.py --test=rf --seconds=10 --platform=Reference
+#        - python benchmark.py --test=rf --seconds=10 --platform=CPU
+    imports:
+        - simtk
+        - simtk.openmm
+about:
+    home: http://openmm.org
+    license: MIT
+    summary: A high performance toolkit for molecular simulation.
+extra:
+    copy_test_source_files: true
+    final: true
+    force_upload: true
+    scheduled: true
+    upload: cuda102,main

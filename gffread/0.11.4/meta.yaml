@@ -1,0 +1,35 @@
+{% set name = "gffread" %}
+{% set version = "0.11.4" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: http://ccb.jhu.edu/software/stringtie/dl/{{ name }}-{{ version }}.tar.gz
+  sha256: d96fe277488ec9172cc68326b3466f2651fa1dedce1bd75fd886009a470cf9d1
+
+build:
+  number: 0
+
+requirements:
+  build:
+  host:
+    - zlib
+  run:
+    - zlib
+    
+test:
+  commands:
+    - gffread --version
+
+about:
+  home: http://ccb.jhu.edu/software/stringtie/gff.shtml
+  license: 'MIT'
+  summary: 'GFF/GTF utility providing format conversions, region filtering, FASTA sequence extraction and more.'
+  dev_url: "https://github.com/gpertea/gffread"
+
+
+extra:
+  identifiers:
+    - biotools:gffread

@@ -1,0 +1,33 @@
+{% set version = "4.1.2.0" %}
+
+package:
+  name: gatk
+  version: '{{ version }}'
+
+source:
+  url: file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/gatk4/{{ version }}/gatk-{{ version }}.tar.gz
+  sha256: '6d877cb24f5bf80adc9e413a92b92161f61ca299bb49bc30c5403a75522144fb'
+
+build:
+  number: 1
+  detect_binary_files_with_prefix: False
+
+requirements:
+  host:
+  run:
+#    - openjdk >=8,<9
+    - python
+
+test:
+  commands:
+    - gatk -h
+    - gatk --list
+    - gatk HaplotypeCaller --help
+    - gatk MarkDuplicatesSpark --help
+
+about:
+  home: https://github.com/ruzhuchen/GATK4-Power
+  license: BSD-3-Clause
+  license_family: BSD
+  summary: Genome Analysis Toolkit (GATK4) for Power
+  dev_url: https://github.com/broadinstitute/gatk

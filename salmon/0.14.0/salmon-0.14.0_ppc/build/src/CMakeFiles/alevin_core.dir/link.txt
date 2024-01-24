@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libalevin_core.a  CMakeFiles/alevin_core.dir/edlib.cpp.o CMakeFiles/alevin_core.dir/AlevinUtils.cpp.o
+/opt/at12.0/bin/ranlib libalevin_core.a

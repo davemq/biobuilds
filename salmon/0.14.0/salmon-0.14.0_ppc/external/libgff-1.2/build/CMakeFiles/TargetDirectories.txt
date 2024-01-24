@@ -1,0 +1,8 @@
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/install/strip.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/install/local.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/TestGFFParse.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/gff.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/rebuild_cache.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/edit_cache.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/list_install_components.dir
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/external/libgff-1.2/build/CMakeFiles/install.dir

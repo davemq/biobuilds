@@ -1,32 +1,44 @@
 package:
-  name: perl-xml-libxslt
-  version: "1.94"
-
+    name: perl-xml-libxslt
+    version: '1.94'
 source:
-  fn: XML-LibXSLT-1.94.tar.gz
-  url: https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.94.tar.gz
-  md5: a32045699c001d960d6f94891f9e853c
-
+    md5: a32045699c001d960d6f94891f9e853c
+    url: https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXSLT-1.94.tar.gz
 build:
-  number: 0
-
+    number: '0'
+    noarch: generic
 requirements:
-  build:
-    - perl
-    - perl-xml-libxml
-    - libxslt
-
-  run:
-    - perl
-    - perl-xml-libxml
-    - libxslt
-
+    build:
+       - {{ compiler('c') }}
+    host:
+        - perl==5.26.2
+        - libxml2
+        - libxslt
+        - perl-app-cpanminus
+        - perl-carp
+        - perl-constant
+        - perl-exporter
+        - perl-extutils-makemaker
+        - perl-file-path
+        - perl-file-temp
+        - perl-parent
+        - perl-xml-libxml
+        - perl-xml-namespacesupport
+        - perl-xml-sax
+        - perl-xml-sax-base
+        - xz
+        - zlib
+    run:
+        - perl==5.26.2
+        - libxslt
+        - perl-xml-libxml
 test:
-  # Perl 'use' tests
-  imports:
-    - XML::LibXSLT
-
+    imports:
+        - XML::LibXSLT
 about:
-  home: http://metacpan.org/pod/XML-LibXSLT
-  license: perl_5
-  summary: 'Interface to GNOME libxslt library'
+    home: http://metacpan.org/pod/XML-LibXSLT
+    license: perl_5
+    summary: Interface to GNOME libxslt library
+extra:
+    copy_test_source_files: true
+    final: true

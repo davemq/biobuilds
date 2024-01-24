@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/c++/lib/applications/MergeSequenceAlleleCounts/MergeSequenceAlleleCounts.hh
+common/Program.hh
+../src/c++/lib/applications/MergeSequenceAlleleCounts/common/Program.hh
+
+../src/c++/lib/common/Program.hh
+iosfwd
+-
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/bin/MergeSequenceAlleleCounts.cpp
+applications/MergeSequenceAlleleCounts/MergeSequenceAlleleCounts.hh
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/bin/applications/MergeSequenceAlleleCounts/MergeSequenceAlleleCounts.hh
+

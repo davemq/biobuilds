@@ -1,6 +1,6 @@
 {% set name = "DelayedArray" %}
-{% set version = "0.4.1" %}
-{% set bioc_version = "3.6" %}
+{% set version = "0.8.0" %}
+{% set bioc_version = "3.8" %}
 
 package:
   name: "bioconductor-{{ name|lower }}"
@@ -9,20 +9,21 @@ package:
 source:
   fn: "bioconductor-{{ name|lower }}_{{ version }}.tar.gz"
   url:
-    - "http://bioconductor.org/packages/release/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/bioconductor-{{ name|lower }}_{{ version }}.tar.gz"
-  sha256: "8b7ca552d391c58c5899480bbab5bdb975c8ef5f6b2222cc6304fcede313f068"
+    - "http://bioconductor.org/packages/3.8/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz"
+  sha256: "4eac6d8579a0c020104482ba18275b115d86e4071f4aab53e8787339b1558532"
 
 requirements:
   build:
     - r-base {{ r_base }}
     - r-matrixstats
+    - bioconductor-biocparallel
     - bioconductor-biocgenerics
     - bioconductor-s4vectors >=0.15.3
     - bioconductor-iranges >=2.11.17
   run:
     - r-base
     - r-matrixstats
+    - bioconductor-biocparallel
     - bioconductor-biocgenerics
     - bioconductor-s4vectors >=0.15.3
     - bioconductor-iranges >=2.11.17

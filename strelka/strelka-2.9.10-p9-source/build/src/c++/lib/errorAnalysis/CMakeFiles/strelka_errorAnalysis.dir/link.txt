@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_errorAnalysis.a  CMakeFiles/strelka_errorAnalysis.dir/BasecallCounts.cpp.o CMakeFiles/strelka_errorAnalysis.dir/IndelCounts.cpp.o CMakeFiles/strelka_errorAnalysis.dir/SequenceAlleleCounts.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_errorAnalysis.a

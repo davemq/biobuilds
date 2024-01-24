@@ -1,0 +1,10 @@
+--- CMakeLists.txt.org	2019-12-12 12:45:57.207284000 -0500
++++ CMakeLists.txt	2019-12-12 12:46:27.162745000 -0500
+@@ -27,6 +27,7 @@
+ endif()
+ 
+ #add_compile_options(-Wall -Wno-unused-function)
++set (LINK  "static")
+ 
+ if(LINK MATCHES static)
+     message("static build")

@@ -1,0 +1,24 @@
+package:
+    name: perl-date-format
+    version: '2.30'
+source:
+    sha256: 75bd254871cb5853a6aa0403ac0be270cdd75c9d1b6639f18ecba63c15298e86
+    url: https://cpan.metacpan.org/authors/id/G/GB/GBARR/TimeDate-2.30.tar.gz
+    patches:
+       - fix-getdate.patch
+build:
+    number: '2'
+    string: pl526_2
+requirements:
+    build:
+        - libgcc-ng 7.3.0
+        - perl 5.26.2
+    run:
+        - perl >=5.26.2,<5.26.3.0a0
+about:
+    home: http://metacpan.org/pod/Date::Format
+    license: perl_5
+    summary: Date formating subroutines
+extra:
+    copy_test_source_files: true
+    final: true

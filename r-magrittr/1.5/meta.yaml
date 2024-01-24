@@ -10,7 +10,6 @@ source:
   url:
     - "http://cran.r-project.org/src/contrib/{{ name }}_{{ version }}.tar.gz"
     - "http://cran.r-project.org/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-{{ name|lower }}_{{ version }}.tar.gz"
   sha256: "05c45943ada9443134caa0ab24db4a962b629f00b755ccf039a2a2a7b2c92ae8"
 
 build:

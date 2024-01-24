@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_common.a  CMakeFiles/strelka_common.dir/Exceptions.cpp.o CMakeFiles/strelka_common.dir/OutStream.cpp.o CMakeFiles/strelka_common.dir/Program.cpp.o CMakeFiles/strelka_common.dir/ProgramUtil.cpp.o CMakeFiles/strelka_common.dir/SegmentTimeTracker.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_common.a

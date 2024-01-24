@@ -22,7 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('cxx') }}
     - r-rcpp
     - r-bindr
     - r-plogr

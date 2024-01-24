@@ -22,7 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('cxx') }}
     - autoconf
     - automake
     - pkg-config

@@ -1,0 +1,39 @@
+libstaden_read_la-md5.lo: md5.c /opt/at12.0/include/stdc-predef.h \
+ /opt/at12.0/include/string.h \
+ /opt/at12.0/include/bits/libc-header-start.h \
+ /opt/at12.0/include/features.h /opt/at12.0/include/sys/cdefs.h \
+ /opt/at12.0/include/bits/wordsize.h \
+ /opt/at12.0/include/bits/long-double.h /opt/at12.0/include/gnu/stubs.h \
+ /opt/at12.0/include/gnu/stubs-64-v2.h \
+ /opt/at12.0/lib/gcc/powerpc64le-linux-gnu/8.2.1/include/stddef.h \
+ /opt/at12.0/include/bits/types/locale_t.h \
+ /opt/at12.0/include/bits/types/__locale_t.h \
+ /opt/at12.0/include/strings.h md5.h
+
+/opt/at12.0/include/stdc-predef.h:
+
+/opt/at12.0/include/string.h:
+
+/opt/at12.0/include/bits/libc-header-start.h:
+
+/opt/at12.0/include/features.h:
+
+/opt/at12.0/include/sys/cdefs.h:
+
+/opt/at12.0/include/bits/wordsize.h:
+
+/opt/at12.0/include/bits/long-double.h:
+
+/opt/at12.0/include/gnu/stubs.h:
+
+/opt/at12.0/include/gnu/stubs-64-v2.h:
+
+/opt/at12.0/lib/gcc/powerpc64le-linux-gnu/8.2.1/include/stddef.h:
+
+/opt/at12.0/include/bits/types/locale_t.h:
+
+/opt/at12.0/include/bits/types/__locale_t.h:
+
+/opt/at12.0/include/strings.h:
+
+md5.h:

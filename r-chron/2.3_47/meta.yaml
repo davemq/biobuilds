@@ -5,7 +5,7 @@ package:
 source:
   fn: chron_2.3-47.tar.gz
   url:
-    - http://cran.r-project.org/src/contrib/chron_2.3-47.tar.gz
+#    - http://cran.r-project.org/src/contrib/chron_2.3-47.tar.gz
     - http://cran.r-project.org/src/contrib/Archive/chron/chron_2.3-47.tar.gz
   md5: "b8890cdc5f2337f8fd775b0becdcdd1f"
 
@@ -16,11 +16,11 @@ build:
 
 requirements:
   build:
-    - r
+    - r-base=3.6.1
     - gcc     # [not win and not ppc64le]
 
   run:
-    - r
+    - r-base
     - libgcc  # [not win and not ppc64le]
 
 test:

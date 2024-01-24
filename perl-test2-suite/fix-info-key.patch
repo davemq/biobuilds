@@ -1,0 +1,29 @@
+--- Changes	2018-12-04 14:37:16.000000000 -0500
++++ Changes	2020-06-30 13:58:31.632627697 -0400
+@@ -1,6 +1,7 @@
+ 0.000117  2018-12-04 11:37:15-08:00 America/Los_Angeles
+ 
+     - Remove test that belongs in another dist
++    - Fix test broken by new Test-Simple #175
+ 
+ 0.000116  2018-11-28 15:47:12-08:00 America/Los_Angeles
+ 
+--- lib/Test2/Tools/Tester.pm	2018-12-04 14:37:16.000000000 -0500
++++ lib/Test2/Tools/Tester.pm	2020-06-30 13:57:16.188457000 -0400
+@@ -19,9 +19,14 @@ our @EXPORT_OK = qw{
+ my %TYPES;
+ for my $class (__PACKAGE__->plugins) {
+     my $type = $class;
+-    $type =~ s/^.*::EventFacet:://g;
++#    $type =~ s/^.*::EventFacet:://g;
++    $type =~ s/^Test2::EventFacet:://g;
+ 
+-    my $key = $class->facet_key || lc($type);
++#    my $key = $class->facet_key || lc($type);
++    next unless $class->isa('Test2::EventFacet');
++    my $key;
++    $key = $class->facet_key if $class->can('facet_key');
++    $key = lc($type) unless defined $key;
+ 
+     $TYPES{$type}     = $class;
+     $TYPES{lc($type)} = $class;

@@ -1,0 +1,29 @@
+{
+  'manpage_support' => {
+                         'description' => 'Create Unix man pages',
+                         'requires' => {
+                                         'Pod::Man' => 0
+                                       }
+                       },
+  'C_support' => {
+                   'recommends' => {
+                                     'ExtUtils::ParseXS' => '1.02'
+                                   },
+                   'description' => 'Compile/link C & XS code',
+                   'requires' => {
+                                   'ExtUtils::CBuilder' => '0.15'
+                                 }
+                 },
+  'HTML_support' => {
+                      'description' => 'Create HTML documentation',
+                      'requires' => {
+                                      'Pod::Html' => 0
+                                    }
+                    },
+  'YAML_support' => {
+                      'requires' => {
+                                      'YAML' => ' >= 0.35, != 0.49_01 '
+                                    },
+                      'description' => 'Use YAML.pm to write META.yml files'
+                    }
+}

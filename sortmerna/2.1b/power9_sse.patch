@@ -1,0 +1,13 @@
+--- configure	2016-03-04 09:22:28.000000000 -0500
++++ configure	2019-11-11 21:39:05.466437000 -0500
+@@ -5083,8 +5083,8 @@
+ rm -f conftest.mmap conftest.txt
+ 
+ 
+-CXXFLAGS="$CXXFLAGS -pipe -funroll-loops -Wall -msse2 -D_FILE_OFFSET_BITS=64 $OPENMP_CFLAGS"
+-CFLAGS="$CFLAGS -pipe -funroll-loops -msse2 -Wall $OPENMP_CFLAGS"
++CXXFLAGS="$CXXFLAGS -pipe -funroll-loops -Wall -DNO_WARN_X86_INTRINSICS -D_FILE_OFFSET_BITS=64 $OPENMP_CFLAGS"
++CFLAGS="$CFLAGS -pipe -funroll-loops -DNO_WARN_X86_INTRINSICS -Wall $OPENMP_CFLAGS"
+ LIBS="$LIBS -lm"
+ 
+ 

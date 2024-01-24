@@ -1,0 +1,39 @@
+{% set name = "minimap2" %}
+{% set version = "2.17" %}
+{% set sha256 = "0a3eaa3ef3d9f9e41f48199cc4aac0508366ac644fc3e8fe05e3463acd23d20b" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+requirements:
+  build:
+  host:
+    - zlib {{ zlib }}
+  run:
+    - zlib
+
+source:
+  fn: "{{ name|lower }}-{{ version }}.tar.gz"
+  url:
+    - "https://github.com/lh3/minimap2/archive/v{{ version }}.tar.gz"
+  sha256: "{{ sha256 }}"
+  patches:
+    - 00_makefile.patch
+
+build:
+  number: 0
+
+test:
+  source_files:
+    - test/MT-*.fa
+
+about:
+  home: "https://github.com/lh3/minimap2"
+  license: "MIT"
+  license_file: "LICENSE.txt"
+  summary: >-
+    Versatile sequence alignment program that aligns DNA or mRNA sequences
+    against a large reference database
+  doc_url: "https://github.com/lh3/minimap2/blob/v{{ version }}/README.md"
+  dev_url: "https://github.com/lh3/minimap2"

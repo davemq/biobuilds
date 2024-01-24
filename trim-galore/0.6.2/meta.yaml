@@ -1,0 +1,29 @@
+{% set version = "0.6.2" %}
+
+package:
+  name: trim-galore
+  version: {{ version }}
+
+build:
+  number: 0
+  skip: True # [osx]
+
+source:
+  url: https://github.com/FelixKrueger/TrimGalore/archive/{{ version }}.zip
+  sha256: "bcceefdabfcb5a6daa5c696a4418c4bf91fcd7176814d434fce14fbb907b24a7"
+
+requirements:
+  build:
+  run:
+    - perl
+    - fastqc
+    - cutadapt
+
+test:
+  commands:
+    - trim_galore --help | grep trim_galore > /dev/null
+
+about:
+  home: http://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
+  license: GPL
+  summary: Trim Galore! is a wrapper script to automate quality and adapter trimming as well as quality control

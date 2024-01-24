@@ -1,0 +1,60 @@
+libstaden_read_la-fpoint.lo: fpoint.c /opt/at12.0/include/stdc-predef.h \
+ ../io_lib_config.h /opt/at12.0/include/math.h \
+ /opt/at12.0/include/bits/libc-header-start.h \
+ /opt/at12.0/include/features.h /opt/at12.0/include/sys/cdefs.h \
+ /opt/at12.0/include/bits/wordsize.h \
+ /opt/at12.0/include/bits/long-double.h /opt/at12.0/include/gnu/stubs.h \
+ /opt/at12.0/include/gnu/stubs-64-v2.h /opt/at12.0/include/bits/types.h \
+ /opt/at12.0/include/bits/typesizes.h \
+ /opt/at12.0/include/bits/math-vector.h \
+ /opt/at12.0/include/bits/libm-simd-decl-stubs.h \
+ /opt/at12.0/include/bits/floatn.h \
+ /opt/at12.0/include/bits/floatn-common.h \
+ /opt/at12.0/include/bits/flt-eval-method.h \
+ /opt/at12.0/include/bits/fp-logb.h /opt/at12.0/include/bits/fp-fast.h \
+ /opt/at12.0/include/bits/mathcalls-helper-functions.h \
+ /opt/at12.0/include/bits/mathcalls.h ../io_lib/fpoint.h
+
+/opt/at12.0/include/stdc-predef.h:
+
+../io_lib_config.h:
+
+/opt/at12.0/include/math.h:
+
+/opt/at12.0/include/bits/libc-header-start.h:
+
+/opt/at12.0/include/features.h:
+
+/opt/at12.0/include/sys/cdefs.h:
+
+/opt/at12.0/include/bits/wordsize.h:
+
+/opt/at12.0/include/bits/long-double.h:
+
+/opt/at12.0/include/gnu/stubs.h:
+
+/opt/at12.0/include/gnu/stubs-64-v2.h:
+
+/opt/at12.0/include/bits/types.h:
+
+/opt/at12.0/include/bits/typesizes.h:
+
+/opt/at12.0/include/bits/math-vector.h:
+
+/opt/at12.0/include/bits/libm-simd-decl-stubs.h:
+
+/opt/at12.0/include/bits/floatn.h:
+
+/opt/at12.0/include/bits/floatn-common.h:
+
+/opt/at12.0/include/bits/flt-eval-method.h:
+
+/opt/at12.0/include/bits/fp-logb.h:
+
+/opt/at12.0/include/bits/fp-fast.h:
+
+/opt/at12.0/include/bits/mathcalls-helper-functions.h:
+
+/opt/at12.0/include/bits/mathcalls.h:
+
+../io_lib/fpoint.h:

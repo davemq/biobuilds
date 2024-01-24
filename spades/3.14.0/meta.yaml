@@ -1,0 +1,60 @@
+{% set version = "3.14.0" %}
+{% set sha256 = "18988dd51762863a16009aebb6e873c1fbca92328b0e6a5af0773e2b1ad7ddb9" %}
+
+package:
+  name: spades
+  version: {{ version }}
+
+source:
+  url: http://cab.spbu.ru/files/release{{ version }}/SPAdes-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+  patches:
+    - power9_at12_simd.patch
+
+build:
+  number: 1
+
+requirements:
+  build:
+    - cmake
+  host:
+    - zlib
+    - bzip2
+  run:
+
+test:
+  commands:
+    - spades.py --version
+    - rnaspades.py --version
+#    - truspades.py -h 
+    - metaspades.py --version
+    - plasmidspades.py --version
+    - spades-kmercount -h
+    - spades.py --test && rm -rf spades_test
+
+about:
+  home: http://cab.spbu.ru/software/spades/
+  license: GPLv2
+  license_family: GPL
+  license_file: LICENSE
+  summary: SPAdes (St. Petersburg genome assembler) is intended for both standard isolates and single-cell MDA bacteria assemblies.
+  description: |
+    SPAdes (St. Petersburg genome assembler) is a genome assembly algorithm which was designed for
+    single cell and multi-cells bacterial data sets. However, it might not be suitable for large
+    genomes projects.
+
+    SPAdes works with Ion Torrent, PacBio, Oxford Nanopore, and Illumina paired-end, mate-pairs and
+    single reads
+
+  dev_url: https://github.com/ablab/spades
+  doc_url: http://cab.spbu.ru/files/release{{version}}/manual.html
+extra:
+  recipe-maintainers:
+    - druvus
+    - notestaff
+  identifiers:
+    - biotools:spades
+    - doi:10.1089/cmb.2012.0021
+    - doi:10.1101/gr.213959.116
+  skip-lints:
+    - should_not_be_noarch_source

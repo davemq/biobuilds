@@ -1,0 +1,28 @@
+package:
+  name: perl-jcode
+  version: "2.07"
+
+source:
+  url: http://cpan.metacpan.org/authors/id/D/DA/DANKOGAI/Jcode-2.07.tar.gz
+  md5: f6c52253ff69a44c38a9183c469f6eb0
+
+build:
+  noarch: generic
+  number: 2
+
+requirements:
+  host:
+    - perl==5.26.2
+
+  run:
+    - perl==5.26.2
+
+test:
+  # Perl 'use' tests
+  imports:
+    - Jcode
+
+about:
+  home: http://metacpan.org/pod/Jcode
+  license: unknown
+  summary: 'Japanese Charset Handler'

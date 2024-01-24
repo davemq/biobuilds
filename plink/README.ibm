@@ -1,0 +1,22 @@
+The source codes here are modified the Makefile to build static plink (1.9 and 2.0)
+
+for version 2.0, change the code "plink2.cc" below:
+
+#ifdef __APPLE__
+  fesetenv(FE_DFL_DISABLE_SSE_DENORMS_ENV);
+#else
+#  ifdef __LP64__
+  #if defined(__i386__) || defined(__x86_64__)
+     _MM_SET_FLUSH_ZERO_MODE(_MM_FLUSH_ZERO_ON);
+
+  #elif defined(__PPC__) || defined(__PPC64__)
+    /* Altivec non-IEEE mode for subnormal (denormalized) values.
+       m*vscr requires vector types even for writing to registers (disturbing)
+       so the high order bits are index'd. */
+   __vector unsigned short vscr = vec_mfvscr();
+   vscr[1] |= 1;
+   vec_mtvscr(vscr);
+  #endif
+#  endif
+#endif
+

@@ -1,0 +1,29 @@
+CUDA_SHORT_VERSION: '102'
+CUDA_VERSION: '10.2'
+c_compiler: gcc
+cpu_optimization_target: nocona
+cran_mirror: https://cran.r-project.org
+cxx_compiler: gxx
+debug_openmm: 'false'
+extend_keys:
+- ignore_version
+- extend_keys
+- ignore_build_only_deps
+- pin_run_as_build
+fortran_compiler: gfortran
+ignore_build_only_deps:
+- numpy
+- python
+lua: '5'
+numpy: '1.14'
+perl: 5.26.0
+pin_run_as_build:
+  python:
+    min_pin: x.x
+    max_pin: x.x
+  r-base:
+    min_pin: x.x
+    max_pin: x.x
+python: 3.7.* *_cpython
+r_base: '3.6'
+target_platform: linux-ppc64le

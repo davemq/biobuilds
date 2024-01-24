@@ -9,8 +9,9 @@
 # https://github.com/jeroen/autobrew/issues/3
 export DISABLE_AUTOBREW=1
 
+export LD_LIBRARY_PATH=/home/rchen/miniconda3/envs/CZ-Lab/lib/R/library/RCurl/libs:$LD_LIBRARY_PATH
 # R refuses to build packages that mark themselves as Priority: Recommended
 mv DESCRIPTION DESCRIPTION.old
 grep -v '^Priority: ' DESCRIPTION.old > DESCRIPTION
 
-$R CMD INSTALL --build .
+R CMD INSTALL --build .

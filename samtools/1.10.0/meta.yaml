@@ -1,0 +1,41 @@
+{% set maj_min = "1.10" %}
+{% set patch = "0" %}
+{% set version = maj_min ~ "." ~ patch %}
+
+package:
+  name: samtools
+  version: "{{ version }}"
+
+source:
+  url: https://github.com/samtools/samtools/releases/download/1.10/samtools-1.10.tar.bz2
+  sha256: 7b9ec5f05d61ec17bd9a82927e45d8ef37f813f79eb03fe06c88377f1bd03585
+
+requirements:
+  # TODO: get curses support working; currently, attempting to build with
+  # ncurses leads to a bunch of undeclared name and unknown type errors.
+  build:
+    - zlib 1.2.11
+    #- ncurses {{ ncurses }}
+    - htslib
+  run:
+    - zlib
+    #- ncurses
+    - htslib
+    - python==3.7.6
+    - perl 5.*
+
+build:
+  number: 0
+  detect_binary_files_with_prefix: true
+
+test:
+  commands:
+    # Bulk of tests are performed in the build process. This basically just
+    # ensures we got our Perl requirement correct.
+    - "samtools --help >/dev/null"
+
+about:
+  home: http://www.htslib.org/
+  license: MIT
+  license_file: LICENSE
+  summary: "Various utilities for manipulating alignments in the SAM/BAM format"

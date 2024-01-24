@@ -1,0 +1,30 @@
+--- src/Makefile.Linux	2019-03-10 21:26:02.000000000 -0400
++++ src/Makefile.Linux	2019-08-01 15:53:29.993283000 -0400
+@@ -7,9 +7,9 @@
+ include makefile.version
+ -include ~/.R/DBPZ_debug_makefile
+ 
+-CCFLAGS = -mtune=core2 ${MACOS} -O${OPT_LEVEL} -DMAKE_FOR_EXON  -D MAKE_STANDALONE -D SUBREAD_VERSION=\"${SUBREAD_VERSION}\"  -D_FILE_OFFSET_BITS=64 ${WARNING_LEVEL} 
+-LDFLAGS = ${STATIC_MAKE} -pthread -lz ${MACOS} -O${OPT_LEVEL} -DMAKE_FOR_EXON -D MAKE_STANDALONE -lm
+-CC = ${CC_EXEC}  ${CCFLAGS}  -fmessage-length=0  -ggdb 
++CCFLAGS = -O${OPT_LEVEL} -DMAKE_FOR_EXON  -D MAKE_STANDALONE -D SUBREAD_VERSION=\"${SUBREAD_VERSION}\"  -D_FILE_OFFSET_BITS=64 ${WARNING_LEVEL} 
++LDFLAGS = ${STATIC_MAKE} -pthread -lz ${MACOS} -O${OPT_LEVEL} -DNO_WARN_X86_INTRINSICS -DMAKE_FOR_EXON -D MAKE_STANDALONE -lm
++CC = ${CC_EXEC}  ${CCFLAGS}  -fsigned-char -fmessage-length=0
+ 
+ 
+ ALL_LIBS= core core-junction core-indel sambam-file sublog gene-algorithms hashtable input-files sorted-hashtable gene-value-index exon-algorithms HelperFunctions interval_merge long-hashtable core-bigtable seek-zlib
+--- src/longread-one/Makefile	2019-03-10 21:26:03.000000000 -0400
++++ src/longread-one/Makefile	2019-08-01 15:55:37.974961000 -0400
+@@ -1,10 +1,10 @@
+ OPT_LEVEL = 3
+ include ../makefile.version
+ include make.version
+-CCFLAGS = -mtune=core2 ${MACOS} -O${OPT_LEVEL} -Wall  -DMAKE_FOR_EXON  -D MAKE_STANDALONE  -D_FILE_OFFSET_BITS=64 -DSUBREAD_VERSION=\"${SUBREAD_VERSION}\" ${WARNING_LEVEL}
++CCFLAGS = -O${OPT_LEVEL} -Wall  -DNO_WARN_X86_INTRINSICS -DMAKE_FOR_EXON  -D MAKE_STANDALONE  -D_FILE_OFFSET_BITS=64 -DSUBREAD_VERSION=\"${SUBREAD_VERSION}\" ${WARNING_LEVEL}
+ LDFLAGS =  -lpthread -lz -lm -O${OPT_LEVEL} -DMAKE_FOR_EXON -D MAKE_STANDALONE # -DREPORT_ALL_THE_BEST
+ CC_EXEC = gcc
+-CC = ${CC_EXEC}  ${CCFLAGS}  -fmessage-length=0  -ggdb
++CC = ${CC_EXEC}  ${CCFLAGS}  -fmessage-length=0 -fsigned-char
+ 
+ ALL_LIBS=LRMsorted-hashtable LRMbase-index LRMchro-event LRMhelper LRMseek-zlib LRMfile-io LRMhashtable
+ 

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libtbb"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libtbb.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libtbb-complete.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-install.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-mkdir.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-download.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-update.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-patch.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-configure.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-build.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libtbb-prefix/src/libtbb-stamp/libtbb-reconfigure.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libtbb"
+		],
+		"name" : "libtbb"
+	}
+}

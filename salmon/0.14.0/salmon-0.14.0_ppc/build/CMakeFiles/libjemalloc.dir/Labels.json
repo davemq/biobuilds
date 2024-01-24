@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc-complete.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-install.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-mkdir.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-download.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-update.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-patch.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-configure.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-build.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libjemalloc"
+		],
+		"name" : "libjemalloc"
+	}
+}

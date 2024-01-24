@@ -1,0 +1,33 @@
+package:
+    name: r-cghflasso
+    version: '0.2_1'
+source:
+    sha256: 6e697959b35a3ceb2baa1542ef81f0335006a5a9c937f0173c6483979cb4302c
+    url:
+        - https://cran.r-project.org/src/contrib/Archive/cghFLasso/cghFLasso_0.2-1.tar.gz
+        - https://cran.r-project.org/src/contrib/cghFLasso_0.2-1.tar.gz
+    patches:
+        - ppc64le.patch
+build:
+    number: '0'
+    rpaths:
+        - lib/
+        - lib/R/lib/
+requirements:
+    build:
+        - r-base {{ r_base }}
+    run:
+        - r-base
+test:
+    commands:
+        - $R -e "library('cghFLasso')"
+about:
+    home: https://CRAN.R-project.org/package=cghFLasso
+    license: GPL (>= 2)
+    license_family: GPL3
+    summary: Spatial smoothing and hot spot detection using the fused lasso regression
+extra:
+    copy_test_source_files: true
+    final: true
+    recipe-maintainers:
+        - conda-forge/r

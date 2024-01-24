@@ -22,8 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
     - r-bh >=1.58.0_1
     - r-r6
     - r-rcpp >=0.12.7

@@ -1,0 +1,23 @@
+diff -ruNp STAR-2.7.5a/source/Genome_genomeLoad.cpp STAR-2.7.5a-p9/source/Genome_genomeLoad.cpp
+--- STAR-2.7.5a/source/Genome_genomeLoad.cpp	2020-06-16 13:35:50.000000000 -0400
++++ STAR-2.7.5a-p9/source/Genome_genomeLoad.cpp	2020-07-21 21:37:54.857514608 -0400
+@@ -5,6 +5,7 @@
+ #include "streamFuns.h"
+ #include "SharedMemory.h"
+ #include "genomeScanFastaFiles.h"
++#include <cmath>
+ 
+ //addresses with respect to shmStart of several genome values
+ #define SHM_sizeG 0
+diff -ruNp STAR-2.7.5a/source/SuperTranscriptome.cpp STAR-2.7.5a-p9/source/SuperTranscriptome.cpp
+--- STAR-2.7.5a/source/SuperTranscriptome.cpp	2020-06-16 13:35:50.000000000 -0400
++++ STAR-2.7.5a-p9/source/SuperTranscriptome.cpp	2020-07-21 21:43:25.145629000 -0400
+@@ -48,7 +48,7 @@ void SuperTranscriptome::load(char *G, v
+     
+     while(true) {//load junctions, assume they are sorted by donor coordinate
+         
+-        bool inGood = (superTrSJ >> sutr);
++        bool inGood = (bool)(superTrSJ >> sutr);
+         
+         if (sutr!=sutr1 || !inGood) {//new suTr
+             //sort sj1 by acceptor position

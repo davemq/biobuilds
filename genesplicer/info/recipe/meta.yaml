@@ -1,0 +1,23 @@
+# This file created by conda-build v2.0.1-fix-output+skip+61.g6003670
+# meta.yaml template originally from:
+# /bioconda-recipes/recipes/genesplicer, last modified Thu Oct  6 18:02:46 2016
+# ------------------------------------------------
+
+package:
+    name: genesplicer
+    version: '1.0'
+source:
+    fn: GeneSplicer.tar.gz
+    url: http://www.cs.jhu.edu/~genomics/GeneSplicer/GeneSplicer.tar.gz
+build:
+    number: '0'
+requirements:
+    build:
+        - gcc
+test:
+    commands:
+        - genesplicer
+about:
+    home: http://www.cs.jhu.edu/~genomics/GeneSplicer
+    license: OSI
+    summary: 'GeneSplicer : A computational method for splice site prediction'

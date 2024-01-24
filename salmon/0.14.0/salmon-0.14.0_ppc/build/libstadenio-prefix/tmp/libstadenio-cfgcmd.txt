@@ -1,0 +1,1 @@
+cmd='./configure;--enable-shared=no;--without-libcurl;--prefix=<INSTALL_DIR>;LDFLAGS=;CFLAGS=;CC=/opt/at12.0/bin/cc;CXX=/opt/at12.0/bin/c++'

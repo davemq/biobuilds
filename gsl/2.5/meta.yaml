@@ -1,0 +1,33 @@
+{% set version = "2.5" %}
+
+package:
+  name: gsl
+  version: {{ version }}
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+
+  run:
+
+source:
+  fn: "gsl-{{ version }}.tar.gz"
+  url:
+    - "https://ftpmirror.gnu.org/gsl/gsl-{{ version }}.tar.gz"
+  sha256: "0460ad7c2542caaddc6729762952d345374784100223995eb14d614861f2258d"
+  patches:
+    - ppc64le-skip-tests.patch
+
+build:
+  number: 1
+
+test:
+  commands:
+    - gsl-config --prefix
+
+about:
+  home: "https://www.gnu.org/software/gsl/"
+  license: GPLv3
+  license_file: COPYING
+  summary: "Numerical library for C and C++"

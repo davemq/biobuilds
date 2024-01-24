@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_SummarizeAlignmentStats.a  CMakeFiles/manta_SummarizeAlignmentStats.dir/SASOptions.cpp.o CMakeFiles/manta_SummarizeAlignmentStats.dir/SummarizeAlignmentStats.cpp.o
+/opt/at12.0/bin/ranlib libmanta_SummarizeAlignmentStats.a

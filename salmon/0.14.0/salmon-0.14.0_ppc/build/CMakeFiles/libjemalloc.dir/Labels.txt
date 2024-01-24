@@ -1,0 +1,13 @@
+# Target labels
+ libjemalloc
+# Source files and their labels
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libjemalloc-complete.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-install.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-mkdir.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-download.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-update.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-patch.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-configure.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libjemalloc-prefix/src/libjemalloc-stamp/libjemalloc-build.rule

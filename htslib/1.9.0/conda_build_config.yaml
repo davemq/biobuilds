@@ -1,0 +1,18 @@
+VERBOSE_AT: V=1
+VERBOSE_CM: VERBOSE=1
+
+MACOSX_DEPLOYMENT_TARGET: '10.9'
+
+toolchain:
+  - default
+  - intel-psxe2018  # [linux and x86_64]
+
+curl:
+  - 7.56.1
+
+zlib:
+  - 1.2.11
+
+pin_run_as_build:
+  zlib: {'min_pin': 'x.x.x', 'max_pin': 'x.x'}
+  curl: {'min_pin': 'x.x', 'max_pin': 'x'}

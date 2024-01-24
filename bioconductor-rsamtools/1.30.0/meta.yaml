@@ -16,8 +16,6 @@ source:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
     - bioconductor-biocparallel
     - bioconductor-genomeinfodb >=1.1.3
     - bioconductor-genomicranges >=1.21.6

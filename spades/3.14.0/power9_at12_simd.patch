@@ -1,0 +1,318 @@
+--- ext/include/folly/PackedSyncPtr.h	2019-12-27 08:24:51.000000000 -0500
++++ ext/include/folly/PackedSyncPtr.h	2020-01-09 19:56:19.671922000 -0500
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2014 Facebook, Inc.
++ * Copyright 2015 Facebook, Inc.
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+@@ -17,8 +17,8 @@
+ #ifndef FOLLY_PACKEDSYNCPTR_H_
+ #define FOLLY_PACKEDSYNCPTR_H_
+ 
+-#ifndef __x86_64__
+-# error "PackedSyncPtr is x64-specific code."
++#if !defined(__x86_64__) && !defined(__powerpc64__)
++# error "PackedSyncPtr is x86_64- and ppc64-specific code."
+ #endif
+ 
+ /*
+--- ext/include/folly/Portability.h	2019-12-27 08:24:51.000000000 -0500
++++ ext/include/folly/Portability.h	2020-01-09 19:56:19.672918000 -0500
+@@ -24,4 +24,14 @@ struct MaxAlign { char c; } __attribute_
+ # error Cannot define MaxAlign on this platform
+ #endif
+ 
++inline void asm_volatile_pause() {
++#if defined (__x86_64__)
++    asm volatile ("pause");
++#elif defined(__powerpc64__)
++    asm volatile("or 27,27,27");
++#else
++#error "asm_volatile_pause() is x86_64- and ppc64-specific code."
++#endif
++}
++
+ #endif
+--- ext/include/folly/SmallLocks.h	2019-12-27 08:24:51.000000000 -0500
++++ ext/include/folly/SmallLocks.h	2020-01-09 19:56:19.678323000 -0500
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2014 Facebook, Inc.
++ * Copyright 2015 Facebook, Inc.
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+@@ -41,9 +41,10 @@
+ #include <cstdlib>
+ #include <pthread.h>
+ #include <mutex>
++#include <atomic>
+ 
+-#ifndef __x86_64__
+-# error "SmallLocks.h is currently x64-only."
++#if !defined(__x86_64__) && !defined(__powerpc64__)
++# error "SmallLocks.h is x64 and ppc64 specific code."
+ #endif
+ 
+ #include "folly/Portability.h"
+@@ -69,7 +70,7 @@ namespace detail {
+     void wait() {
+       if (spinCount < kMaxActiveSpin) {
+         ++spinCount;
+-        asm volatile("pause");
++        asm_volatile_pause();
+       } else {
+         /*
+          * Always sleep 0.5ms, assuming this will make the kernel put
+@@ -100,29 +101,13 @@ namespace detail {
+  */
+ struct MicroSpinLock {
+   enum { FREE = 0, LOCKED = 1 };
++  // lock_ can't be std::atomic<> to preserve POD-ness.
+   uint8_t lock_;
+ 
+-  /*
+-   * Atomically move lock_ from "compare" to "newval". Return boolean
+-   * success. Do not play on or around.
+-   */
+-  bool cas(uint8_t compare, uint8_t newVal) {
+-    bool out;
+-    bool memVal; // only set if the cmpxchg fails
+-    asm volatile("lock; cmpxchgb %[newVal], (%[lockPtr]);"
+-                 "setz %[output];"
+-                 : [output] "=r" (out), "=a" (memVal)
+-                 : "a" (compare), // cmpxchgb constrains this to be in %al
+-                   [newVal] "q" (newVal),  // Needs to be byte-accessible
+-                   [lockPtr] "r" (&lock_)
+-                 : "memory", "flags");
+-    return out;
+-  }
+-
+   // Initialize this MSL.  It is unnecessary to call this if you
+   // zero-initialize the MicroSpinLock.
+   void init() {
+-    lock_ = FREE;
++    payload()->store(FREE);
+   }
+ 
+   bool try_lock() {
+@@ -132,16 +117,25 @@ struct MicroSpinLock {
+   void lock() {
+     detail::Sleeper sleeper;
+     do {
+-      while (lock_ != FREE) {
+-        asm volatile("" : : : "memory");
++      while (payload()->load() != FREE) {
+         sleeper.wait();
+       }
+     } while (!try_lock());
+   }
+ 
+   void unlock() {
+-    asm volatile("" : : : "memory");
+-    lock_ = FREE; // release barrier on x86
++    payload()->store(FREE, std::memory_order_release);
++  }
++
++ private:
++  std::atomic<uint8_t>* payload() {
++    return reinterpret_cast<std::atomic<uint8_t>*>(&this->lock_);
++  }
++
++  bool cas(uint8_t compare, uint8_t newVal) {
++    return std::atomic_compare_exchange_strong_explicit(payload(), &compare, newVal,
++                                                        std::memory_order_acquire,
++                                                        std::memory_order_relaxed);
+   }
+ };
+ 
+@@ -217,6 +211,7 @@ struct PicoSpinLock {
+   bool try_lock() const {
+     bool ret = false;
+ 
++#if defined(__x86_64__)
+ #define FB_DOBTS(size)                                  \
+   asm volatile("lock; bts" #size " %1, (%2); setnc %0"  \
+                : "=r" (ret)                             \
+@@ -231,6 +226,35 @@ struct PicoSpinLock {
+     }
+ 
+ #undef FB_DOBTS
++#elif defined(__powerpc64__)
++#define FB_DOBTS(size)                                 \
++    asm volatile("\teieio\n"                           \
++                 "\tl" #size "arx 14,0,%[lockPtr]\n"   \
++                 "\tli 15,1\n"                         \
++                 "\tsldi 15,15,%[bit]\n"               \
++                 "\tand. 16,15,14\n"                   \
++                 "\tbne 0f\n"                          \
++                 "\tor 14,14,15\n"                     \
++                 "\tst" #size "cx. 14,0,%[lockPtr]\n"  \
++                 "\tbne 0f\n"                          \
++                 "\tori %[output],%[output],1\n"       \
++                 "\tisync\n"                           \
++                 "0:\n"                                \
++                 : [output] "+r" (ret)                 \
++                 : [lockPtr] "r"(&lock_),              \
++                   [bit] "i" (Bit)                     \
++                 : "cr0", "memory", "r14", "r15", "r16")
++
++    switch (sizeof(IntType)) {
++    case 2: FB_DOBTS(h); break;
++    case 4: FB_DOBTS(w); break;
++    case 8: FB_DOBTS(d); break;
++    }
++
++#undef FB_DOBTS
++#else
++#error "x86_64 or ppc64 only"
++#endif
+ 
+     return ret;
+   }
+@@ -250,6 +274,7 @@ struct PicoSpinLock {
+    * integer.
+    */
+   void unlock() const {
++#if defined(__x86_64__)
+ #define FB_DOBTR(size)                          \
+   asm volatile("lock; btr" #size " %0, (%1)"    \
+                :                                \
+@@ -267,6 +292,31 @@ struct PicoSpinLock {
+     }
+ 
+ #undef FB_DOBTR
++#elif defined(__powerpc64__)
++#define FB_DOBTR(size)                                 \
++    asm volatile("\teieio\n"                           \
++                 "0:  l" #size "arx 14,0,%[lockPtr]\n" \
++                 "\tli 15,1\n"                         \
++                 "\tsldi 15,15,%[bit]\n"               \
++                 "\txor 14,14,15\n"                    \
++                 "\tst" #size "cx. 14,0,%[lockPtr]\n"  \
++                 "\tbne 0b\n"                          \
++                 "\tisync\n"                           \
++                 :                                     \
++                 : [lockPtr] "r"(&lock_),              \
++                   [bit] "i" (Bit)                     \
++                 : "cr0", "memory", "r14", "r15")
++
++    switch (sizeof(IntType)) {
++    case 2: FB_DOBTR(h); break;
++    case 4: FB_DOBTR(w); break;
++    case 8: FB_DOBTR(d); break;
++    }
++
++#undef FB_DOBTR
++#else
++#error "x86_64 or ppc64 only"
++#endif
+   }
+ };
+ 
+--- ext/src/bwa/Makefile	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/bwa/Makefile	2020-01-09 19:45:36.114323000 -0500
+@@ -1,4 +1,4 @@
+-CC=			gcc
++CC=			gcc -DNO_WARN_X86_INTRINSICS -fsigned-char
+ #CC=			clang --analyze
+ CFLAGS=		-g -Wall -Wno-unused-function -O2
+ WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
+--- ext/src/easel/esl_sse.h	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/easel/esl_sse.h	2020-01-09 19:59:26.528220000 -0500
+@@ -10,6 +10,13 @@
+  *    2. Inlined utilities for ps vectors (4 floats in __m128)
+  *    3. Inlined utilities for epu8 vectors (16 uchars in __m128i)
+  */
++#ifdef __PPC__
++#ifndef HAVE_SSE2
++#define HAVE_SSE2
++#endif
++#define _MM_SHUFFLE(a, b, c, d) ((const long) (a*64+b*16+c*4+d))
++#endif
++
+ #ifdef HAVE_SSE2
+ #ifndef eslSSE_INCLUDED
+ #define eslSSE_INCLUDED
+--- ext/src/gqf/gqf.c	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/gqf/gqf.c	2020-01-09 19:38:44.266439000 -0500
+@@ -172,7 +172,7 @@ static void modify_metadata(QF *qf, uint
+     __sync_fetch_and_add(metadata, cnt);
+ }
+ 
+-
++#ifndef __PPC__
+ static inline int popcnt(uint64_t val) {
+        asm("popcnt %[val], %[val]"
+                        : [val] "+r" (val)
+@@ -180,6 +180,11 @@ static inline int popcnt(uint64_t val) {
+                        : "cc");
+        return val;
+ }
++#else
++static inline int popcnt(uint64_t val) {
++     return __builtin_popcount(val);
++} 
++#endif
+ 
+ static inline int popcntv(const uint64_t val, int ignore)
+ {
+--- ext/src/hmmer/src/hmmer.h	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/hmmer/src/hmmer.h	2020-01-09 19:52:25.706053853 -0500
+@@ -53,6 +53,7 @@
+ #include "esl_sq.h"		/* ESL_SQ                */
+ #include "esl_scorematrix.h"    /* ESL_SCOREMATRIX       */
+ #include "esl_stopwatch.h"      /* ESL_STOPWATCH         */
++#include "esl_sse.h"      /* ESL_STOPWATCH         */
+ 
+ 
+ 
+--- ext/src/jemalloc/build-aux/DetectOSFeatures.cmake	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/jemalloc/build-aux/DetectOSFeatures.cmake	2020-01-09 19:40:44.393449000 -0500
+@@ -118,6 +118,8 @@ endif()
+ if(NOT LG_VADDR)
+     if(CMAKE_SYSTEM_PROCESSOR MATCHES "aarch64") # maybe "arm64" too?
+         set(LG_VADDR 48)
++    elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "ppc64le")
++        set(LG_VADDR 64)
+     elseif(CMAKE_SYSTEM_PROCESSOR MATCHES "x86_64")
+         GetSystemAddrBits(LG_VADDR)
+         # Cache result so we don't run the check every time
+--- ext/src/jemalloc/build-aux/UserCompileOptions.cmake	2019-12-27 08:24:51.000000000 -0500
++++ ext/src/jemalloc/build-aux/UserCompileOptions.cmake	2020-01-09 19:42:20.946136516 -0500
+@@ -20,7 +20,7 @@ option(JEMALLOC_CXX_DISABLE "Disable C++
+ #417-AC_ARG_WITH([lg_vaddr],
+ #418:  [AS_HELP_STRING([--with-lg-vaddr=<lg-vaddr>], [Number of significant virtual address bits])],
+ #419-  [LG_VADDR="$with_lg_vaddr"], [LG_VADDR="detect"])
+-set(LG_VADDR "detect"
++set(LG_VADDR "64"
+     CACHE STRING "Number of significant virtual address bits")
+ #--
+ #548-AC_ARG_WITH([version],
+--- spades_compile.sh	2019-12-27 08:24:52.000000000 -0500
++++ spades_compile.sh	2020-01-09 19:46:47.233241000 -0500
+@@ -14,12 +14,20 @@ if [ "x$PREFIX" = "x" ]; then
+ fi
+ BUILD_DIR=build_spades
+ BASEDIR=`pwd`/`dirname $0`
++CFLAGS="${CFLAGS} -DNO_WARN_X86_INTRINSICS -fsigned-char"
++CXXFLAGS="${CXXFLAGS} -DNO_WARN_X86_INTRINSICS -fsigned-char"
+ 
+ rm -rf "$BASEDIR/$BUILD_DIR"
+ mkdir -p "$BASEDIR/$BUILD_DIR"
+ set -e
+ cd "$BASEDIR/$BUILD_DIR"
+-cmake -G "Unix Makefiles" -DCMAKE_INSTALL_PREFIX="$PREFIX" $* "$BASEDIR/src"
+-make -j 8
++cmake -G "Unix Makefiles" \
++   -DCMAKE_CXX_COMPILER="g++" -DCMAKE_CXX_FLAGS="${CXXFLAGS}" \
++   -DCMAKE_C_COMPILER="gcc" -DCMAKE_C_FLAGS="${CFLAGS}" \
++   -DCMAKE_VERBOSE_MAKEFILE:BOOL=OFF \
++   -DSPADES_USE_JEMALLOC:BOOL=ON \
++   -DSPADES_USE_TCMALLOC:BOOL=OFF \
++   -DCMAKE_INSTALL_PREFIX="$PREFIX" $* "$BASEDIR/src"
++make -j 4 
+ make install
+ cd $PREFIX

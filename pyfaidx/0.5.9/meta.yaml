@@ -1,0 +1,43 @@
+{% set version = "0.5.9" %}
+
+package:
+  name: pyfaidx
+  version: {{ version }}
+
+source:
+  url: https://github.com/mdshw5/pyfaidx/archive/v{{ version }}.tar.gz
+  sha256: daf9040d7c8d1c25dad58ae55a5dbeb1a6e85e684055376c810cbaff5e5c4356
+
+build:
+  number: 0
+  noarch: python
+  entry_points:
+    - faidx = pyfaidx.cli:main
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+
+requirements:
+  host:
+    - python=3.7
+    - pip
+
+  run:
+    - python=3.7
+    - six
+
+test:
+  imports:
+    - pyfaidx
+
+  commands:
+    - faidx --help
+
+about:
+  home: http://mattshirley.com
+  license: BSD License
+  summary: 'pyfaidx: efficient pythonic random access to fasta subsequences'
+  license_family: BSD
+
+extra:
+  identifiers:
+    - biotools:pyfaidx
+    - doi:10.7287/peerj.preprints.970v1

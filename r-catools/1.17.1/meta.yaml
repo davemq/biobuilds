@@ -24,8 +24,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
     - r-bitops
 
   run:
@@ -34,7 +32,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('{{ name }}')"          # [not win]
+    - R -e "library('{{ name }}')"          # [not win]
     - "\"%R%\" -e \"library('{{ name }}')\"" # [win]
 
 about:

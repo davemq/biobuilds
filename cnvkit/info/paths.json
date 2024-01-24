@@ -1,0 +1,841 @@
+{
+  "paths": [
+    {
+      "_path": "bin/cnv_annotate.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "8481913be4e76478656e1eb79397fb23c92c2ccdd77fe7bfcd46fd0be1ac6425",
+      "size_in_bytes": 1052
+    },
+    {
+      "_path": "bin/cnv_expression_correlate.py",
+      "path_type": "hardlink",
+      "sha256": "71de3bdde691dbe937e9f251a0b560f4a816212f5d3bf3a1151f30b2cf694f19",
+      "size_in_bytes": 4324
+    },
+    {
+      "_path": "bin/cnv_updater.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "7bb36c5dd67e932467af4ddd83424208fa7c128dda512a670f604a7ff811301c",
+      "size_in_bytes": 2404
+    },
+    {
+      "_path": "bin/cnv_ztest.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "731ba68d44383a634e67a3d75ede3370ce626794de35733eb17aa146c6f4a56e",
+      "size_in_bytes": 2232
+    },
+    {
+      "_path": "bin/cnvkit.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "c5a7c55c39b2e672d81e8b9fa6569149ad77184eae897c62013e5c2e1d6ae2e4",
+      "size_in_bytes": 385
+    },
+    {
+      "_path": "bin/guess_baits.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "65fd988d6d8d5caec231e0b0fea16b6ca2f5652f13cad27c300d5d3fc1d021d9",
+      "size_in_bytes": 10305
+    },
+    {
+      "_path": "bin/reference2targets.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "8636dc475a59312e058ab4599ff402033444cd4cb299d04d159f9dc9f38c61c0",
+      "size_in_bytes": 1229
+    },
+    {
+      "_path": "bin/skg_convert.py",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "fe21afa6a6b0c931f97685010caf340f587ad4c6199b3c5a12bffa264669939e",
+      "size_in_bytes": 3467
+    },
+    {
+      "_path": "lib/python3.7/site-packages/CNVkit-0.9.6-py3.7.egg-info/PKG-INFO",
+      "path_type": "hardlink",
+      "sha256": "3437a4695638f0f591111155ea755fbbaf89844327a12613599617e0403dbf76",
+      "size_in_bytes": 1218
+    },
+    {
+      "_path": "lib/python3.7/site-packages/CNVkit-0.9.6-py3.7.egg-info/SOURCES.txt",
+      "path_type": "hardlink",
+      "sha256": "9930f907ed2d9f0702861486c1cd8110902cb6d9e8ebd104b47a3cb92e96b5c3",
+      "size_in_bytes": 1756
+    },
+    {
+      "_path": "lib/python3.7/site-packages/CNVkit-0.9.6-py3.7.egg-info/dependency_links.txt",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "lib/python3.7/site-packages/CNVkit-0.9.6-py3.7.egg-info/requires.txt",
+      "path_type": "hardlink",
+      "sha256": "740281cebf68b135129639f2c29672e2c05e46840e3443af23052f0b927423eb",
+      "size_in_bytes": 160
+    },
+    {
+      "_path": "lib/python3.7/site-packages/CNVkit-0.9.6-py3.7.egg-info/top_level.txt",
+      "path_type": "hardlink",
+      "sha256": "9d988601a982a06f3473e7780acc9ddc4401df07ba75fb421cc90cbfbb2101b8",
+      "size_in_bytes": 16
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "92c2958a1f4e4113cd00ebdd69317c46a61e9b9cd544dbe0885a2fd5287c7dbb",
+      "size_in_bytes": 180
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/__init__.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "12844bf8be37e179ff76e65ddc5caa1905d6e4b29dd927327e3bba4b77430e70",
+      "size_in_bytes": 355
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/_version.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "415f6eab0c86c1e5bbb4d0ea1c9ef3f120656bc028e9aa6ce84898db2c8b9dcd",
+      "size_in_bytes": 154
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/access.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "67dfdcc063255e08340c8038849e2d4f3a63a10a71ea6258e8eb721f65737c25",
+      "size_in_bytes": 3778
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/antitarget.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "1c722ec6bb9d2d16d7afc61f96cbdb5ffeadf1cf8cc5eb780175d6fd51cd9402",
+      "size_in_bytes": 5055
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/autobin.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "c09a69bdc71787b629e3ea64304282ee99ecc728451a26c15d0e952b701ef83c",
+      "size_in_bytes": 6362
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/batch.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "27717b8fa7d56c749b391fcc0514d2a811790f28f029ff02bd52c5bbfea0a85a",
+      "size_in_bytes": 5005
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/call.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "b96f460a119b4fc769c825bbc47380fcc901d7678cc61b8641f97486c86ebd16",
+      "size_in_bytes": 8914
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/cmdutil.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ed862ecdfb7d5d69d8e4057243909a84acaf1b5a0daa120fbcda5b7ff0d46486",
+      "size_in_bytes": 3126
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/cnary.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "4076d6736b408a50c927429282e9725be795b30aa2780fab06457c027598992d",
+      "size_in_bytes": 17273
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/commands.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "40c1e05970d36ba580d7b6496baea4cc19afe164fa2b244e7fd28cc430ac20e5",
+      "size_in_bytes": 53631
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/core.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ebfd8e80542ffad1cfec3e92025f1a096c4858fd871414a5fe62b39adc2aa022",
+      "size_in_bytes": 3915
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/coverage.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "796418d68c8b3ba11a4596fbed6538e5a7569f5727677becd74680be9ffae785",
+      "size_in_bytes": 7476
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/descriptives.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "348dface97747667c496c634e5daae179871b243b97d075ebfae4f42ba97dba1",
+      "size_in_bytes": 7592
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/diagram.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "a03c2627244f66420ddd90c34ace3cb824014b11e505b1f800a90f27dd82c385",
+      "size_in_bytes": 6144
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/export.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "99d4bf7e9ce367e1e82a0edf72f591e6a6853ad786e303a792b1afd2f5c6e951",
+      "size_in_bytes": 17231
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/fix.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "53d8e906a66be0249533424be4aafe567e0fed702f2def6d6707fccda6aee7ea",
+      "size_in_bytes": 7852
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/heatmap.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "0a9ebe9d327c9bc1ce5ba0f24d730382d1125fb83096ff12300b257584a360f1",
+      "size_in_bytes": 4928
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/import_rna.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "76daa96f28c60ee6d289ae5d3b6777adbbe6828597f1630fd81498b3d718ffcd",
+      "size_in_bytes": 3466
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/importers.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "5d717e3cb294b50d154d2885abd3cf6911a1703f3e233b188d3fa2351f30e82f",
+      "size_in_bytes": 4465
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/metrics.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "b6648743f55ae1f10adf18dc1fd841c8e8099e106602793106970851e35490d3",
+      "size_in_bytes": 2269
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/parallel.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "fbddf1ba1b7af295598261fc0ad6b3e48362e8fa43e574e9b1ec79f8f5c1bf3c",
+      "size_in_bytes": 2859
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/params.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "36094eef9b79d7b25b63f68db241d7cb04b4ba1a2c0729c3ee7a9af6756ca40e",
+      "size_in_bytes": 452
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/plots.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "6614ceb6f234f66a8c0ce7c3bd7d4291024f57605b3a1dd71cce5cfabb447576",
+      "size_in_bytes": 7647
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/reference.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "551513ee540518680ddb80b2ba827aa3a54747d62b2a34a5abdf755a1eda75c3",
+      "size_in_bytes": 10625
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/reports.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "f62e349aa643bef5a1cc8e085032f78298422c532a691464862daa79eb9660a1",
+      "size_in_bytes": 6372
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/rna.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ba389ea1041f2a0414083faf0fb355cbe5ad36ce1e1f4a5973f901ff8dbf76cf",
+      "size_in_bytes": 12298
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/samutil.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "6f9a7125f6653197e31f8a3a090b1a6d57d538a0eb0159a496f2de16aa1d62ab",
+      "size_in_bytes": 3780
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/scatter.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "7a2756b43043cf48abcb292472d5433bec22f752be47cf6110137d54fa493f66",
+      "size_in_bytes": 13712
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/segfilters.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "cb975ae3e2e0afa4652333bd06be21a32c19c78477867b2c6cf03bfaeaf834b3",
+      "size_in_bytes": 5750
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/segmetrics.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "65b4e93df5fdcf253461680cc750675f041383df3e47e8e4a24585af4d7c2bb6",
+      "size_in_bytes": 6123
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/smoothing.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "c00639e3f8f52ca42688533a0c50874590e12e3ebdb47fec2343e0bc62060932",
+      "size_in_bytes": 9793
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/target.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "bfe168955b85b985f048b6fff115434826f0690f7ecc2ad2cdb28400b101ef4a",
+      "size_in_bytes": 3165
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/vary.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "bef0382120a185d84bcbab6428d154131207e211220a9c46aa575ef58d532f5f",
+      "size_in_bytes": 6612
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/__pycache__/ztest.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "fc87f6f25027e0200669fab6504e676251e57e5e3d243444aacc9efcaa799c59",
+      "size_in_bytes": 1826
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/_version.py",
+      "path_type": "hardlink",
+      "sha256": "2205478ebf937a2a1960b25292fa53f342cb1a2e94dce37347571f61f7795cd4",
+      "size_in_bytes": 22
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/access.py",
+      "path_type": "hardlink",
+      "sha256": "558f3e95589c22aab33665db216c49ef4f3f9bdcf6d3c377cb103cb681f48072",
+      "size_in_bytes": 5534
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/antitarget.py",
+      "path_type": "hardlink",
+      "sha256": "f3e51b1ece32a6bdff63cf140ed5ac23bbdf1ec0c45bac9bdc8ee8ed73b9fbe4",
+      "size_in_bytes": 5803
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/autobin.py",
+      "path_type": "hardlink",
+      "sha256": "b6918d289a3c581838badde807280d94fa244a5e3ddf3674631eb6dcfde57a7c",
+      "size_in_bytes": 7602
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/batch.py",
+      "path_type": "hardlink",
+      "sha256": "97c75fe25a3e7f26da74e4508e520762b9390bff9a80b05a25665b093c511d03",
+      "size_in_bytes": 9616
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/call.py",
+      "path_type": "hardlink",
+      "sha256": "4b155b8113f3f748b10f2226f802f93b78415325f0f8ed68dbd09897e15be0c7",
+      "size_in_bytes": 11809
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/cmdutil.py",
+      "path_type": "hardlink",
+      "sha256": "373445ea15c7a89dabe05a7e01a1e7467aaba55659c9bf5850b78de8a86f2185",
+      "size_in_bytes": 3702
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/cnary.py",
+      "path_type": "hardlink",
+      "sha256": "c5ea7bcfd84056e2efadce0e0d7b3f6720690dc43fbe7764b1647e9da58a9576",
+      "size_in_bytes": 21232
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/commands.py",
+      "path_type": "hardlink",
+      "sha256": "ceb813fb042ff8902c0d0fa94076381821079288360d3227faef38710932a98f",
+      "size_in_bytes": 87870
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/core.py",
+      "path_type": "hardlink",
+      "sha256": "eb7124320b7f29c5cab24c950dc901a25a61f94371e196ee81488b61b78b71df",
+      "size_in_bytes": 4381
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/coverage.py",
+      "path_type": "hardlink",
+      "sha256": "ad8f556ccca039a321ecf5dbc3304dfa151283584f8463975fe8790dacbd86fe",
+      "size_in_bytes": 9056
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/descriptives.py",
+      "path_type": "hardlink",
+      "sha256": "58fa4f4623fb7116dd35d78864fd55306536e4d6f3ba52ac4bea1f982bef5d67",
+      "size_in_bytes": 8429
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/diagram.py",
+      "path_type": "hardlink",
+      "sha256": "97a79c24f831acef8b61a43f9ddbeb39cd7035c296d9aff0308753c2d2b17b9f",
+      "size_in_bytes": 9640
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/export.py",
+      "path_type": "hardlink",
+      "sha256": "d5a350c20b024f5396dbad8e4dc161c8f2346f4a65f5cc3f2f83c0577abff49a",
+      "size_in_bytes": 22768
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/fix.py",
+      "path_type": "hardlink",
+      "sha256": "bc9a3061e98e7b9ab922870eeb2db7fe0fc753b04c2b9ac819e073da167a38ca",
+      "size_in_bytes": 12091
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/heatmap.py",
+      "path_type": "hardlink",
+      "sha256": "4c7598ebe054ca3b1c21861a408085bf47097829203ef7988065db1895d5a7a7",
+      "size_in_bytes": 6203
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/import_rna.py",
+      "path_type": "hardlink",
+      "sha256": "cba4d1b919282b7f59fcec2cc442b16ff6ccf287b6ad1f64ec61ae5f3e0d8c00",
+      "size_in_bytes": 4586
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/importers.py",
+      "path_type": "hardlink",
+      "sha256": "bc9901cc485f97b9c79894a93db8f1a78b282352e35d18c38fda704773634f74",
+      "size_in_bytes": 4449
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/metrics.py",
+      "path_type": "hardlink",
+      "sha256": "16724547958adf9340eccbb2e5d410ff878588a12a6347786a2004b1c497848a",
+      "size_in_bytes": 2171
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/parallel.py",
+      "path_type": "hardlink",
+      "sha256": "3e530f55aa6e2a0405c5d071568428fc102701e0ea02d0c2e1f251e8dd3de4fc",
+      "size_in_bytes": 2235
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/params.py",
+      "path_type": "hardlink",
+      "sha256": "3c99bdf404b257473206f81bd78affd5a5e0adc0a9c8957200ed90442653c4f7",
+      "size_in_bytes": 524
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/plots.py",
+      "path_type": "hardlink",
+      "sha256": "a17a9099af50f7f34129a20bb7c58a1404c09da62fe66b2c2911a011b87960e5",
+      "size_in_bytes": 10469
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/reference.py",
+      "path_type": "hardlink",
+      "sha256": "cf4c6a1c39e6bf3c44d71cc4bef5d356620037885f9c308d44fb660f56caf152",
+      "size_in_bytes": 14867
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/reports.py",
+      "path_type": "hardlink",
+      "sha256": "922b761f889703cae24eb0e3e7e32cff31508694f31eb5186f5d26a2cb014d0f",
+      "size_in_bytes": 7189
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/rna.py",
+      "path_type": "hardlink",
+      "sha256": "268dd774cb82dbe9eb5ddf6c3c5d33fc97329115a353ab6600bd1f4c108442b6",
+      "size_in_bytes": 17099
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/samutil.py",
+      "path_type": "hardlink",
+      "sha256": "f20ab43fb39ebacde7c3c3ba6e21f5089ae300c416203df5cfeee4a5f9319288",
+      "size_in_bytes": 3759
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/scatter.py",
+      "path_type": "hardlink",
+      "sha256": "97acafadfa8994b8fe56f40353addf46824d412f455b74f3bccbcfc826e567eb",
+      "size_in_bytes": 23712
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segfilters.py",
+      "path_type": "hardlink",
+      "sha256": "83c1fc697aabf991a701ae85d4c7492b41dae6954834d4f01e0cf708e258db2d",
+      "size_in_bytes": 6119
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "d8ae2e9dd6b38f6132de19390fbb62d09b125b7f63c67343207247ac4f60ca88",
+      "size_in_bytes": 11444
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/__init__.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "9659e4544a6a702aaf4f4b3c4fb1693337a67db1929c5b6dd6873d8cb343104b",
+      "size_in_bytes": 8268
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/cbs.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "62ff35a0a5e0c149431a615d98b9416d7699740793508b8488693778bce8f4ac",
+      "size_in_bytes": 1576
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/flasso.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "530f418b3293db9e5ce246a68278c6fd6a62e15376b468e96520fadfa4010b6a",
+      "size_in_bytes": 939
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/haar.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "56c8741f06b592007bfeb0b7c5a95c4c9e4d987cdd8a57f3b39d110454c66850",
+      "size_in_bytes": 13673
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/hmm.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "b158ff23a3704ff22988d672c209673d7def513645b749e5a2dda95597bf97c4",
+      "size_in_bytes": 4703
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/hmm_learn.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "f2fc2c0c8766c64a4129bc1a88bd3c0d5fcec7fd13c876aafd0c48f2c5c3ea76",
+      "size_in_bytes": 3186
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/__pycache__/none.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "1c740722031e660c81d982903165ac51dabe1f8832dadaa979d952da982cdda2",
+      "size_in_bytes": 1076
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/cbs.py",
+      "path_type": "hardlink",
+      "sha256": "e095e7f3605b307f49611f7ad3b41cfd7e57969eb93a4e7748b2f32bb7ac2bfa",
+      "size_in_bytes": 1440
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/flasso.py",
+      "path_type": "hardlink",
+      "sha256": "5655f805a284be0a107a70a76a0d5e362546408037f19ea8c6a163b98708a769",
+      "size_in_bytes": 800
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/haar.py",
+      "path_type": "hardlink",
+      "sha256": "e9012c85b108362038490089eebac3fe0c02588cd5355a107638afd014356b20",
+      "size_in_bytes": 20210
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/hmm.py",
+      "path_type": "hardlink",
+      "sha256": "0ca733e2f39c38eaa4e733e73019974faaa9eeeddc276e133b8969a335d7023d",
+      "size_in_bytes": 5824
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/hmm_learn.py",
+      "path_type": "hardlink",
+      "sha256": "41db37debb99dafe9b6580ce9fe00496e4d70b9cc46f9f9a732c90a2e03831ab",
+      "size_in_bytes": 3873
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmentation/none.py",
+      "path_type": "hardlink",
+      "sha256": "4d1c41f50bd9102ef2abe454fec38d0dd05a76fb14d56d15b17762fb31ff59d0",
+      "size_in_bytes": 923
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/segmetrics.py",
+      "path_type": "hardlink",
+      "sha256": "c65de36895aec4b274736bd2cbf9e84b31e46d2a90f64f5d4564116b5dd5ddc9",
+      "size_in_bytes": 7509
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/smoothing.py",
+      "path_type": "hardlink",
+      "sha256": "f79e86a2034f304b42fcc6bc3358486b5a04e1b52dfdfb3c4c48085cc0db99ce",
+      "size_in_bytes": 10631
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/target.py",
+      "path_type": "hardlink",
+      "sha256": "0dbf1bd6f335dcc692cfd76d4ca1a9f187d63800c98c3e8336ec5b7ba149892e",
+      "size_in_bytes": 3506
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/vary.py",
+      "path_type": "hardlink",
+      "sha256": "9af2d3f8528990d06fd73615e540da33ed47e46f5dfbed28f166863de45ef84c",
+      "size_in_bytes": 6921
+    },
+    {
+      "_path": "lib/python3.7/site-packages/cnvlib/ztest.py",
+      "path_type": "hardlink",
+      "sha256": "73bcbd90e7b4362028f4834448a6f811149d2b05e7cfef7da00bf0e78251886d",
+      "size_in_bytes": 2704
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "e87994a0870de69f26de7525a4d36c7ef3b646b542ca5fc0391c08e1271a39e0",
+      "size_in_bytes": 51
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/__init__.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "9140352098519ed50626a2ce6f6a78687f314d3a9adcdcf5dd0a76c07f4da900",
+      "size_in_bytes": 206
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/chromsort.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "557690ce6fabe4a384edba7935a40651755695f2c3db607a235933de170b5740",
+      "size_in_bytes": 1944
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/combiners.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "cebd06cb30a7282204e856e657b9fae9686acfef97e763962c678d632cf5bcaa",
+      "size_in_bytes": 2077
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/gary.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "5990b394cb8d6ed2bf2050df5affb29dfbaf16c02c59d0a710b44069ee77ff7a",
+      "size_in_bytes": 25602
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/intersect.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "68247ff07b3835877a05649361923b453b12a402ed7978d08a89992e549f5b87",
+      "size_in_bytes": 5533
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/merge.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "32d6acb6321677bf5ceb7c856ec6094790816d08df4686d19fb545e587d2ce7e",
+      "size_in_bytes": 8041
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/rangelabel.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "1d64d4887fc58864cf52271b3ec9149304f8c67055cffb871ffce7de22c912bd",
+      "size_in_bytes": 2284
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/subdivide.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "b58ff0ac01c3bdfacc900b99773467802e78095ef4d0aa3248c0b34246951fdb",
+      "size_in_bytes": 1977
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/__pycache__/subtract.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "92058740af444cdbfe98c8f6379e27f96a98bd357a55a9d146b1f2ef0827a6fd",
+      "size_in_bytes": 1609
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/chromsort.py",
+      "path_type": "hardlink",
+      "sha256": "8cc2c491a27a2cde27683ebb4ab413094de5680648870b844757ff5c1dd9f759",
+      "size_in_bytes": 1925
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/combiners.py",
+      "path_type": "hardlink",
+      "sha256": "34a71e53a29bc26c1626cd9bc311fdfef6fdd9da3f4d0dba99920836f5034203",
+      "size_in_bytes": 1550
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/gary.py",
+      "path_type": "hardlink",
+      "sha256": "f8fe8dcb3690d7c0c78d95f45a386597408e1d02ecc7fa417244469cd56fa192",
+      "size_in_bytes": 28090
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/intersect.py",
+      "path_type": "hardlink",
+      "sha256": "69d31722070ab2c6e7330396737c10c7ce0c978aa91addb2850a288ca2f10e34",
+      "size_in_bytes": 8203
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/merge.py",
+      "path_type": "hardlink",
+      "sha256": "68de818219c8a2281f6872edbd9cfe9d3a6a9d73fe8c0e74e83ebf442a3e6e51",
+      "size_in_bytes": 8079
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/rangelabel.py",
+      "path_type": "hardlink",
+      "sha256": "ff5dd8211dd6a5f039e5f1044479335ee62b9d44cb60141982fc88d5e542e61d",
+      "size_in_bytes": 2328
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/subdivide.py",
+      "path_type": "hardlink",
+      "sha256": "0a2dbff5e0311603a85f73b47f9cadcccbbc87a57d33dfa953fc0f59de9f0fda",
+      "size_in_bytes": 2151
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/subtract.py",
+      "path_type": "hardlink",
+      "sha256": "fb207280474b294372ed96dc92c0bdbe0737bb46be7629d8d2f33fb2ee142dce",
+      "size_in_bytes": 2652
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__init__.py",
+      "path_type": "hardlink",
+      "sha256": "297f372267a5d27622fac9512f99a59e4fc7b4f5de6554e1813972d83c2b3d91",
+      "size_in_bytes": 9722
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/__init__.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ae3a393b49ff13c096497c8bd343e9bb38706d4b1a51022b62b432e35f9c8beb",
+      "size_in_bytes": 6674
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/bedio.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "5640faa6f09802672c76caccc4d2f6b72b8b446adf2d76d8853c4b93c5c88d82",
+      "size_in_bytes": 3810
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/genepred.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "29ed7d22f7c7645233da0974b135df79dbcb22a1adf31402b4a7eebe811b8084",
+      "size_in_bytes": 6554
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/gff.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "56bcff4a8fe7e632dbdedae8e968e3010efc7b955ea68bbaf01168220449d468",
+      "size_in_bytes": 2577
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/picard.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ba6f59d33b82854035cb0d22844a024cfa11dd96b2fa2b190ba03704b30bc575",
+      "size_in_bytes": 2271
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/seg.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "ea9fe7b9b4313374fe407526d614fe7c3add8b560cd9d5939180b57f658f5c31",
+      "size_in_bytes": 5844
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/seqdict.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "eadf453711b39fca99205abcdc1a74933a7da2c74900e1ed148698c3e488226e",
+      "size_in_bytes": 1228
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/tab.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "9fbedda0966070eabd3e11159677abef676e4d43d672bb5d01d9dd7ed300bdb1",
+      "size_in_bytes": 1144
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/textcoord.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "d5b51022355da1ea9d982d1fc5340485eb659ab6f8d0ed25a442550a16de33c4",
+      "size_in_bytes": 1315
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/util.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "dcc5acc72e3f53a526dce31c53f1781c4219c9dd6afd8eb451c1d840d8788b85",
+      "size_in_bytes": 623
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/vcfio.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "2cb9dfc8dc67fc4c27a388bb19eb5a2c7f15e33477f42679d48e66bb9e660e10",
+      "size_in_bytes": 8236
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/__pycache__/vcfsimple.cpython-37.pyc",
+      "path_type": "hardlink",
+      "sha256": "2ec6539fcd2bc822bac1f0bc8e083c62de43c21a7a233bc289c7cd648ccf1f7c",
+      "size_in_bytes": 2706
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/bedio.py",
+      "path_type": "hardlink",
+      "sha256": "2f5926870c7449d487c304f94304af72442cfe32ab87f2b8e48a738abed0d01d",
+      "size_in_bytes": 4029
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/genepred.py",
+      "path_type": "hardlink",
+      "sha256": "cc4cf559c59b2ef64671fa98baf8e96f271b05171a726bacb952960408c0ab09",
+      "size_in_bytes": 6713
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/gff.py",
+      "path_type": "hardlink",
+      "sha256": "36e66a2d2f5cbe28e30bbf3fbd94d52f682766a1a443b3195deb799ca5cf3ac2",
+      "size_in_bytes": 2758
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/picard.py",
+      "path_type": "hardlink",
+      "sha256": "28144a4b6ef944098ab47ffa78689f327bf8609c9f305918cc413d7e22366ac1",
+      "size_in_bytes": 2549
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/seg.py",
+      "path_type": "hardlink",
+      "sha256": "4769fe8fcbaabc4b40c49b924aedfc981cd4fb2b7f28eff0973abeb5171ec80c",
+      "size_in_bytes": 8170
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/seqdict.py",
+      "path_type": "hardlink",
+      "sha256": "73e08489ac1971629ab06a5d5445d467640608c971d134ea4a6d84162c79ca21",
+      "size_in_bytes": 1398
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/tab.py",
+      "path_type": "hardlink",
+      "sha256": "b373c963d17263c507fdb9e18c852628b2e40c69ff6aecb0d3a35f95c66a8fcb",
+      "size_in_bytes": 1000
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/textcoord.py",
+      "path_type": "hardlink",
+      "sha256": "c294c416846aa902cb849eb0c516dcfff206334ca60f0d8332e1580570738906",
+      "size_in_bytes": 961
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/util.py",
+      "path_type": "hardlink",
+      "sha256": "7935c3bfb7ab58cb766666724cad626b978a812441f4b39acc5e198323f52ef4",
+      "size_in_bytes": 341
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/vcfio.py",
+      "path_type": "hardlink",
+      "sha256": "b28b5373b577456ee94080c2bada9c9eef77cf693b8b55dbb78fcce16aa9ee39",
+      "size_in_bytes": 11998
+    },
+    {
+      "_path": "lib/python3.7/site-packages/skgenome/tabio/vcfsimple.py",
+      "path_type": "hardlink",
+      "sha256": "4617fc74bee10c5c5432d2ee9ea311cfbcd0115f0bbbce5cb6ff985e40d6441f",
+      "size_in_bytes": 3391
+    }
+  ],
+  "paths_version": 1
+}

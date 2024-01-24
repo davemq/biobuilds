@@ -1,0 +1,48 @@
+{% set version = "1.14.0" %}
+{% set name = "SummarizedExperiment" %}
+{% set bioc = "3.9" %}
+
+package:
+  name: 'bioconductor-{{ name|lower }}'
+  version: '{{ version }}'
+source:
+  url:
+    - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
+    - 'https://bioarchive.galaxyproject.org/{{ name }}_{{ version }}.tar.gz'
+    - 'https://depot.galaxyproject.org/software/bioconductor-{{ name|lower }}/bioconductor-{{ name|lower }}_{{ version }}_src_all.tar.gz'
+  md5: 8bf661a8b12b424da64db8dd6e487beb
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+# Suggests: annotate, AnnotationDbi, hgu95av2.db, GenomicFeatures, TxDb.Hsapiens.UCSC.hg19.knownGene, BiocStyle, knitr, rmarkdown, digest, jsonlite, rhdf5, HDF5Array (>= 1.7.5), airway, RUnit, testthat
+requirements:
+  host:
+    - r-base {{ r_base }}
+    - r-matrix
+    - bioconductor-genomicranges >=1.29.14
+    - bioconductor-biobase
+    - bioconductor-delayedarray >=0.3.20
+  run:
+    - r-base
+    - r-matrix
+    - bioconductor-genomicranges >=1.29.14
+    - bioconductor-biobase
+    - bioconductor-delayedarray >=0.3.20
+test:
+  commands:
+    - '$R -e "library(''{{ name }}'')"'
+about:
+  home: 'https://bioconductor.org/packages/{{ bioc }}/bioc/html/{{ name }}.html'
+  license: Artistic-2.0
+  summary: 'The SummarizedExperiment container contains one or more assays, each represented by a matrix-like object of numeric or other mode. The rows typically represent genomic ranges of interest and the columns represent samples.'
+extra:
+  identifiers:
+    - biotools:summarizedexperiment
+    - doi:10.1038/nmeth.3252
+  parent_recipe:
+    name: bioconductor-summarizedexperiment
+    path: recipes/bioconductor-summarizedexperiment
+    version: 1.10.1
+

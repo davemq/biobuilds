@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_GetChromDepth.a  CMakeFiles/manta_GetChromDepth.dir/ChromDepthOptions.cpp.o CMakeFiles/manta_GetChromDepth.dir/GetChromDepth.cpp.o CMakeFiles/manta_GetChromDepth.dir/ReadChromDepthUtil.cpp.o
+/opt/at12.0/bin/ranlib libmanta_GetChromDepth.a

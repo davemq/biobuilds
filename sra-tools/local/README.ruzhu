@@ -1,0 +1,13 @@
+Modification to compile ncbi-vdb-2.10.5
+
+create platform ppc64le specific file at
+interfaces/cc/gcc/ppc64le
+
+Most of the atomic functions are replaced with power builtin functions or generic functions.
+Hints: atomic header files can be modified from Boost header files.
+
+
+bool issue
+
+change in build/Makefile.env from -std=c++11 to:
+-std=gnu++11

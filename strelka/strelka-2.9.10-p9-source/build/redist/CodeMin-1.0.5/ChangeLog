@@ -1,0 +1,9 @@
+Version 1.0.5 / 20160513
+- Add more details to conj dir failure message 
+Version 1.0.4 / 20160413
+- Remove and/or logical op keywords to improve windows portability
+Version 1.0.3 / 20140929
+- Suppress icc complier warnings
+Version 1.0.2 / 20110129
+- Use boost copysign when available to simplify windows compilation
+- Use boost inf and nan tests when available to simplify windows compilation

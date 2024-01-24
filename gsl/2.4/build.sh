@@ -6,13 +6,14 @@ set -o pipefail
 FP_MODEL="precise"
 
 # Pull in the common BioBuilds build flags
-BUILD_ENV="${PREFIX}/share/biobuilds-build/build.env"
-if [[ ! -f "${BUILD_ENV}" ]]; then
-    echo "FATAL: Could not find build environment configuration script!" >&2
-    exit 1
-fi
-source "${BUILD_ENV}" -v
-
+#BUILD_ENV="${PREFIX}/share/biobuilds-build/build.env"
+#if [[ ! -f "${BUILD_ENV}" ]]; then
+#    echo "FATAL: Could not find build environment configuration script!" >&2
+#    exit 1
+#fi
+#source "${BUILD_ENV}" -v
+CC=gcc
+CXX=g++
 # Additional tweaks for Intel compilers
 if [[ "${CC}" == *"/icc" ]]; then
     # Don't generate auto-dispatch, alternative code paths, as doing so causes

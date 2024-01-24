@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/c++/lib/applications/GetAlignmentStats/GetAlignmentStats.hpp
+common/Program.hpp
+../src/c++/lib/applications/GetAlignmentStats/common/Program.hpp
+
+../src/c++/lib/common/Program.hpp
+iosfwd
+-
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/manta/manta-1.6.0.release_src/src/c++/bin/GetAlignmentStats.cpp
+applications/GetAlignmentStats/GetAlignmentStats.hpp
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/manta/manta-1.6.0.release_src/src/c++/bin/applications/GetAlignmentStats/GetAlignmentStats.hpp
+

@@ -1,0 +1,44 @@
+{% set name = "pathos" %}
+{% set version = "0.2.5" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 21ae2cb1d5a76dcf57d5fe93ae8719c7339f467e246163650c08ccf35b87c846
+
+build:
+  noarch: python
+  number: 0
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv "
+
+requirements:
+  host:
+    - pip
+    - python
+  run:
+    - dill >=0.2.9
+    - multiprocess >=0.70.7
+    - pox >=0.2.5
+    - ppft >=1.6.4.9
+    - python
+
+test:
+  imports:
+    - pathos
+    - pathos.helpers
+    - pathos.secure
+    - pathos.xmlrpc
+
+about:
+  home: http://trac.mystic.cacr.caltech.edu/project/pathos/wiki.html
+  license: BSD 3-Clause
+  license_file: LICENSE
+  summary: parallel graph management and execution in heterogeneous computing
+
+extra:
+  recipe-maintainers:
+    - jschueller
+    - mariusvniekerk

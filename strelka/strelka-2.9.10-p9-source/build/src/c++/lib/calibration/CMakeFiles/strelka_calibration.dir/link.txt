@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_calibration.a  CMakeFiles/strelka_calibration.dir/IndelErrorModel.cpp.o CMakeFiles/strelka_calibration.dir/IndelErrorModelJson.cpp.o CMakeFiles/strelka_calibration.dir/RandomForestModel.cpp.o CMakeFiles/strelka_calibration.dir/ThetaJson.cpp.o CMakeFiles/strelka_calibration.dir/VariantScoringModelMetadata.cpp.o CMakeFiles/strelka_calibration.dir/VariantScoringModelServer.cpp.o CMakeFiles/strelka_calibration.dir/featuresetUtil.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_calibration.a

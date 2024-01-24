@@ -1,0 +1,30 @@
+{% set name = "perl-inc-latest" %}
+{% set version = "0.500" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://cpan.metacpan.org/authors/id/D/DA/DAGOLDEN/inc-latest-0.500.tar.gz
+  sha256: daa905f363c6a748deb7c408473870563fcac79b9e3e95b26e130a4a8dc3c611
+
+build:
+  noarch: generic
+  number: '0'
+
+requirements:
+  host:
+    - perl==5.26.2
+    - perl-extutils-makemaker
+  run:
+    - perl==5.26.2
+
+test:
+  commands:
+    - perl -e "use inc::latest"
+
+about:
+  home: https://github.com/dagolden/inc-latest
+  license: apache
+  summary: use modules bundled in inc/ if they are newer than installed ones

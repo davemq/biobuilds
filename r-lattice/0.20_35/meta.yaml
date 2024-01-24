@@ -21,7 +21,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
 
   run:
     - r-base

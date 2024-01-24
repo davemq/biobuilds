@@ -23,7 +23,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
     - r-mime >=0.3
 
   run:

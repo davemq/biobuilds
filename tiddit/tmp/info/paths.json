@@ -1,0 +1,2727 @@
+{
+  "paths": [
+    {
+      "_path": "bin/tiddit",
+      "path_type": "softlink",
+      "sha256": "6bcc6afccb4796c3ab90136a33ac8e3d8cdc443b2e02f248bfcafaa0a30b9003",
+      "size_in_bytes": 5593
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/AUTHORS",
+      "path_type": "hardlink",
+      "sha256": "5e4403e5730945d73dc8f76195bb29033b9fe9ab512f3efc741a3bbd68f0322e",
+      "size_in_bytes": 107
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "ccbdf044d30f7be448cf743bb665e439a92317443234c90f0a499e2545a194b7",
+      "size_in_bytes": 1009
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/COPYING",
+      "path_type": "hardlink",
+      "sha256": "3283f247d3b36bb3d80ffe8523992944fa1f71b03f60e525f26ecfd3788d06ea",
+      "size_in_bytes": 113
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/INSTALL.sh",
+      "path_type": "hardlink",
+      "sha256": "43846b72c73b9b37dc8e3d75128079416b036bcda4fe14f1b66549212e96331f",
+      "size_in_bytes": 110
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/README.md",
+      "path_type": "hardlink",
+      "sha256": "559068eb98e718d8a956f6d5753fc4fec7699595e2b3dc69148d08884903f0ba",
+      "size_in_bytes": 8887
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/Singularity",
+      "path_type": "hardlink",
+      "sha256": "2896c6e6ec2e6972373c98d29bd7504600927a0f2758de0bb32ece68d0cb5d96",
+      "size_in_bytes": 604
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/TIDDIT.py",
+      "path_type": "hardlink",
+      "sha256": "6bcc6afccb4796c3ab90136a33ac8e3d8cdc443b2e02f248bfcafaa0a30b9003",
+      "size_in_bytes": 5593
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/TIDDIT.pyc",
+      "path_type": "hardlink",
+      "sha256": "c9a5b51957faceaf36126d7958fcc8bd1c091d7013de122f3f7f7f0f3d0d352f",
+      "size_in_bytes": 5250
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/bin/TIDDIT",
+      "path_type": "hardlink",
+      "sha256": "4afe1996f7e762f382568698cea8e910bba7aaafdb4cf93dd91609ec707f9529",
+      "size_in_bytes": 190656
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeCache.txt",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "294671a77498213203d6cd9f4ffa818a7f10751a2bb7c26fdb6b4dca4bf8627e",
+      "size_in_bytes": 15817
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CMakeCCompiler.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9a3b2de7971c14ef7068457cd2cc7724e7cbb29d2f69ffad14110f7ebcf7279e",
+      "size_in_bytes": 3205
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CMakeCXXCompiler.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "fe2c5b73c528ff9a86ff6454e38f31344e16252c245ab071efe3854e2a59fd91",
+      "size_in_bytes": 6214
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CMakeDetermineCompilerABI_C.bin",
+      "path_type": "hardlink",
+      "sha256": "e834f4a131f506d022bc19937ae2c1b4c92ac40b05c090a1b0d7dd0006c50924",
+      "size_in_bytes": 19816
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CMakeDetermineCompilerABI_CXX.bin",
+      "path_type": "hardlink",
+      "sha256": "2124fe5907bcce2c4fb0d147f5fcded993ad8627f7b621cf54ebd3b74bd4fec0",
+      "size_in_bytes": 19832
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CMakeSystem.cmake",
+      "path_type": "hardlink",
+      "sha256": "7c3aa0b50a1edd45e7cb3a26b265e04c3cf33e7f29efe5255415489ade64a016",
+      "size_in_bytes": 398
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CompilerIdC/CMakeCCompilerId.c",
+      "path_type": "hardlink",
+      "sha256": "1f0d1783c2bfe6c0828bfd3fd3583917dce9dab6b4167a1d5f3cf9833fbdad3f",
+      "size_in_bytes": 20099
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CompilerIdC/a.out",
+      "path_type": "hardlink",
+      "sha256": "76cbe50b23f9ec5ca0aed6acda88fd27c5e44f15a40d077254882fb443a75a32",
+      "size_in_bytes": 20104
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+      "path_type": "hardlink",
+      "sha256": "e5d25626b3c1c80fc91617ce57583b2678e9d633c046b66feca61636235a273b",
+      "size_in_bytes": 19635
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/3.15.0/CompilerIdCXX/a.out",
+      "path_type": "hardlink",
+      "sha256": "79e0dacc066e374a3feb6c7eb56848cb75e506d16d48870c5ef45929c0ad684a",
+      "size_in_bytes": 20112
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/CMakeOutput.log",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "bb2500acbdddaf830d74bf80ad1f14e3b60bd3c689973102de9dba014918acb6",
+      "size_in_bytes": 96438
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/Makefile.cmake",
+      "path_type": "hardlink",
+      "sha256": "ee88ca427d4c8594e2c84c411e56dd50bfcc232986cbf473d27240ec6ab9fce7",
+      "size_in_bytes": 12291
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/Makefile2",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "d3341123318301cb7dcaa7e20807488852700f9e81407f99cef0f0fa91e4a748",
+      "size_in_bytes": 16425
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/CXX.includecache",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "1bbbf1308baceda2259b155521870e3a456e982d43cc81abe82be318148f00e2",
+      "size_in_bytes": 1614
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/DependInfo.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "b4c5d61ff2b0b9d9880910305f36b6fb42f9b34da4d67586bd36c83fd319e36e",
+      "size_in_bytes": 1495
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/build.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "d55bf9fe746abf104f9a434c712d1c50ac606ebba04084acf2f3fff07180cec9",
+      "size_in_bytes": 10718
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/cmake_clean.cmake",
+      "path_type": "hardlink",
+      "sha256": "d260dd70ab1bfef20636caaf5b90edf52d15f932b31f7c4de335f30bc036e1e2",
+      "size_in_bytes": 470
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/depend.internal",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "0e915ac5d34d4bbec561146b6155ddf05308e36cd785ab6c5197ca9ab6928783",
+      "size_in_bytes": 1069
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/depend.make",
+      "path_type": "hardlink",
+      "sha256": "609358b16a399065fcf9b24a7afc8297a46a5a772c7d9805f0e6d67e1323294c",
+      "size_in_bytes": 904
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/flags.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "74b2fe2dd638168e7ea9cbe790a43924de1f5916986ffe778caee9e95b4630d3",
+      "size_in_bytes": 875
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/link.txt",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "e6437921c1377d6820427bee72eb747c67b8ddf48225c28877ab4ed7b6c69a69",
+      "size_in_bytes": 1155
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/progress.make",
+      "path_type": "hardlink",
+      "sha256": "971a7433b862e6d7733b9eb81261f956395956e11cd25814c4d4b1582521c7b8",
+      "size_in_bytes": 111
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/src/TIDDIT.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "e76bfdc66dddb8b9c829c5d0ba010d016521496b2af4e978fb776263a3b26b43",
+      "size_in_bytes": 118344
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/src/data_structures/CoverageModule.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "0c9863644a5dafd2a3b26c35d45b9d1ea55b60eb53872df792d1fd7ec8a3d033",
+      "size_in_bytes": 55072
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/src/data_structures/Translocation.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "984e74dd4ca773b0dc0322d61d1e8f723d1d5245e9397ed2457d3e2097dde9e5",
+      "size_in_bytes": 114920
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TIDDIT.dir/src/data_structures/findTranslocationsOnTheFly.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "7ee925454b37f84c8c0e1dc20a23baf67f4c09ac485715fd66437f73a23b0a97",
+      "size_in_bytes": 35632
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/TargetDirectories.txt",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "5c10be312e192cf990d071840da28cd89802937a3eaecc92c3eea82e42e3c49a",
+      "size_in_bytes": 6703
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/cmake.check_cache",
+      "path_type": "hardlink",
+      "sha256": "a26189e394421da57f45706a07713c5720acd200a41711b0c0c590c3c63371c4",
+      "size_in_bytes": 85
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "f1769867b0abc7068f5cb7dd41574a420b3cfa4553856f459857ff8e5a525b13",
+      "size_in_bytes": 3
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "3cdd884eecc0f4c7992515279a95a00247cd925352f608563453905aa54ecd82",
+      "size_in_bytes": 13404
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "0931332b9d4ae063c2c47c148e196540bb6c77838c20e65eceab926f2fe7c5f0",
+      "size_in_bytes": 1759
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "b03c70ff0d641a363f1a021413a098dce02e4c68b75f3a47aa10044f42ee1784",
+      "size_in_bytes": 3
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "abb15b1f27d51e50a697d7d092f3952208fefe146d0d5ead9b4b7ee7470b6129",
+      "size_in_bytes": 6812
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/DependInfo.cmake",
+      "path_type": "hardlink",
+      "sha256": "5ff34ce53471663433bd0d970c9a2392506c48c279153c6ab56be7542caa9c13",
+      "size_in_bytes": 316
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/build.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "d1d06fd8f5748f606e9daf0df96730424688c1b3f438d7aa5dc00233a04e33f2",
+      "size_in_bytes": 8839
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/cmake_clean.cmake",
+      "path_type": "hardlink",
+      "sha256": "9ed2053466a622670b64ff6436123bb3affe6c54747ce48202fde83c48b2c392",
+      "size_in_bytes": 154
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/depend.internal",
+      "path_type": "hardlink",
+      "sha256": "494b8b6577689d0080528fc6b92c08a7f636f92b1307236082a87b23d8c198cf",
+      "size_in_bytes": 100
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/depend.make",
+      "path_type": "hardlink",
+      "sha256": "494b8b6577689d0080528fc6b92c08a7f636f92b1307236082a87b23d8c198cf",
+      "size_in_bytes": 100
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/APIHeaders.dir/progress.make",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/DependInfo.cmake",
+      "path_type": "hardlink",
+      "sha256": "5ff34ce53471663433bd0d970c9a2392506c48c279153c6ab56be7542caa9c13",
+      "size_in_bytes": 316
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/build.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "7c74634980cc24543e1bbd6781a7718ae9a893d499cb830201742ed89be40387",
+      "size_in_bytes": 3110
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/cmake_clean.cmake",
+      "path_type": "hardlink",
+      "sha256": "e98c27de9b91f49efa37df9a36090d657fa85fe086495cbfca35cce957442d6f",
+      "size_in_bytes": 161
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/depend.internal",
+      "path_type": "hardlink",
+      "sha256": "494b8b6577689d0080528fc6b92c08a7f636f92b1307236082a87b23d8c198cf",
+      "size_in_bytes": 100
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/depend.make",
+      "path_type": "hardlink",
+      "sha256": "494b8b6577689d0080528fc6b92c08a7f636f92b1307236082a87b23d8c198cf",
+      "size_in_bytes": 100
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/AlgorithmsHeaders.dir/progress.make",
+      "path_type": "hardlink",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+      "size_in_bytes": 1
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/BamAlignment.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1006e18fe2efcc3ea43dc94f2f80369b26814b23bfe62c06d4e3446d90d4a84e",
+      "size_in_bytes": 47912
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/BamMultiReader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "af00019c3c692060b0e4559c842b1e41f96a5c659d9e5f00e68944511b628122",
+      "size_in_bytes": 28344
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/BamReader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "407353ac2dfdb5f4e59599e8da722497deee557025a8b9164a87df93eb63b07a",
+      "size_in_bytes": 18304
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/BamWriter.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "74b2b24c48f0d974d95ab4b63f87986e6e2266b75fd34606d79ed5a55a67278b",
+      "size_in_bytes": 11888
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/CXX.includecache",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9a27b5469f03a1a6475fb4e3205fca5cd4d838f31b8829bf533b984813c831d6",
+      "size_in_bytes": 21065
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/DependInfo.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "4d84dda96fc294634f8125aa5f8b6b573e6ebf3f065e8719b5838cfe7b5dc6bd",
+      "size_in_bytes": 10169
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamHeader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "81844cfc45f7e3c0fe9ae73b62808cb7d4b14ab55a965fbdcf325504632970bc",
+      "size_in_bytes": 43288
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamProgram.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "5217a9e87d96c4829bab8506880138ed93d994d19a6eb039d93d8633eb5f1945",
+      "size_in_bytes": 9488
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamProgramChain.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "cd3c3de0f7a0445b2e35e364403bd9f2e70d402869ea219fca24064f0d07d857",
+      "size_in_bytes": 19912
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamReadGroup.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a327cb66eaea6f8910379f7634c0d87e4aa6b5efe1e3f82cb0416f864a95d3cd",
+      "size_in_bytes": 14584
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamReadGroupDictionary.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "9ee8298b6e38922fe5d4e2f647f3ba43c87bff397512860da2afe24f92ef7bbc",
+      "size_in_bytes": 34264
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamSequence.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "0e2ca691bd016dd729f27416f2bf31629856f2f31de261be41d30872eb56685b",
+      "size_in_bytes": 17272
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/SamSequenceDictionary.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "23ba0a619b98e9ab2c004335affd40c357690245059d82839ee2fc67d3412dae",
+      "size_in_bytes": 34536
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/build.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "7314aeccc6ce4b652fe9b9ed8edb545061a316e694200c94ac5068322feadbd2",
+      "size_in_bytes": 96452
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/cmake_clean.cmake",
+      "path_type": "hardlink",
+      "sha256": "2e3f9396796a6d6248f0cd63ad728ef91237e0b7df27fa8a344225867edfb192",
+      "size_in_bytes": 2693
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/cmake_clean_target.cmake",
+      "path_type": "hardlink",
+      "sha256": "3c38548b2ad3f2b8ad02cef2ff3e8a7e688ef3408c75d7469d70fe6ee71c4432",
+      "size_in_bytes": 40
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/depend.internal",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "454a8ba3cdc3462ef0c802e692a15e6c19e79e813404cdce1a65371201524f47",
+      "size_in_bytes": 7170
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/depend.make",
+      "path_type": "hardlink",
+      "sha256": "7550c07f041272b6fe3002bd87af2f9453c0974f3205ca05ac558d8440326c99",
+      "size_in_bytes": 5270
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/flags.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "58c6af59b08c2b7262ac34717fb902a706161f08d378865985a763034ec9a7a0",
+      "size_in_bytes": 967
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/bam/BamHeader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "f84e4b342c331c5f30702d9a051054026ca9a424478126f037e648b0893f0bed",
+      "size_in_bytes": 23744
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/bam/BamMultiReader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "fa1723a9da6dd91b5ca310805c2ad562b60d4c374370818a9ccf91fbeb922e30",
+      "size_in_bytes": 143088
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/bam/BamRandomAccessController_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "9c68ff2e9053607e1b805d341eb6f23e63629b4d67d9778b7121be8ef5fc2193",
+      "size_in_bytes": 38448
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/bam/BamReader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "e400298b636b89874a7be3dee1554bb95f62f8161a28ef6adc51965ce0927e29",
+      "size_in_bytes": 65936
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/bam/BamWriter_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1103a9aec1de9ce9073b7798cfa71bedb63c169688c2d343a73b4e188d892445",
+      "size_in_bytes": 41560
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/index/BamIndexFactory_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "c576ddb27e76acd8b96cf091c8eac1bfa91e00db6e8b64a8af077ba507cf819b",
+      "size_in_bytes": 16584
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/index/BamStandardIndex_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a9f7f2927e5dd9f615575375f79dc4ba81be2c540793d534bfd45d154554ae35",
+      "size_in_bytes": 125488
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/index/BamToolsIndex_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "3af8110b814082b533a6460b1b93dc1bc23ac68785a4c4d030a9a837663bbc90",
+      "size_in_bytes": 75624
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BamDeviceFactory_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a9fcd9fa155583129b79aa88de1c196f2b51f3c084f6bea55e1814d87449553b",
+      "size_in_bytes": 10304
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BamFile_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "5a4294d02e7560b36a16d77835581d278dcc301ae3cc68a8dc0b6d47dbabb7de",
+      "size_in_bytes": 24144
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BamFtp_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "417deafd8fb59f42b5db66f45eef93560cf8b250b1779a85180c7f80ee02d4c8",
+      "size_in_bytes": 86616
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BamHttp_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "e74297e100fa21c70da01123a12d6fe1e047fd4d586b9469d0798463a13c2f65",
+      "size_in_bytes": 96480
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BamPipe_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "30598617f6741d603226d19f54b1171b2eb0cae8b1917fe45de038da1cf88092",
+      "size_in_bytes": 25752
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/BgzfStream_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "0ca070042faf7bc063bccefc701b09644fad0cf08c0f8c02eea48e23c7fa56a6",
+      "size_in_bytes": 48960
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/ByteArray_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "098344ae63e8e461e1ba9a43629267545dd0fe168cd4ac57af009ea455cbb99b",
+      "size_in_bytes": 12280
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/HostAddress_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "96c8fcfd9fb56db959e21cac230ff1f0ae9ba00eb3d8e0651c47d2eeb13f65ec",
+      "size_in_bytes": 36176
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/HostInfo_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "ec22ad3ff7185427a440ede10bb796743eb187319b8ac6366f0177b1c478e3a9",
+      "size_in_bytes": 23240
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/HttpHeader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1a3dd885a08806275ae4b32eec2c8e7af17d9225de5d7ea3dfff65a93c4c28bb",
+      "size_in_bytes": 75696
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/ILocalIODevice_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "b31a804e234a50ac1d75b930795295eba8d239761fedbce139f8f55cd8d6a7c7",
+      "size_in_bytes": 10432
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/RollingBuffer_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "803701cdd70c094d2aa93fa557592025ffca29fc464a57881003ba0bb0aa58e8",
+      "size_in_bytes": 23800
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/TcpSocketEngine_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "4ff1d869e21c09534db6ec8c81d97beb1f0697bf7afbc9edf5092dfa94a10ad4",
+      "size_in_bytes": 16960
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/TcpSocketEngine_unix_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "6b36e1f0b828be9ff33d62d8ed51491d932e2c87be570a8b39aed271cd58a9c3",
+      "size_in_bytes": 17632
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/io/TcpSocket_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "3e20eed7a7bc3c8eb1f97bb4a3bec973dae8ff2f439843de77be2c4c2a8d09ac",
+      "size_in_bytes": 49104
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/sam/SamFormatParser_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "140193047a61dd9d47559a7c0ece6ee512bd84e9f005077fcff4638a73062dd7",
+      "size_in_bytes": 62648
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/sam/SamFormatPrinter_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "6e2df957db530566bf81ffa4feecca4fb133455cb9a28298a6a6ee85ec264a7e",
+      "size_in_bytes": 77168
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/sam/SamHeaderValidator_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "7feaeefb5339ab5b154a4565e350fc1598e81eb909b3e29e558f5bfb72d8eef6",
+      "size_in_bytes": 74176
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/internal/utils/BamException_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "16e66a9e1080be6d8c04b7d8091f68fe801919202d97169aeb73af66c5149b06",
+      "size_in_bytes": 2704
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/link.txt",
+      "path_type": "hardlink",
+      "sha256": "8a38dfa5116641fa5f631da7cbc0bbe033c18232d04f71535468e624b4a80824",
+      "size_in_bytes": 2379
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools-static.dir/progress.make",
+      "path_type": "hardlink",
+      "sha256": "7eb278a800f98789fa13070d9d61b9f086b6b1c286392487aea818bae0de544c",
+      "size_in_bytes": 889
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/BamAlignment.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1006e18fe2efcc3ea43dc94f2f80369b26814b23bfe62c06d4e3446d90d4a84e",
+      "size_in_bytes": 47912
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/BamMultiReader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "af00019c3c692060b0e4559c842b1e41f96a5c659d9e5f00e68944511b628122",
+      "size_in_bytes": 28344
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/BamReader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "407353ac2dfdb5f4e59599e8da722497deee557025a8b9164a87df93eb63b07a",
+      "size_in_bytes": 18304
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/BamWriter.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "74b2b24c48f0d974d95ab4b63f87986e6e2266b75fd34606d79ed5a55a67278b",
+      "size_in_bytes": 11888
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/CXX.includecache",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9a27b5469f03a1a6475fb4e3205fca5cd4d838f31b8829bf533b984813c831d6",
+      "size_in_bytes": 21065
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/DependInfo.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9cf8465ae226b0e51cc3ca95cc8e6b6503b2431ba5d31f170b2e558c72cffcf4",
+      "size_in_bytes": 10217
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamHeader.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "81844cfc45f7e3c0fe9ae73b62808cb7d4b14ab55a965fbdcf325504632970bc",
+      "size_in_bytes": 43288
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamProgram.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "5217a9e87d96c4829bab8506880138ed93d994d19a6eb039d93d8633eb5f1945",
+      "size_in_bytes": 9488
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamProgramChain.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "cd3c3de0f7a0445b2e35e364403bd9f2e70d402869ea219fca24064f0d07d857",
+      "size_in_bytes": 19912
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamReadGroup.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a327cb66eaea6f8910379f7634c0d87e4aa6b5efe1e3f82cb0416f864a95d3cd",
+      "size_in_bytes": 14584
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamReadGroupDictionary.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "9ee8298b6e38922fe5d4e2f647f3ba43c87bff397512860da2afe24f92ef7bbc",
+      "size_in_bytes": 34264
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamSequence.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "0e2ca691bd016dd729f27416f2bf31629856f2f31de261be41d30872eb56685b",
+      "size_in_bytes": 17272
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/SamSequenceDictionary.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "23ba0a619b98e9ab2c004335affd40c357690245059d82839ee2fc67d3412dae",
+      "size_in_bytes": 34536
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/build.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "2e3d00c116d753d4bea1cb021a7fbee260931840ca9c4e13b69de7b25cb3d770",
+      "size_in_bytes": 93324
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/cmake_clean.cmake",
+      "path_type": "hardlink",
+      "sha256": "8801deafd51ba1454b5a1462cd1c2e1ab61688c19d3c4101130665c28f6306a0",
+      "size_in_bytes": 2446
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/depend.internal",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "f6a724d02b9aa80ae9ba71cb1de99e9413b8787c8e3c8cf6f3c16ec49e485ba7",
+      "size_in_bytes": 6904
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/depend.make",
+      "path_type": "hardlink",
+      "sha256": "6d354072c68546dc3f0e155ccc3dde91b859bfc6a7e0b79c09d8a7d774e7fcee",
+      "size_in_bytes": 5004
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/flags.make",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "81c767133e3429f7c7a06f2a952174aac8298cc7b8482097b10c800dff6edaa4",
+      "size_in_bytes": 992
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/bam/BamHeader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "f84e4b342c331c5f30702d9a051054026ca9a424478126f037e648b0893f0bed",
+      "size_in_bytes": 23744
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/bam/BamMultiReader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "fa1723a9da6dd91b5ca310805c2ad562b60d4c374370818a9ccf91fbeb922e30",
+      "size_in_bytes": 143088
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/bam/BamRandomAccessController_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "9c68ff2e9053607e1b805d341eb6f23e63629b4d67d9778b7121be8ef5fc2193",
+      "size_in_bytes": 38448
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/bam/BamReader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "e400298b636b89874a7be3dee1554bb95f62f8161a28ef6adc51965ce0927e29",
+      "size_in_bytes": 65936
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/bam/BamWriter_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1103a9aec1de9ce9073b7798cfa71bedb63c169688c2d343a73b4e188d892445",
+      "size_in_bytes": 41560
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/index/BamIndexFactory_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "c576ddb27e76acd8b96cf091c8eac1bfa91e00db6e8b64a8af077ba507cf819b",
+      "size_in_bytes": 16584
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/index/BamStandardIndex_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a9f7f2927e5dd9f615575375f79dc4ba81be2c540793d534bfd45d154554ae35",
+      "size_in_bytes": 125488
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/index/BamToolsIndex_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "3af8110b814082b533a6460b1b93dc1bc23ac68785a4c4d030a9a837663bbc90",
+      "size_in_bytes": 75624
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BamDeviceFactory_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "a9fcd9fa155583129b79aa88de1c196f2b51f3c084f6bea55e1814d87449553b",
+      "size_in_bytes": 10304
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BamFile_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "5a4294d02e7560b36a16d77835581d278dcc301ae3cc68a8dc0b6d47dbabb7de",
+      "size_in_bytes": 24144
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BamFtp_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "417deafd8fb59f42b5db66f45eef93560cf8b250b1779a85180c7f80ee02d4c8",
+      "size_in_bytes": 86616
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BamHttp_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "e74297e100fa21c70da01123a12d6fe1e047fd4d586b9469d0798463a13c2f65",
+      "size_in_bytes": 96480
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BamPipe_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "30598617f6741d603226d19f54b1171b2eb0cae8b1917fe45de038da1cf88092",
+      "size_in_bytes": 25752
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/BgzfStream_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "0ca070042faf7bc063bccefc701b09644fad0cf08c0f8c02eea48e23c7fa56a6",
+      "size_in_bytes": 48960
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/ByteArray_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "098344ae63e8e461e1ba9a43629267545dd0fe168cd4ac57af009ea455cbb99b",
+      "size_in_bytes": 12280
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/HostAddress_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "96c8fcfd9fb56db959e21cac230ff1f0ae9ba00eb3d8e0651c47d2eeb13f65ec",
+      "size_in_bytes": 36176
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/HostInfo_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "ec22ad3ff7185427a440ede10bb796743eb187319b8ac6366f0177b1c478e3a9",
+      "size_in_bytes": 23240
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/HttpHeader_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "1a3dd885a08806275ae4b32eec2c8e7af17d9225de5d7ea3dfff65a93c4c28bb",
+      "size_in_bytes": 75696
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/ILocalIODevice_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "b31a804e234a50ac1d75b930795295eba8d239761fedbce139f8f55cd8d6a7c7",
+      "size_in_bytes": 10432
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/RollingBuffer_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "803701cdd70c094d2aa93fa557592025ffca29fc464a57881003ba0bb0aa58e8",
+      "size_in_bytes": 23800
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/TcpSocketEngine_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "4ff1d869e21c09534db6ec8c81d97beb1f0697bf7afbc9edf5092dfa94a10ad4",
+      "size_in_bytes": 16960
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/TcpSocketEngine_unix_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "6b36e1f0b828be9ff33d62d8ed51491d932e2c87be570a8b39aed271cd58a9c3",
+      "size_in_bytes": 17632
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/io/TcpSocket_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "3e20eed7a7bc3c8eb1f97bb4a3bec973dae8ff2f439843de77be2c4c2a8d09ac",
+      "size_in_bytes": 49104
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/sam/SamFormatParser_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "140193047a61dd9d47559a7c0ece6ee512bd84e9f005077fcff4638a73062dd7",
+      "size_in_bytes": 62648
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/sam/SamFormatPrinter_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "6e2df957db530566bf81ffa4feecca4fb133455cb9a28298a6a6ee85ec264a7e",
+      "size_in_bytes": 77168
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/sam/SamHeaderValidator_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "7feaeefb5339ab5b154a4565e350fc1598e81eb909b3e29e558f5bfb72d8eef6",
+      "size_in_bytes": 74176
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/internal/utils/BamException_p.cpp.o",
+      "path_type": "hardlink",
+      "sha256": "16e66a9e1080be6d8c04b7d8091f68fe801919202d97169aeb73af66c5149b06",
+      "size_in_bytes": 2704
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/link.txt",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "713bfe93f1913635d4d3017dd22c3c2750bc11a1de44a329b49ac819c37a9644",
+      "size_in_bytes": 2876
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/BamTools.dir/progress.make",
+      "path_type": "hardlink",
+      "sha256": "ebb2ab20c2d2f8e01c81489e36831f243856e905bf877d6e06efe05b19ba3d49",
+      "size_in_bytes": 880
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "b03c70ff0d641a363f1a021413a098dce02e4c68b75f3a47aa10044f42ee1784",
+      "size_in_bytes": 3
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "eb04de6b8cbf768eada4749a163cd6da149d830b4141b9c54750a0fe7c8e53f6",
+      "size_in_bytes": 86553
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "627b4982959be5ef8dd6369ba93b21685411ba7900978aa84e0db23e49b739d3",
+      "size_in_bytes": 8979
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "6d701c98b3db14230f79930c693a85a681b11c074aec5baaf05e60c75c913ea9",
+      "size_in_bytes": 6942
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/bam/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/bam/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/bam/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "28164191ec8c1ed8592dc82a4795de00663e85ad9f857042ee6c4e292334fa11",
+      "size_in_bytes": 6962
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/bam/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "efe1aadc5de3f5ed0c81e84e220d804ffbb44ffbea54c196ede0a0b53ee882b7",
+      "size_in_bytes": 1184
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "dbddd7db99d67401cd7e3ca8548edf4ae328d67b7159e2e8a96c79b7a37bb344",
+      "size_in_bytes": 1915
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/index/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/index/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/index/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "d629b0856a95e2ea548d2ae9f69d20f9b2d0851e5c8120a16d4964aab4074bcb",
+      "size_in_bytes": 6972
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/index/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "5fa625bd6d0d479d2b4b60ef3c22f9d3357611811f32c55d7e27aed7a57a9268",
+      "size_in_bytes": 1186
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/io/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/io/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/io/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "5ea36d1ccd4bcd84939f0e8e29f1fabe06c716057abb6b34c5bee5fca81018c8",
+      "size_in_bytes": 6957
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/io/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "f12d34dfdff56bc4ed71489bebabd570b58fd8b48beaab9267eedbd219f67442",
+      "size_in_bytes": 1183
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/sam/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/sam/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/sam/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9b68064c763c82679df66ec14eae6efb7946ae2c31a0d99f5a42944997f86355",
+      "size_in_bytes": 6962
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/sam/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "8a7a3a66e2892cbd82094a99fd0cecedd3d02c63983cba90cc6595aea88d16f3",
+      "size_in_bytes": 1184
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/utils/CMakeFiles/CMakeDirectoryInformation.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "028e54ccb8c2fa78a91ffb85022a25a562274130a743a1437f9cf522992e7a64",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/utils/CMakeFiles/progress.marks",
+      "path_type": "hardlink",
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+      "size_in_bytes": 2
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/utils/Makefile",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "379245771f4c9ab53c073ba9cdaff5e92dee5c63c4a4dffef9bb7159a8a7824f",
+      "size_in_bytes": 6972
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/internal/utils/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "447e10581ca2630ef975e401e9f88d592687f52eb862d6b29fba8f63e23cd23e",
+      "size_in_bytes": 1186
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/libbamtools.a",
+      "path_type": "hardlink",
+      "sha256": "e59956a0598c51faae379a13f077223dea06a2d5a2d23f8b17e1edb3ceb22c02",
+      "size_in_bytes": 1672060
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/libbamtools.so",
+      "path_type": "softlink",
+      "sha256": "487928abe542949d7fc85e832bb858113907ad701fa62d99d4d18a9b9af6cace",
+      "size_in_bytes": 758560
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/bamtools/src/api/libbamtools.so.2.3.0",
+      "path_type": "hardlink",
+      "sha256": "487928abe542949d7fc85e832bb858113907ad701fa62d99d4d18a9b9af6cace",
+      "size_in_bytes": 758560
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build/lib/cmake_install.cmake",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "0d9da4d040f20b5c1f7465a77eb9fedb440838a66c0cee261487380797cbaaae",
+      "size_in_bytes": 1365
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/build_env_setup.sh",
+      "file_mode": "text",
+      "path_type": "hardlink",
+      "prefix_placeholder": "/opt/anaconda1anaconda2anaconda3",
+      "sha256": "9565d5987ed23c59ae263c9f26091fd12568dd6a56f964c2b6cbf88000c158ce",
+      "size_in_bytes": 8531
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/conda_build.sh",
+      "path_type": "hardlink",
+      "sha256": "7fd9ed07a1456adaf9a3b9cab2c5b5c71db7d9d02c661f29729215a16b08dcdf",
+      "size_in_bytes": 449
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamAlgorithms.h",
+      "path_type": "hardlink",
+      "sha256": "89955649dd410e56a43dad90b342733b7eac20d5a0e6ee4be4192612ff1445ed",
+      "size_in_bytes": 847
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamAlignment.h",
+      "path_type": "hardlink",
+      "sha256": "15f4e513c112e6170bc9ffe29de6446f3589c65114332e08a521c1658af18a85",
+      "size_in_bytes": 23802
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamAux.h",
+      "path_type": "hardlink",
+      "sha256": "b3a5d8c23a1779bd46c97ec1e1c959f8779bd4ee5d66084c44a00d2335917059",
+      "size_in_bytes": 14569
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamConstants.h",
+      "path_type": "hardlink",
+      "sha256": "e52ec1c0b7a19a595843be6201c5d93c97fce45cfdad2fc89f6b485cb0016846",
+      "size_in_bytes": 9726
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamIndex.h",
+      "path_type": "hardlink",
+      "sha256": "a335598aed1c63c1d9c3956d4a42074096a2db75a198d738290b5dc69821759f",
+      "size_in_bytes": 2885
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamMultiReader.h",
+      "path_type": "hardlink",
+      "sha256": "aa5f95afdf0eb75b017888edb219c09de577f28d2a7626ec9a022b9975b62f87",
+      "size_in_bytes": 4676
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamReader.h",
+      "path_type": "hardlink",
+      "sha256": "dda32cc6525c3712d5328ee8433eadc69b0c2779dcd2dd811cdd6b2d14e43bf7",
+      "size_in_bytes": 4285
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/BamWriter.h",
+      "path_type": "hardlink",
+      "sha256": "6ff718d2c3ce6828b343514050856524a29c45eaab8e03d46d9398d8d5aafc54",
+      "size_in_bytes": 2207
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/IBamIODevice.h",
+      "path_type": "hardlink",
+      "sha256": "7c2d6ebae373982d927d8473eeff4a6d1dabd61e326b1bde4e1d498c05674f54",
+      "size_in_bytes": 3022
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamConstants.h",
+      "path_type": "hardlink",
+      "sha256": "eccbe7f7cdad055b7340e693a8c4832b11be35d5be9edadaf9915d943ca846cc",
+      "size_in_bytes": 3725
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamHeader.h",
+      "path_type": "hardlink",
+      "sha256": "1198c65c5825d85069edb3c68d205f6039ad115202290b0c9da7e1abe22c73ff",
+      "size_in_bytes": 2853
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamProgram.h",
+      "path_type": "hardlink",
+      "sha256": "6cac76ebd1e6596c324e93e1b166e69d768a25bcea99dd8723c32ff907ed693e",
+      "size_in_bytes": 2294
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamProgramChain.h",
+      "path_type": "hardlink",
+      "sha256": "3120e4e9d49adeb3556a1a11e0bcb8924877438fc75ea4264934c60fbaf26589",
+      "size_in_bytes": 3127
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamReadGroup.h",
+      "path_type": "hardlink",
+      "sha256": "3f065018203fccbc3c561fc5eef911ed9ddda195a1be22a189b532d6b23958f5",
+      "size_in_bytes": 3336
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamReadGroupDictionary.h",
+      "path_type": "hardlink",
+      "sha256": "71bc56e7e7269e7423d3f3122066877a1cfb0f232a49ca16610a11c79f82c308",
+      "size_in_bytes": 3281
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamSequence.h",
+      "path_type": "hardlink",
+      "sha256": "0099f87055a166898e7fbc5ad007c81d91211b4655aed24527115eb9bd2c0f5d",
+      "size_in_bytes": 2454
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/SamSequenceDictionary.h",
+      "path_type": "hardlink",
+      "sha256": "9540cc67abbbbf23e3d5a8494a4497592a1067be0ea7125cfb5b43aac23c593a",
+      "size_in_bytes": 3248
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/algorithms/Sort.h",
+      "path_type": "hardlink",
+      "sha256": "65176f4161cff665536210ef8a61ad68e16e4e4f8a6a27c3f708b9f58287c5d5",
+      "size_in_bytes": 12112
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/include/api/api_global.h",
+      "path_type": "hardlink",
+      "sha256": "8a71f7bd9931c1395a2a6bd4e0835c17618e61a6e9b4f4c2e764a2dda49e9e06",
+      "size_in_bytes": 757
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "d70136fc5e5b071bf1f8dd52486e5b494eb8c208a9d039a17437ef94f577902f",
+      "size_in_bytes": 284
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "73359f4793bd11b42f2a6451c0c8b07c29e22c43c818cac88db42df8e38cfdc2",
+      "size_in_bytes": 1812
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "5e7778d3cdfaa6fd80cb653d7a95fa76b1a89231c2ce62e6d875039464743fe1",
+      "size_in_bytes": 1127
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/README",
+      "path_type": "hardlink",
+      "sha256": "0f4296dd78d5a644862c00599f7d669339116af6bc9678ef4882d83778f68e11",
+      "size_in_bytes": 2016
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/docs/Doxyfile",
+      "path_type": "hardlink",
+      "sha256": "6fd6cc4dfc8a65003efe34a4884d037dc0b7d511e3c6f5d0e9e3504aeeea02f4",
+      "size_in_bytes": 67863
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "875457065d61d80869b0c04ada9af31152daf249e1251eef3c92c80412b4b48d",
+      "size_in_bytes": 392
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/ExportHeader.cmake",
+      "path_type": "hardlink",
+      "sha256": "82668e1b2154e4697d186e07e71b882aa20a60d9bc3d48a33b2f9ec3d4b3d4d1",
+      "size_in_bytes": 830
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamAlgorithms.h",
+      "path_type": "hardlink",
+      "sha256": "89955649dd410e56a43dad90b342733b7eac20d5a0e6ee4be4192612ff1445ed",
+      "size_in_bytes": 847
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamAlignment.cpp",
+      "path_type": "hardlink",
+      "sha256": "353859fc4df72734b39ffe59d7ea36bfd16a6df6f27581236f634367697d97fb",
+      "size_in_bytes": 40684
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamAlignment.h",
+      "path_type": "hardlink",
+      "sha256": "15f4e513c112e6170bc9ffe29de6446f3589c65114332e08a521c1658af18a85",
+      "size_in_bytes": 23802
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamAux.h",
+      "path_type": "hardlink",
+      "sha256": "b3a5d8c23a1779bd46c97ec1e1c959f8779bd4ee5d66084c44a00d2335917059",
+      "size_in_bytes": 14569
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamConstants.h",
+      "path_type": "hardlink",
+      "sha256": "e52ec1c0b7a19a595843be6201c5d93c97fce45cfdad2fc89f6b485cb0016846",
+      "size_in_bytes": 9726
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamIndex.h",
+      "path_type": "hardlink",
+      "sha256": "a335598aed1c63c1d9c3956d4a42074096a2db75a198d738290b5dc69821759f",
+      "size_in_bytes": 2885
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamMultiReader.cpp",
+      "path_type": "hardlink",
+      "sha256": "99dea4f72f5986222aa093ed3f31d7d915e21414fce824c87b6f7936878b7b98",
+      "size_in_bytes": 16490
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamMultiReader.h",
+      "path_type": "hardlink",
+      "sha256": "aa5f95afdf0eb75b017888edb219c09de577f28d2a7626ec9a022b9975b62f87",
+      "size_in_bytes": 4676
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamReader.cpp",
+      "path_type": "hardlink",
+      "sha256": "115d4ccab27f413801654d63d7e2fdf445328be5c6a7a7cbcca2fbc0d7c5f48a",
+      "size_in_bytes": 13665
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamReader.h",
+      "path_type": "hardlink",
+      "sha256": "dda32cc6525c3712d5328ee8433eadc69b0c2779dcd2dd811cdd6b2d14e43bf7",
+      "size_in_bytes": 4285
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamWriter.cpp",
+      "path_type": "hardlink",
+      "sha256": "aaa3102a81651befe44219ce2225a7ae3520fdcf9a995ca5e488d4d73450f60e",
+      "size_in_bytes": 5263
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/BamWriter.h",
+      "path_type": "hardlink",
+      "sha256": "6ff718d2c3ce6828b343514050856524a29c45eaab8e03d46d9398d8d5aafc54",
+      "size_in_bytes": 2207
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "c7a671352ad25a73f06bda88e0e8ee3014f2307e33bc824856dcaa2d96f17173",
+      "size_in_bytes": 3185
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/IBamIODevice.h",
+      "path_type": "hardlink",
+      "sha256": "7c2d6ebae373982d927d8473eeff4a6d1dabd61e326b1bde4e1d498c05674f54",
+      "size_in_bytes": 3022
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamConstants.h",
+      "path_type": "hardlink",
+      "sha256": "eccbe7f7cdad055b7340e693a8c4832b11be35d5be9edadaf9915d943ca846cc",
+      "size_in_bytes": 3725
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamHeader.cpp",
+      "path_type": "hardlink",
+      "sha256": "a9e530cf34b52c340ca3edee35eec65c9bfb084e992b1c60b1b3527e000e88fd",
+      "size_in_bytes": 6797
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamHeader.h",
+      "path_type": "hardlink",
+      "sha256": "1198c65c5825d85069edb3c68d205f6039ad115202290b0c9da7e1abe22c73ff",
+      "size_in_bytes": 2853
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamProgram.cpp",
+      "path_type": "hardlink",
+      "sha256": "6d03d8550988ed2056b45d9e36670d81975c8684c8114b9c51de83ee1640b97d",
+      "size_in_bytes": 3812
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamProgram.h",
+      "path_type": "hardlink",
+      "sha256": "6cac76ebd1e6596c324e93e1b166e69d768a25bcea99dd8723c32ff907ed693e",
+      "size_in_bytes": 2294
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamProgramChain.cpp",
+      "path_type": "hardlink",
+      "sha256": "6e5fa111dc351ced09965c10c61b9dfa1946d63c344abad6837e6caba192c1c9",
+      "size_in_bytes": 11825
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamProgramChain.h",
+      "path_type": "hardlink",
+      "sha256": "3120e4e9d49adeb3556a1a11e0bcb8924877438fc75ea4264934c60fbaf26589",
+      "size_in_bytes": 3127
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamReadGroup.cpp",
+      "path_type": "hardlink",
+      "sha256": "58d92987a7b4fa0e2b65a0e4b7acad4ccadb029665ff0641309432107b287e01",
+      "size_in_bytes": 6452
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamReadGroup.h",
+      "path_type": "hardlink",
+      "sha256": "3f065018203fccbc3c561fc5eef911ed9ddda195a1be22a189b532d6b23958f5",
+      "size_in_bytes": 3336
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamReadGroupDictionary.cpp",
+      "path_type": "hardlink",
+      "sha256": "1d361b19c580e1391aef556f82a639e0f9da34a2d2aa289c3af2f78e8fee1a17",
+      "size_in_bytes": 10142
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamReadGroupDictionary.h",
+      "path_type": "hardlink",
+      "sha256": "71bc56e7e7269e7423d3f3122066877a1cfb0f232a49ca16610a11c79f82c308",
+      "size_in_bytes": 3281
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamSequence.cpp",
+      "path_type": "hardlink",
+      "sha256": "41a6be3a72964e903e5f4dc571ed2bbb2b679b0131885009b7101c678f445143",
+      "size_in_bytes": 4303
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamSequence.h",
+      "path_type": "hardlink",
+      "sha256": "0099f87055a166898e7fbc5ad007c81d91211b4655aed24527115eb9bd2c0f5d",
+      "size_in_bytes": 2454
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamSequenceDictionary.cpp",
+      "path_type": "hardlink",
+      "sha256": "d80e0d2ceac37e58208263a96390541c2a515fe1d27190746c309b543742b3f0",
+      "size_in_bytes": 10272
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/SamSequenceDictionary.h",
+      "path_type": "hardlink",
+      "sha256": "9540cc67abbbbf23e3d5a8494a4497592a1067be0ea7125cfb5b43aac23c593a",
+      "size_in_bytes": 3248
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/algorithms/Sort.h",
+      "path_type": "hardlink",
+      "sha256": "65176f4161cff665536210ef8a61ad68e16e4e4f8a6a27c3f708b9f58287c5d5",
+      "size_in_bytes": 12112
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/api_global.h",
+      "path_type": "hardlink",
+      "sha256": "8a71f7bd9931c1395a2a6bd4e0835c17618e61a6e9b4f4c2e764a2dda49e9e06",
+      "size_in_bytes": 757
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "a1d4f2632cd99694478ce981834f3920b481fa5ad9e88f71b8f9efaf68cb876a",
+      "size_in_bytes": 516
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamHeader_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "5184b07730d10e8c51747dfa21944817252d9794a65a7f2af98f4f2457b19de7",
+      "size_in_bytes": 3991
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamHeader_p.h",
+      "path_type": "hardlink",
+      "sha256": "7e209149314ed7be35bda7ea8f7f1b546ac08808bb7cdc6957946f3e54fec0b6",
+      "size_in_bytes": 2254
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamMultiMerger_p.h",
+      "path_type": "hardlink",
+      "sha256": "f4b5d10201c446cb14132447201dee05a5b17691cf5157b6b15b782c83d90aae",
+      "size_in_bytes": 7446
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamMultiReader_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "da857742089c87df2acace98fb65fc4bdb5925519b1820f98eedecb424f5ea17",
+      "size_in_bytes": 30745
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamMultiReader_p.h",
+      "path_type": "hardlink",
+      "sha256": "abfb181c7cc1160a7a906572634e2aa1fc5ee147b521647d3ab2495b429be181",
+      "size_in_bytes": 3542
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamRandomAccessController_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "4d53e94946eeaa0e58db0287b04da91e9b0ca96363c2fa07256eee500e579419",
+      "size_in_bytes": 10125
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamRandomAccessController_p.h",
+      "path_type": "hardlink",
+      "sha256": "42b8a6482fd5d1a71bd6d4d6af8db30ae77d071bc85f907d0f9a769bc115c687",
+      "size_in_bytes": 2883
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamReader_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "6503f617b370cc951354ecf9187337ce17a838e7979c01b47c97c1aa8ac4bd70",
+      "size_in_bytes": 15755
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamReader_p.h",
+      "path_type": "hardlink",
+      "sha256": "870da3ff6b627f61e3efc011f144646c714ed0072718df8279eac436594a549c",
+      "size_in_bytes": 3813
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamWriter_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "8f5469fa4740956eb4b5106a1503301774fa46ed9c862641a90260a25054ef88",
+      "size_in_bytes": 19313
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/BamWriter_p.h",
+      "path_type": "hardlink",
+      "sha256": "7778f251d41efa4761498560f584111bfa9193e2a91298ab410efdca586c44ea",
+      "size_in_bytes": 2314
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/bam/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "ad1e6f84035e73356c2e012bd087279b9a326f9f03f77fbc90807167b1018b3a",
+      "size_in_bytes": 490
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamIndexFactory_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "3ed6eb04c8b170afbc0252041968910fc43ffe7fd9ca7c8e9a0878fc80d5f1f9",
+      "size_in_bytes": 4274
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamIndexFactory_p.h",
+      "path_type": "hardlink",
+      "sha256": "5e981b2491ca409efb45a3784d3d637d65fd3434b55a10894a1fcacd4426d31b",
+      "size_in_bytes": 2206
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamStandardIndex_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "00019303e748591b20bd8242567fb126f8c2270cf1c88f31f85460fea44f90ab",
+      "size_in_bytes": 35972
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamStandardIndex_p.h",
+      "path_type": "hardlink",
+      "sha256": "e7f713d82b63265c1e4b09ef3c99cec040a627da41ed8e26d3dfa3af40fa34c2",
+      "size_in_bytes": 9118
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamToolsIndex_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "8f74224395627dbec77d94f66b4cd6da3384e50160d40ac527f49ef55522f819",
+      "size_in_bytes": 23536
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/BamToolsIndex_p.h",
+      "path_type": "hardlink",
+      "sha256": "a9de4b968cfd1a903e6a589eba58dd54d438e35fa42197d0bda4aaa2458eb873",
+      "size_in_bytes": 6032
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/index/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "3b43a947b89a9bc37c2905c7d1b34f0fae2800f3cba2053989bee17bbe237e30",
+      "size_in_bytes": 407
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamDeviceFactory_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "560dc038a3d7f9d2b8918db134a18e616a5c02a172b548c6991227d082a31ac1",
+      "size_in_bytes": 1309
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamDeviceFactory_p.h",
+      "path_type": "hardlink",
+      "sha256": "c64f2f1339dbe7f3c6751361c714002e90035becc9c85e741e1bfd2000fbd33a",
+      "size_in_bytes": 1122
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamFile_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "13169203791f34e2c9f9124326d18cc70d2b6bc0f1756aca407e744f9062fe42",
+      "size_in_bytes": 2160
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamFile_p.h",
+      "path_type": "hardlink",
+      "sha256": "85fbab7887bec08f6920091fffbeb4d5a8c81d73f3ac91211308f9f290904393",
+      "size_in_bytes": 1428
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamFtp_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "3ced8f3386799101a586900b17a342ac33cb7a78f7d9dc9eeb5752080258140f",
+      "size_in_bytes": 13864
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamFtp_p.h",
+      "path_type": "hardlink",
+      "sha256": "2e9bba1a46be42a70aa5049109e94f42a3c92a10cc7a8b8ad0844af2ff546f42",
+      "size_in_bytes": 2733
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamHttp_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "b71bef0098ba18b4ce0d3b90fc548d0348c97d8796dbdcdd46000f8fc3e8204a",
+      "size_in_bytes": 15804
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamHttp_p.h",
+      "path_type": "hardlink",
+      "sha256": "d3ebcffbe125218afb39e7080f1dcc447337e072cfd0793b9f61fb67db21d5db",
+      "size_in_bytes": 2676
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamPipe_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "a963275a1f7bd6d9c1808ff8a5251bccc9e0f8af42792e06060d9fa5fb43e109",
+      "size_in_bytes": 2353
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BamPipe_p.h",
+      "path_type": "hardlink",
+      "sha256": "657e21d76f7d2a98cd77de0216f170b324ea6e4c9234cfdb904e10e004781f18",
+      "size_in_bytes": 1311
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BgzfStream_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "f6ec13fd7eeaeb807078249c986c67adcd032feadd4b45c597055faa064eb19c",
+      "size_in_bytes": 15870
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/BgzfStream_p.h",
+      "path_type": "hardlink",
+      "sha256": "de2b5b1073d2449c4ba711e1c6511d80c0954100fa704c563a756c8d2286abb3",
+      "size_in_bytes": 2964
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/ByteArray_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "51794a8d7518d8ca1ba0e3295d938cfdd3e2553e7384b703d5d8a4b7fcc264ae",
+      "size_in_bytes": 2681
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/ByteArray_p.h",
+      "path_type": "hardlink",
+      "sha256": "b6d1978cff8793ea3b5c392c8c5000a2e197917e93121012f08dcf74bfa7e16f",
+      "size_in_bytes": 1957
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "1fb28f2e95887354d210a4cb13252ba8648194f180d434fd4cae75b638139433",
+      "size_in_bytes": 1333
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HostAddress_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "928055731d4ec5b920c378bfa302af18dc114c247ca049517e3c6606f0b82561",
+      "size_in_bytes": 11392
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HostAddress_p.h",
+      "path_type": "hardlink",
+      "sha256": "6deabb44abad5934f573032083875b773e541354aa6759caac4a47d1734f9b55",
+      "size_in_bytes": 3170
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HostInfo_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "76799da48371a439ca442f1bf657cf7b342689790125f6aeaec09957d40ae0e1",
+      "size_in_bytes": 7103
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HostInfo_p.h",
+      "path_type": "hardlink",
+      "sha256": "550be0e5da3c4b519f9c339df56b28efee6320d57dc142fc766cbb8d9e8c196a",
+      "size_in_bytes": 2157
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HttpHeader_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "c96595de3d40f93d8e6fec8ac8f278ba1f92c4ea774a56fc5949d16f0ddcbba0",
+      "size_in_bytes": 12172
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/HttpHeader_p.h",
+      "path_type": "hardlink",
+      "sha256": "6cfae188c2d6e16c55d447f26801929c4a4fbd8945e480a07a288486c4b02f73",
+      "size_in_bytes": 3973
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/ILocalIODevice_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "1c9e611735e7bf0218892681a18479e08311a71111b5413990ebea8d007d4a92",
+      "size_in_bytes": 1928
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/ILocalIODevice_p.h",
+      "path_type": "hardlink",
+      "sha256": "d327d929300f4015b1addea97fd80775faab4a935bd08c2df72403126d604492",
+      "size_in_bytes": 1452
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/NetUnix_p.h",
+      "path_type": "hardlink",
+      "sha256": "c85437360bee3d1f9c2a1f202f9cf4ce3e296c6168f89f0e1d834f97871af3af",
+      "size_in_bytes": 1207
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/NetWin_p.h",
+      "path_type": "hardlink",
+      "sha256": "b80237e98310c99f615e7521e194ff8cc4bee4b93d777903807ed3a3a0380698",
+      "size_in_bytes": 1588
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/RollingBuffer_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "693f2cce9c63e27a39c956955cab9b0f29c492eccabed18c03005b9a120baaf6",
+      "size_in_bytes": 8703
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/RollingBuffer_p.h",
+      "path_type": "hardlink",
+      "sha256": "5810c68a2d3cbaee452b1ce7ed5ba6c0c828ce9779f0490a3bc0d1582dac6f29",
+      "size_in_bytes": 3173
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocketEngine_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "7039e51bf29953a67286fabb3fda7a076fa86456197ecc1e023cd370c6435fac",
+      "size_in_bytes": 5460
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocketEngine_p.h",
+      "path_type": "hardlink",
+      "sha256": "27cf2a8ed7dd0933b414dcc66d37d546a250134d52cdbaf72f438d1b225b63d9",
+      "size_in_bytes": 3230
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocketEngine_unix_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "c2cdd232bb67f078eaf9f27c53bd173fa5bc046e9d54b6a0a4d6b244e346c721",
+      "size_in_bytes": 7021
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocketEngine_win_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "446d41f0e11562a5d492ea37c963f39e62541046257e903688f7dbd9c8cbc215",
+      "size_in_bytes": 8152
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocket_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "371795a8a5364cfb3d2b0ed497dab19442a0cbca4b579a9d5910db585a8e19e7",
+      "size_in_bytes": 12942
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/io/TcpSocket_p.h",
+      "path_type": "hardlink",
+      "sha256": "c166e79be0206ecf74d99f3f22085784637b984258f775406d1d012d1ba41562",
+      "size_in_bytes": 4213
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "63577f051f98b41d2d4bb7ab19c2cfb4241714d385ba8582fbd00e2e0f58cb48",
+      "size_in_bytes": 398
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamFormatParser_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "2de9f6eb470abf5b9d27671a52f9032d933bb4723a5766712dd544517e2e33d3",
+      "size_in_bytes": 8178
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamFormatParser_p.h",
+      "path_type": "hardlink",
+      "sha256": "fa28372610de9fb50fa85c449394da6d7c37c8653c7c9d895b295970fc7b787e",
+      "size_in_bytes": 1775
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamFormatPrinter_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "8b92b0536081a002de81899d03a96f262c0428e783cef3a74e41be22b72e8509",
+      "size_in_bytes": 6954
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamFormatPrinter_p.h",
+      "path_type": "hardlink",
+      "sha256": "d855519c75acde3e0042fea8f1c8cd9fe2b4d476375f124a9af09c7548ead426",
+      "size_in_bytes": 1662
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamHeaderValidator_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "b56b5492214588c7f6863406941487003dd4d22765a0103b8ac2146a1a1bf560",
+      "size_in_bytes": 16428
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamHeaderValidator_p.h",
+      "path_type": "hardlink",
+      "sha256": "5a5048e65f0c9e1ff98bd74f0b5e5a9a556353310dd34fb8faeabca0b3b9f597",
+      "size_in_bytes": 3214
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/sam/SamHeaderVersion_p.h",
+      "path_type": "hardlink",
+      "sha256": "36c8dd1e75b065d9f24dbb9f4f9a97a5d0062de1de5b4468a3e5d60039cebf57",
+      "size_in_bytes": 4452
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/utils/BamException_p.cpp",
+      "path_type": "hardlink",
+      "sha256": "379892b7fd173c01f2337dd350e5aa4c3c0b27a5620d6a3e4160e1581b76c0eb",
+      "size_in_bytes": 688
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/utils/BamException_p.h",
+      "path_type": "hardlink",
+      "sha256": "93c4bc03f956ccdb713d13ca8c6c3624f6ae62885dc2f967d755655585e7a60f",
+      "size_in_bytes": 1474
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/api/internal/utils/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "59df30828151ca805ec1a6e0a96177d4410b5fb1473713b48c8744e2119c6c09",
+      "size_in_bytes": 305
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/shared/bamtools_global.h",
+      "path_type": "hardlink",
+      "sha256": "83410e0f5231794d303dade82ae7d287f4cb34aac30ad95ab93034c44fcf2548",
+      "size_in_bytes": 2790
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "7242b673dd2441bf77a25bc6eb7e9d3359d3e261c997020bf8d6bd4eaf3f886c",
+      "size_in_bytes": 205
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/CHANGES",
+      "path_type": "hardlink",
+      "sha256": "72c8a289bfe4dd9160074a3a2238c8067a5bc7ca49fd87f70a134c3f373932a4",
+      "size_in_bytes": 5296
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "cdf938ce79ea066866dc614de3925bfaa48d9e19e04049db2ec8c5443abaaa9b",
+      "size_in_bytes": 8664
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/CONTRIBUTORS",
+      "path_type": "hardlink",
+      "sha256": "4d911cd5e6d71f3f4bbcb2788b2f916df4b0ce1e088752a159457a1d936ae0ce",
+      "size_in_bytes": 1358
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/COPYING",
+      "path_type": "hardlink",
+      "sha256": "9702de7e4117a8e2b20dafab11ffda58c198aede066406496bef670d40a22138",
+      "size_in_bytes": 1475
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/README",
+      "path_type": "hardlink",
+      "sha256": "484b19654362942fac9734c8fab0ed3d99249b81c69027bdb7de46054abada6b",
+      "size_in_bytes": 15450
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/cmake/internal_utils.cmake",
+      "path_type": "hardlink",
+      "sha256": "6f4670a5825cf8ae0415be9dd43d82a7f30316d75cab20a4c60afb6d9db2a01d",
+      "size_in_bytes": 8980
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/fused-src/gtest/gtest-all.cc",
+      "path_type": "hardlink",
+      "sha256": "212b22005c1576ae0ecc6094fed0ce6c2a9b766ed1697048b69b5b6c42615cbe",
+      "size_in_bytes": 337020
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/fused-src/gtest/gtest.h",
+      "path_type": "hardlink",
+      "sha256": "7b1c6bf54d22c3bcceb5c105485f46594c75fb966bbed8e9cd011298c8f31895",
+      "size_in_bytes": 801700
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/fused-src/gtest/gtest_main.cc",
+      "path_type": "hardlink",
+      "sha256": "22fa1f77542b882d1798d7f696045c5895942a626e26200a175fa4382e1fa5b5",
+      "size_in_bytes": 1772
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-all.cc",
+      "path_type": "hardlink",
+      "sha256": "568ac119f5e6418f1fbcfbdf185d724657d7f3539b47822da229ac5d015626b2",
+      "size_in_bytes": 2161
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-death-test.cc",
+      "path_type": "hardlink",
+      "sha256": "eec1b3c8252670c76acbbaf63483946897ce625139b53a566406b6313f023896",
+      "size_in_bytes": 46413
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-filepath.cc",
+      "path_type": "hardlink",
+      "sha256": "31b7fcda5d11346f8a487597c6a70ff057f1192e0cb11f27eb7841a9f3aa8b86",
+      "size_in_bytes": 14255
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-internal-inl.h",
+      "path_type": "hardlink",
+      "sha256": "c9d428a6b5990ace091e40c4ce8b7bf6c50c186a8314b1c4a4cdc988ca0ac1a4",
+      "size_in_bytes": 40288
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-port.cc",
+      "path_type": "hardlink",
+      "sha256": "95bcf473622d1b901c734e5c2aeb8efb058555ec924212a61bb04f049bb5a069",
+      "size_in_bytes": 25320
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-printers.cc",
+      "path_type": "hardlink",
+      "sha256": "6f191a7fc7f5a0a967fd11964057f2e2d2eaf2f37ccece16bd816531f52b3154",
+      "size_in_bytes": 12042
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-test-part.cc",
+      "path_type": "hardlink",
+      "sha256": "e489868b4cdc66f4fc33bc2326ac86bc1acc5808ab58bbb288c9dcfc330faddc",
+      "size_in_bytes": 4197
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest-typed-test.cc",
+      "path_type": "hardlink",
+      "sha256": "ca9e819df728c25a6a1fc072806c22f3494e1dffe4bd0d48284f38dbdd3a0dd5",
+      "size_in_bytes": 3747
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest.cc",
+      "path_type": "hardlink",
+      "sha256": "5cf9a3e897892c9f0e5c887f91d3c8c8c5665bd7348560441fc0b946c254873c",
+      "size_in_bytes": 179822
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/gtest-1.6.0/src/gtest_main.cc",
+      "path_type": "hardlink",
+      "sha256": "22fa1f77542b882d1798d7f696045c5895942a626e26200a175fa4382e1fa5b5",
+      "size_in_bytes": 1772
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "2c9a3ebea6bf9c705693771ca69b4ea2ac77479066458462015797760fe9e14f",
+      "size_in_bytes": 696
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/LICENSE",
+      "path_type": "hardlink",
+      "sha256": "76c45ece83a26117f86f4e349e7df118708e061e87225328fb478ce1e8b3eb86",
+      "size_in_bytes": 2665
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json.h",
+      "path_type": "hardlink",
+      "sha256": "a46e4e4d32a6e7205f4760702acef78c6e43c73dfe903f961836d985c5d312d8",
+      "size_in_bytes": 448
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_batchallocator.h",
+      "path_type": "hardlink",
+      "sha256": "0e154f2113bac495885d6ec3b974f6aaa20918db9f8437538a2a34518f60899e",
+      "size_in_bytes": 4155
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_config.h",
+      "path_type": "hardlink",
+      "sha256": "eae8822965334548606b715ec3b61d91771e727c9c870cd85ba28f4ffd74350b",
+      "size_in_bytes": 1375
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_features.h",
+      "path_type": "hardlink",
+      "sha256": "3877236f9c2e61b27057706586491b249c0f143831c0361b2285d9a3eb2afeec",
+      "size_in_bytes": 1521
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_forwards.h",
+      "path_type": "hardlink",
+      "sha256": "35bd72fecc0a2003aa673335bce0393c9b7bbb9b2601c4792aa965b46dfbe049",
+      "size_in_bytes": 927
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_internalarray.inl",
+      "path_type": "hardlink",
+      "sha256": "6aaaeae10e7f6976402aad4fd88125fa260cf7581c61a802466faa1c25dd1f07",
+      "size_in_bytes": 12895
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_internalmap.inl",
+      "path_type": "hardlink",
+      "sha256": "20eb4d82dbc058f3f032407925abe72570ba5d3562e41a84494af10497fb4db8",
+      "size_in_bytes": 16500
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_reader.cpp",
+      "path_type": "hardlink",
+      "sha256": "48f22cdaff792a2ca8d5b03eb5db8e3439df34ca6a1345d7155f82244279c166",
+      "size_in_bytes": 20853
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_reader.h",
+      "path_type": "hardlink",
+      "sha256": "20906a9aac30feedb9c6e6216649e4a4358a6f6b5bed225346377cd0e64090a2",
+      "size_in_bytes": 6722
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_tool.h",
+      "path_type": "hardlink",
+      "sha256": "0616f3f566ea331bc9e10624e0e5b7702ce5b9c17303bf9a87f38f17598963ff",
+      "size_in_bytes": 2463
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_value.cpp",
+      "path_type": "hardlink",
+      "sha256": "b4dea62477ffd8afcc2a940136600fb27da62891d2ef01ec06752ef6aae24460",
+      "size_in_bytes": 38564
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_value.h",
+      "path_type": "hardlink",
+      "sha256": "e24e7cf200ba988ee210ccef0ce4cab1496ec6fd2d1e656ee402e71858172eb2",
+      "size_in_bytes": 33542
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_valueiterator.inl",
+      "path_type": "hardlink",
+      "sha256": "45fae86a9d5b97f15d1d22c93e0d458ab00bd62f5c8be3ebd8a29d7c98e2958e",
+      "size_in_bytes": 7593
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_writer.cpp",
+      "path_type": "hardlink",
+      "sha256": "0db96374be0bffababe6f3174d72d60c3da270936183a56cedc649fde17ab2f6",
+      "size_in_bytes": 20308
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/third_party/jsoncpp/json_writer.h",
+      "path_type": "hardlink",
+      "sha256": "a9d84c7871911799a7428c195333173bb4695a700a695671cfde0f37cc2198ac",
+      "size_in_bytes": 6419
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "a07753633287627e8250cdc61b40764d5576581c579e282c696600678e8c605d",
+      "size_in_bytes": 1427
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools.cpp",
+      "path_type": "hardlink",
+      "sha256": "fa9aa45a61d2b55df70291ac36b041a61d3f45c4f41170832f416351a8b3e9a8",
+      "size_in_bytes": 6196
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_convert.cpp",
+      "path_type": "hardlink",
+      "sha256": "5af6ce09b39f65ee61e1ca4837ff4ddd5633bc96117e78ff26167234e173c23d",
+      "size_in_bytes": 32926
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_convert.h",
+      "path_type": "hardlink",
+      "sha256": "2ed833da7026f3f3c9b13dcc233adb018e9874739bb81ec3d2205c5172221345",
+      "size_in_bytes": 1044
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_count.cpp",
+      "path_type": "hardlink",
+      "sha256": "599ca814f8857ac86c17a4caf94b7309e54c55b9a0eee1ed48a439e8550bc859",
+      "size_in_bytes": 6578
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_count.h",
+      "path_type": "hardlink",
+      "sha256": "48b28c89d76f7996a112fd323d2c8af9e2d92440267d89e8cdd1cb208a7ceeeb",
+      "size_in_bytes": 1003
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_coverage.cpp",
+      "path_type": "hardlink",
+      "sha256": "349e8fce494c86cfb4c23891032f11766a7ce2fcf04674da6b7f41ea6bb67b37",
+      "size_in_bytes": 5436
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_coverage.h",
+      "path_type": "hardlink",
+      "sha256": "c2ff1e8bb81feba118f2a82b4d59f88ceccd86db902faa60d4c5197e678983f4",
+      "size_in_bytes": 1052
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_filter.cpp",
+      "path_type": "hardlink",
+      "sha256": "3ebe741d2ed96618df49aa26f9bcf067921c494b4ec0df331026dbc3219f278e",
+      "size_in_bytes": 42868
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_filter.h",
+      "path_type": "hardlink",
+      "sha256": "b437009ab5a9909645eb5ae5536411076bee9f2953250bd0187f8b335a6dfa96",
+      "size_in_bytes": 1047
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_header.cpp",
+      "path_type": "hardlink",
+      "sha256": "cf5fdf4d454b105ce2c4f51e4969cec0cf99a4a5d3309d765d76516746c6d2c5",
+      "size_in_bytes": 3926
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_header.h",
+      "path_type": "hardlink",
+      "sha256": "1771b2bed9ffb9e531f440516b0d60ff88156bcf87e4a48c8d055d0d65548d23",
+      "size_in_bytes": 1083
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_index.cpp",
+      "path_type": "hardlink",
+      "sha256": "dd588d618c884b81c671cb80d67d8a84aa8f7822fe9e8658982e90b7d9f50951",
+      "size_in_bytes": 3431
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_index.h",
+      "path_type": "hardlink",
+      "sha256": "4348a6103181adf0b61d63ac13b85db98de03f8ba00043ffddad1e3a117c2bc6",
+      "size_in_bytes": 989
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_merge.cpp",
+      "path_type": "hardlink",
+      "sha256": "91127d4dddcaad5b1b23ebf6c515fc20985c46926ba4c12f8cd3c5dac4d5fc16",
+      "size_in_bytes": 8125
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_merge.h",
+      "path_type": "hardlink",
+      "sha256": "9a82c0e937eaa79fbe8309f426b94e8b3ea7a1b1bf9c76c49876e505e644e8af",
+      "size_in_bytes": 999
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_random.cpp",
+      "path_type": "hardlink",
+      "sha256": "499a7d9d6deb9ae3eaf04a24fee8e494fe044559d0e7ac966646454628d5b796",
+      "size_in_bytes": 10355
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_random.h",
+      "path_type": "hardlink",
+      "sha256": "202b476bafa66c3c2b74062c71458ab48ae8c673bd8db533f92dbaf9c49f077b",
+      "size_in_bytes": 1031
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_resolve.cpp",
+      "path_type": "hardlink",
+      "sha256": "fc3ac21f5705beb04fcca3eb0e5d815a39faf782bcefebe3c7f4aff1d094f21c",
+      "size_in_bytes": 52275
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_resolve.h",
+      "path_type": "hardlink",
+      "sha256": "0b20a2a7ce34210e65ae6c571d8357f470d470a220aa87bed146871d0f9d194d",
+      "size_in_bytes": 1160
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_revert.cpp",
+      "path_type": "hardlink",
+      "sha256": "3c8754f6ef5520589464f053357dc7a87423aadce42fe6babcd948568333445f",
+      "size_in_bytes": 6189
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_revert.h",
+      "path_type": "hardlink",
+      "sha256": "46645a11c4b3e2ef954aa5ed346fb8b41eddbc47479d712974b0f07b7e0dc946",
+      "size_in_bytes": 1044
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_sort.cpp",
+      "path_type": "hardlink",
+      "sha256": "255ad1299a17afbb52969012c63ebf18328e5e9802977fd723ed53412986f4e2",
+      "size_in_bytes": 12192
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_sort.h",
+      "path_type": "hardlink",
+      "sha256": "62cfecf57379f063ebddacbbabea73ee1d680ace92a21defc097ac83a26452e9",
+      "size_in_bytes": 983
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_split.cpp",
+      "path_type": "hardlink",
+      "sha256": "d476682c85c7d708ec4962d7bccdede4a6a314fa912310d00bfcc965f421ad5f",
+      "size_in_bytes": 20943
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_split.h",
+      "path_type": "hardlink",
+      "sha256": "f5953e044e5cb1d00ee5db585db4655181c27141a79fcddda20fb3fa6e5e51c0",
+      "size_in_bytes": 1078
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_stats.cpp",
+      "path_type": "hardlink",
+      "sha256": "571ca6c1df8429d0f10fe16b0ae188bbf0746820306bae4e1c3b7654c4ff9d8a",
+      "size_in_bytes": 10199
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_stats.h",
+      "path_type": "hardlink",
+      "sha256": "e5ef9c343a72c043942b40a7ed6e827a9bc6b6882413368b7e76cb155bee6bd2",
+      "size_in_bytes": 1020
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_tool.h",
+      "path_type": "hardlink",
+      "sha256": "8698caa152b729ee88f45edacf788fee0f430859001c3b61b5b5ff8b3d0f2e88",
+      "size_in_bytes": 1074
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/toolkit/bamtools_version.h.in",
+      "path_type": "hardlink",
+      "sha256": "caf088640cc77f3296a28a33e5f6619a69ff0e262d28429347489c4a5550e754",
+      "size_in_bytes": 921
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/CMakeLists.txt",
+      "path_type": "hardlink",
+      "sha256": "5c0ffeedc37b76945fec73f7f031b98bff66f8fbc3e13d2478726a2f33a5585c",
+      "size_in_bytes": 950
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_fasta.cpp",
+      "path_type": "hardlink",
+      "sha256": "7034b2b6434a221cace8619a92347611e0e7c36743f1b6250e68dbd2c1c0d9ee",
+      "size_in_bytes": 17452
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_fasta.h",
+      "path_type": "hardlink",
+      "sha256": "20992b16760e3b9756e993497aa806537e7431cbf186bc6d0484436c753e3df9",
+      "size_in_bytes": 1397
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_filter_engine.h",
+      "path_type": "hardlink",
+      "sha256": "ef766bb11c2dc0be16b7012d17a1e993610bbd64795de1cf327a6a4d2b6f6cb4",
+      "size_in_bytes": 21017
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_filter_properties.h",
+      "path_type": "hardlink",
+      "sha256": "fee99f24a16747f67cf1aea6e8d36323de6a31b84fc0e758e6544d85a65e720a",
+      "size_in_bytes": 7917
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_filter_ruleparser.h",
+      "path_type": "hardlink",
+      "sha256": "e43f6740f38d5bb4bc9e7a1a721d50c39863e40e381ee37de7b3ae8a8ec3bd61",
+      "size_in_bytes": 9559
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_options.cpp",
+      "path_type": "hardlink",
+      "sha256": "2d2a1bb756768c8348a81f261e673cec9d15cee07f3866fb793b1429584443ac",
+      "size_in_bytes": 12207
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_options.h",
+      "path_type": "hardlink",
+      "sha256": "fd591442d3e33c4eb4ef663214fd8d0fc784963d1a63410e8261df2d71843d84",
+      "size_in_bytes": 7382
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_pileup_engine.cpp",
+      "path_type": "hardlink",
+      "sha256": "36dacbb9359dcd56573fa4217dcd5ac2571d1195ee959b56c9a72fecba75473a",
+      "size_in_bytes": 12361
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_pileup_engine.h",
+      "path_type": "hardlink",
+      "sha256": "622af4ee5f7ab858b59cb2d568bc57f33a26eb9260425379418615f9105646b4",
+      "size_in_bytes": 2540
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_utilities.cpp",
+      "path_type": "hardlink",
+      "sha256": "625cd5fd6e150524c159dfd2c65bc861b8fe198d105a5e1f99ae4fce0baed23a",
+      "size_in_bytes": 11510
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_utilities.h",
+      "path_type": "hardlink",
+      "sha256": "718cc0f193cce2b0d9ca883071dcd1593fd075c0ffed8f7a0d138255c32a0aca",
+      "size_in_bytes": 2775
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/bamtools_variant.h",
+      "path_type": "hardlink",
+      "sha256": "f5bbd8981393c538d6f7ba109fddb0418bffa4d6468e95a073aa24d8452d0395",
+      "size_in_bytes": 3941
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/lib/bamtools/src/utils/utils_global.h",
+      "path_type": "hardlink",
+      "sha256": "7f97e03d0abc64639dee6e8adbb036817ab59e6e9fabb2c7c3c614a64f6d334e",
+      "size_in_bytes": 773
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/metadata_conda_debug.yaml",
+      "path_type": "hardlink",
+      "sha256": "06dfdf9889983bdf52f2b472b826e3f336644177a44f98394f540442b090b26f",
+      "size_in_bytes": 726
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/DBSCAN.c",
+      "path_type": "hardlink",
+      "sha256": "6526754b0ae30b855714ed88bc1209a7d47c3d1b665e3cb5e2d8bdd098ab3b40",
+      "size_in_bytes": 394411
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/DBSCAN.py",
+      "path_type": "hardlink",
+      "sha256": "6174f6f04e4ee5ce84e3fdce4db159ff5b3a834a1bfa4c69d97488414feb4c76",
+      "size_in_bytes": 5442
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/DBSCAN.pyc",
+      "path_type": "hardlink",
+      "sha256": "f7fd4615fa5fdd2e12c9c418d5185f029f1d43d7becec0d744be5107d939c533",
+      "size_in_bytes": 5166
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/DBSCAN.so",
+      "path_type": "hardlink",
+      "sha256": "6b965eba55af45bef16d9c54f7f472230602122d9b33bfce8029b48a07e6dd1f",
+      "size_in_bytes": 153984
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT.cpp",
+      "path_type": "hardlink",
+      "sha256": "5e44fb1c6e29b554cdb9543900e05d761a041f527440cfb0ca1e5e083496679e",
+      "size_in_bytes": 13962
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_calling.c",
+      "path_type": "hardlink",
+      "sha256": "b1c725f8ce4b6903cf0e7ed01a8f96a57909e21d2f2d69699887ee364fbcdd7f",
+      "size_in_bytes": 668066
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_calling.py",
+      "path_type": "hardlink",
+      "sha256": "37abe1057b72a96a50f7414fb95aa49683f95137cc831fd7be8f5d0ce29b50bd",
+      "size_in_bytes": 11542
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_calling.pyc",
+      "path_type": "hardlink",
+      "sha256": "88ded0b37d2076787b4fe21ea908df7bba63c2f55a5dde1863c9c89f7335317f",
+      "size_in_bytes": 10577
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_calling.so",
+      "path_type": "hardlink",
+      "sha256": "6b54ab7c798ee17921e11ecfa366fd50cd9ce1a087c948c91e86675ef151265f",
+      "size_in_bytes": 380504
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_coverage.c",
+      "path_type": "hardlink",
+      "sha256": "ead8b30154b8493f1a6ace04c35fbdbab858835493f3ed7e7df51f1c7037222c",
+      "size_in_bytes": 391448
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_coverage.py",
+      "path_type": "hardlink",
+      "sha256": "438af4e54007473be52a751f2bd959703ff40d56b5321f3f71cd86fd02b39d06",
+      "size_in_bytes": 5761
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_coverage.pyc",
+      "path_type": "hardlink",
+      "sha256": "1925df0b6f37bc7dcdcd68a1a02ae1c478f378c994d57c42416f30af2a79a386",
+      "size_in_bytes": 4770
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_coverage.so",
+      "path_type": "hardlink",
+      "sha256": "4728c07ce0ebe527f25a40722bd7572cde2ea189f7bb3d801fabe202f7f1d1ba",
+      "size_in_bytes": 144752
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_filtering.c",
+      "path_type": "hardlink",
+      "sha256": "ff96a4cc3085472e515e45132148d88a7921ab8783572be4aec73d4a55af5fad",
+      "size_in_bytes": 299412
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_filtering.py",
+      "path_type": "hardlink",
+      "sha256": "bc875ec379b02f79585602df08d8b3d7018ac42088cf542fab3548e4b0a25b9e",
+      "size_in_bytes": 4456
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_filtering.pyc",
+      "path_type": "hardlink",
+      "sha256": "1cede8de5885aff7bb9f10fcfbabcacb8c840f591aefc753def6ee9a63e404b2",
+      "size_in_bytes": 3264
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_filtering.so",
+      "path_type": "hardlink",
+      "sha256": "ec523e5a8ce8a71fb57dd94c825834301b700ba4f03d18d17421c61d1fb73b35",
+      "size_in_bytes": 95344
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_signals.c",
+      "path_type": "hardlink",
+      "sha256": "f74a2a269f6422cfbd1bea3864f9ad8847a4fa492d242db4b61348ac45f543c1",
+      "size_in_bytes": 402129
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_signals.py",
+      "path_type": "hardlink",
+      "sha256": "b2d6f894c05240cd33832f02a259811e30e90488890ebe95e57490d7c5c1e6df",
+      "size_in_bytes": 5889
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_signals.pyc",
+      "path_type": "hardlink",
+      "sha256": "b55b125bff33baf24391320229611f7363ced6828ab67ecdbb6acc43c1beae3f",
+      "size_in_bytes": 5435
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/TIDDIT_signals.so",
+      "path_type": "hardlink",
+      "sha256": "f7c4222765c3131daddbb817d4c5feee3f90128c41aee044c137cf59acf4053d",
+      "size_in_bytes": 172888
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/build/temp.linux-x86_64-2.7/DBSCAN.o",
+      "path_type": "hardlink",
+      "sha256": "e617487779a745dacff56522f66218d75e871beeeeda7b34f313cb988fa6cd3b",
+      "size_in_bytes": 227296
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/build/temp.linux-x86_64-2.7/TIDDIT_calling.o",
+      "path_type": "hardlink",
+      "sha256": "5428e3e947b0f0f538c6b8df6eb000b04d182919ed201832e46cd240cdb22e20",
+      "size_in_bytes": 562280
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/build/temp.linux-x86_64-2.7/TIDDIT_coverage.o",
+      "path_type": "hardlink",
+      "sha256": "a3e29de0642c4f3f897d825ef0a077ec88fad2a65ae390cf585fb38295eb9bd8",
+      "size_in_bytes": 215920
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/build/temp.linux-x86_64-2.7/TIDDIT_filtering.o",
+      "path_type": "hardlink",
+      "sha256": "08c6540b8d2846086015397768662859787aa669a07ac547d310bbf976ee1fcd",
+      "size_in_bytes": 148256
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/build/temp.linux-x86_64-2.7/TIDDIT_signals.o",
+      "path_type": "hardlink",
+      "sha256": "228376ef3e7af49f2ac92b429f61d2eb12e259b9b079e991beb5fcb2006bda8d",
+      "size_in_bytes": 252216
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/common.h",
+      "path_type": "hardlink",
+      "sha256": "55a8b058380abddd243e0641b3d627e23c4f3ce064c77f2d978b2a88cdb30893",
+      "size_in_bytes": 8200
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/.Rhistory",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/CoverageModule.cpp",
+      "path_type": "hardlink",
+      "sha256": "cc939e16776f163b5ae28116d14a6aa229fee1e8a5e051fec13ebc0024eab0e8",
+      "size_in_bytes": 8368
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/ProgramModules.h",
+      "path_type": "hardlink",
+      "sha256": "c8a6d458d98c3f88fe193bfe0cd6382c6ef4856cbbc62875816274b0f03b639d",
+      "size_in_bytes": 641
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/Translocation.cpp",
+      "path_type": "hardlink",
+      "sha256": "59324f8a3b73cadff588dba230103252759c05f9c9797c7c9b79fc3c97d20ea7",
+      "size_in_bytes": 11835
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/Translocation.h",
+      "path_type": "hardlink",
+      "sha256": "1588d42737f81242d9b45ddbdeee48dfc39460c217944e6bd5ff254813c1202b",
+      "size_in_bytes": 1408
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/data_structures/findTranslocationsOnTheFly.cpp",
+      "path_type": "hardlink",
+      "sha256": "5e2cbd2dd27bff123fcb2dea9652bb80dbef48bdd8db593a42f1b8db8abc083e",
+      "size_in_bytes": 2601
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/.dirstamp",
+      "path_type": "hardlink",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size_in_bytes": 0
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Data_Exception.cpp",
+      "path_type": "hardlink",
+      "sha256": "307059ef18034113cc7e39358d1c823b63fb10dc8c0ffffa584e80b51e2d4fe3",
+      "size_in_bytes": 1427
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Data_Exception.h",
+      "path_type": "hardlink",
+      "sha256": "a4c24611bbfc42f40d9171f9de93eafbc6df56ae9759bb5708e1268fcdc71e70",
+      "size_in_bytes": 797
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Data_Not_Found.cpp",
+      "path_type": "hardlink",
+      "sha256": "729abefd5190db5baa93dbf014388a28957f49ccd21b4a9034e3daacd2cd361a",
+      "size_in_bytes": 340
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Data_Not_Found.h",
+      "path_type": "hardlink",
+      "sha256": "c622d8896812673b52ef12ec329490c262220a66df2139d46b090c454c5678fd",
+      "size_in_bytes": 369
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/File_Not_Found.cpp",
+      "path_type": "hardlink",
+      "sha256": "257889287e00c7db57cbd98b8910bc7a1eece8ba5192d7b11134a413c15be0c0",
+      "size_in_bytes": 613
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/File_Not_Found.h",
+      "path_type": "hardlink",
+      "sha256": "8ed5dc2273c7f6b5a6f8e9eaf380aebe5e52e9cb70f27a563491efe57f784101",
+      "size_in_bytes": 450
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Generic_Exception.cpp",
+      "path_type": "hardlink",
+      "sha256": "21e626d7e35ac2a6294ca8fe593c2d46a6c9e8b4fc75ad7b90b1834833e36461",
+      "size_in_bytes": 384
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Generic_Exception.h",
+      "path_type": "hardlink",
+      "sha256": "d1159bb1f04a55dcdfc200ebc6a33bf9d6a3e1ecc087faf42f9575f1de5ccbe5",
+      "size_in_bytes": 470
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Incorrect_Format.cpp",
+      "path_type": "hardlink",
+      "sha256": "68b830004a087402e916a8ed0a5448e2b95a88687956e3a80ce79755196c608f",
+      "size_in_bytes": 638
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/errors/Incorrect_Format.h",
+      "path_type": "hardlink",
+      "sha256": "79517511f26d14384a272fe02eaba9f6646c78807dd55eda9ed7514c5e1a37b2",
+      "size_in_bytes": 465
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/setup.py",
+      "path_type": "hardlink",
+      "sha256": "16a9a0fe3494d33199d9e03f13d217c1bfd103ba4026dd7bf9e5f2157e0686d2",
+      "size_in_bytes": 226
+    },
+    {
+      "_path": "share/tiddit-2.7.1-1/src/setup.pyc",
+      "path_type": "hardlink",
+      "sha256": "3b326440979e3171780b4cbe15a2517e15234926def57fb5c91fea357570cf44",
+      "size_in_bytes": 426
+    }
+  ],
+  "paths_version": 1
+}

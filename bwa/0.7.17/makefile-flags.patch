@@ -1,27 +1,22 @@
---- Makefile
-+++ Makefile
-@@ -1,8 +1,8 @@
+--- Makefile	2017-10-23 13:13:08.000000000 -0400
++++ Makefile	2019-08-04 20:29:15.916725000 -0400
+@@ -1,7 +1,7 @@
 -CC=			gcc
-+CC ?=			gcc
++CC=			gcc -pthread
  #CC=			clang --analyze
 -CFLAGS=		-g -Wall -Wno-unused-function -O2
-+CFLAGS ?=		-g -Wall -Wno-unused-function -O2
- WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
--AR=			ar
-+AR ?=			ar
+-WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
++CFLAGS=		-Wall -Wno-unused-function -Ofast
++WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS -DNO_WARN_X86_INTRINSICS
+ AR=			ar
  DFLAGS=		-DHAVE_PTHREAD $(WRAP_MALLOC)
  LOBJS=		utils.o kthread.o kstring.o ksw.o bwt.o bntseq.o bwa.o bwamem.o bwamem_pair.o bwamem_extra.o malloc_wrap.o \
- 			QSufSort.o bwt_gen.o rope.o rle.o is.o bwtindex.o
-@@ -27,10 +27,10 @@
- all:$(PROG)
+@@ -12,7 +12,7 @@
+ 			bwtsw2_chain.o fastmap.o bwtsw2_pair.o
+ PROG=		bwa
+ INCLUDES=	
+-LIBS=		-lm -lz -lpthread
++LIBS=		-static -L/gpfs/gpfs_4mb/rchen/MCW/p95a30/jemalloc-5.1.0/lib -ljemalloc -L/opt/at12.0/lib64 -lpthread -lc -lm -lstdc++ -L/gpfs/gpfs_4mb/rchen/MCW/p95a30/zlib-1.2.11 -lz -ldl
+ SUBDIRS=	.
  
- bwa:libbwa.a $(AOBJS) main.o
--		$(CC) $(CFLAGS) $(DFLAGS) $(AOBJS) main.o -o $@ -L. -lbwa $(LIBS)
-+		$(CC) $(CFLAGS) $(DFLAGS) $(AOBJS) main.o -o $@ $(LDFLAGS) -L. -lbwa $(LIBS)
- 
- bwamem-lite:libbwa.a example.o
--		$(CC) $(CFLAGS) $(DFLAGS) example.o -o $@ -L. -lbwa $(LIBS)
-+		$(CC) $(CFLAGS) $(DFLAGS) example.o -o $@ $(LDFLAGS) -L. -lbwa $(LIBS)
- 
- libbwa.a:$(LOBJS)
- 		$(AR) -csru $@ $(LOBJS)
+ ifeq ($(shell uname -s),Linux)

@@ -3,31 +3,29 @@
 {% set sha256 = "8a10a83c3e183dc78f9e7b7aa4d09b47c11fb4e7d3a33b9a12912fd22e31af9d" %}
 
 package:
-  name: "{{ name }}"
-  version: "{{ version }}"
+  name: {{ name }}
+  version: {{ version }}
 
 source:
-  fn: "{{ name }}-{{ version }}.tar.gz"
-  url:
-    - "https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz"
-    - "http://download.lab7.io/sources/{{ name }}-{{ version }}.tar.gz"
-  sha256: "{{ sha256 }}"
+  url: https://cpan.metacpan.org/authors/id/R/RI/RIBASUSHI/namespace-clean-0.27.tar.gz
+  sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 3
 
 requirements:
   build:
-    - perl
-    - perl-b-hooks-endofscope
+    - {{ compiler('cxx') }}
+  host:
+    - perl==5.26.2
     - perl-package-stash
-    #- perl-extutils-makemaker
-    #- perl-test-more
+    - perl-b-hooks-endofscope
+    - perl-extutils-makemaker
 
   run:
-    - perl
-    - perl-b-hooks-endofscope
+    - perl==5.26.2
     - perl-package-stash
+    - perl-b-hooks-endofscope
 
 test:
   imports:

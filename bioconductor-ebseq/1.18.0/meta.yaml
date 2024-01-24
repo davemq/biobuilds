@@ -10,7 +10,6 @@ source:
   fn: "bioconductor-{{ name|lower }}_{{ version }}.tar.gz"
   url:
     - "http://bioconductor.org/packages/release/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-{{ name|lower }}_{{ version }}.tar.gz"
   sha256: "bc9eeeeb1ac825d74d9f325d8c10fee39e7bf76958655486cfc372629cea275f"
 
 requirements:

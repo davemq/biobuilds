@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort-complete.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-install.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-mkdir.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-download.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-update.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-patch.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-configure.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-build.rule"
+		},
+		{
+			"file" : "/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-makedir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libdivsufsort"
+		],
+		"name" : "libdivsufsort"
+	}
+}

@@ -24,15 +24,15 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
-    - {{ compiler('fortran') }}
+ #   - {{ compiler('c') }}
+ #   - {{ compiler('fortran') }}
 
   run:
     - r-base
 
 test:
   commands:
-    - $R -e "library('{{ name }}')"          # [not win]
+    - R -e "library('{{ name }}')"          # [not win]
     - "\"%R%\" -e \"library('{{ name }}')\"" # [win]
 
 about:

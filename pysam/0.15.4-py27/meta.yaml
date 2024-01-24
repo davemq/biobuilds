@@ -1,0 +1,45 @@
+{% set version = "0.15.4" %}
+
+package:
+  name: pysam
+  version: '{{ version }}'
+
+source:
+  url: https://github.com/pysam-developers/pysam/archive/v{{ version }}.tar.gz
+  sha256: 72f01e2249d2b552264f2d932f548d48e84f61e017504a7aa623aba51e656e75
+
+build:
+  number: 1
+  binary_relocation: False # [linux]
+  string: py27_1
+requirements:
+  build:
+  host:
+    - cython 0.29.13 py27hb209c28_0
+    - python 2.7.15
+    - setuptools 41.0.1 py27_0
+    - zlib
+    - xz
+    - bzip2
+    - libdeflate
+  run:
+    - python
+    - zlib
+    - xz
+    - bzip2
+    - libdeflate
+    - curl
+
+test:
+  imports:
+    - pysam
+
+about:
+  home: https://github.com/pysam-developers/pysam
+  license: MIT
+  summary: "Pysam is a python module for reading and manipulating Samfiles. It is a lightweight wrapper of the samtools C-API. Pysam also includes an interface for tabix."
+
+extra:
+  identifiers:
+    - biotools:pysam
+    - doi:10.1093/bioinformatics/btp352

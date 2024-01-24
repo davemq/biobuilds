@@ -1,0 +1,22 @@
+{% set name = "perl-test-more" %}
+{% set version = "1.001002" %}
+
+package:
+    name: {{ name }}
+    version: {{ version }}
+build:
+    number: '0'
+    noarch: generic
+    string: pl526_0
+requirements:
+    build:
+        - perl 5.26.2
+    run:
+        - perl >=5.26.0,<5.27.0a0
+about:
+    home: http://metacpan.org/pod/Test::More
+    license: perl_5
+    summary: yet another framework for writing test scripts
+extra:
+    copy_test_source_files: true
+    final: true

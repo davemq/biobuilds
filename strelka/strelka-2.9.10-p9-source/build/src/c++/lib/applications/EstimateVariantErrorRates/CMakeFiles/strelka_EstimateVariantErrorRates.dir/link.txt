@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_EstimateVariantErrorRates.a  CMakeFiles/strelka_EstimateVariantErrorRates.dir/EPECOptions.cpp.o CMakeFiles/strelka_EstimateVariantErrorRates.dir/EstimateVariantErrorRates.cpp.o CMakeFiles/strelka_EstimateVariantErrorRates.dir/IndelModelProduction.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_EstimateVariantErrorRates.a

@@ -1,0 +1,33 @@
+package:
+  name: perl-ole-storage_lite
+  version: "0.19"
+
+source:
+  url: file:///home/rchen/OLE-Storage_Lite-0.19.tar.gz
+#  url: http://cpan.metacpan.org/authors/id/J/JM/JMCNAMARA/OLE-Storage_Lite-0.19.tar.gz
+  md5: 1a713f5342c7d90e54ab0d9659650296
+  patches:
+    - fix-time.patch
+
+build:
+  noarch: generic
+  number: 3
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - perl==5.26.2
+
+  run:
+    - perl==5.26.2
+
+test:
+  # Perl 'use' tests
+  imports:
+    - OLE::Storage_Lite
+
+about:
+  home: http://metacpan.org/pod/OLE-Storage_Lite
+  license: unknown
+  summary: 'Read and write OLE storage files.'

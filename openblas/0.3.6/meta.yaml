@@ -1,0 +1,42 @@
+{% set version = "0.3.6" %}
+
+package:
+  name: openblas
+  version: "{{ version }}"
+
+source:
+  fn: "openblas-{{ version }}.tar.gz"
+  url:
+    - "https://github.com/xianyi/OpenBLAS/archive/v{{ version }}.tar.gz"
+  sha256: "e64c8fe083832ffbc1459ab6c72f71d53afd3b36e8497c922a15a06b72e9002f"
+
+requirements:
+  build:
+    # Need an updated assembler with AVX2 instruction support. (The system
+    # assembler on our CentOS 6 linux-64 build system is too old for this.)
+    - binutils                    # [toolchain == 'default' and linux and x86_64]
+  run:
+    # _Should_ be ok using any libgcc, so we won't request a specific version
+    # to avoid unresolvable dependency graphs when installing in environments
+    # with packages built using newer versions of GCC. If necessary, we'll
+    # revisit this decision if/when we get user breakage reports.
+build:
+  number: 0
+  features:
+    - opt                         # [toolchain != 'default']
+  run_exports:
+    # ABI seems fairly stable, so we'll pin to the "major.minor" versions; note
+    # that this pinning is less restrictive than the one for the "defaults"
+    # channel package (which pins to major.minor.patch" versions). See
+    # <https://abi-laboratory.pro/tracker/timeline/openblas/> for details.
+    - {{ pin_subpackage('openblas', max_pin='x.x') }}
+
+  # Recipes for previous OpenBLAS versions passed the "OPENBLAS_CORETYPE"
+  # environment variable using `script_env`; this has now been moved into
+  # "conda_build_config.yaml".
+
+about:
+  home: "http://www.openblas.net/"
+  license: BSD
+  license_file: LICENSE
+  summary: "Optimized BLAS library based on GotoBLAS2"

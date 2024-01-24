@@ -1,0 +1,33 @@
+package:
+    name: tiddit
+    version: 2.7.1
+source:
+    sha256: 1d014cd2d4e1f5410e9ffbeda7a0512d65895ec38d57e8aed5dffa19f32f4699
+    url: https://github.com/SciLifeLab/TIDDIT/archive/TIDDIT-2.7.1.tar.gz
+build:
+    number: '1'
+requirements:
+    build:
+        - gxx_linux-64 7.*
+        - gcc_linux-64 7.*
+        - cmake
+    host:
+        - python 2.7
+        - cython
+        - cmake
+        - numpy
+        - setuptools
+    run:
+        - python 2.7
+        - cmake
+        - numpy
+        - pysam
+        - numpy
+test:
+    commands:
+        - tiddit >/dev/null
+about:
+    home: https://github.com/SciLifeLab/TIDDIT
+    license: GPL-3
+    license_file: /opt/recipe/LICENSE
+    summary: TIDDIT - structural variant calling.

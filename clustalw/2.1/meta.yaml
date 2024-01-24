@@ -11,14 +11,11 @@ source:
 
 requirements:
   build:
-    - biobuilds-build
+    - {{ compiler('c') }}
   run:
-    - biobuilds-opt     # [opt]
 
 build:
   number: 1
-  features:
-    - opt     # [opt]
 
 test:
   files:

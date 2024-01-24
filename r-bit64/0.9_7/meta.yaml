@@ -22,7 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
     - r-bit >=1.1_12
 
   run:

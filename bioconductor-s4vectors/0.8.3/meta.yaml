@@ -9,11 +9,11 @@ source:
 
 requirements:
   build:
-    - r
+    - r-base
     - gcc  # [not ppc64le]
     - bioconductor-biocgenerics >=0.15.10
   run:
-    - r
+    - r-base
     - libgcc  # [not ppc64le]
     - bioconductor-biocgenerics >=0.15.10
 

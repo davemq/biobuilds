@@ -9,8 +9,7 @@ source:
   url:
     - "https://cran.r-project.org/src/contrib/Matrix_{{ version }}.tar.gz"
     - "https://cran.r-project.org/src/contrib/Archive/Matrix/Matrix_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-matrix_{{ version }}.tar.gz"
-  sha256: "cf8ccba0a89eaa261f6332ce013c82255f34a21ce4d9fcf72332253bba336dfb"
+  sha256: "ba8cd6565612552fe397e909721817b6cc0604a91299d56d118208006888dc0b"
 
 build:
   number: 0
@@ -22,7 +21,6 @@ requirements:
   build:
     - r-base {{ r_base }}
     - r-lattice
-    - {{ compiler('c') }}
 
   run:
     - r-base

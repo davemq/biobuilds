@@ -1,0 +1,52 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/control-freec/11.6, last modified Mon Jun 29 12:37:31 2020
+# ------------------------------------------------
+
+package:
+    name: control-freec
+    version: '11.6'
+source:
+    patches:
+        - makeGraph_Chromosome.R.patch
+        - perl_shebang.patch
+    sha256: 36564f86a01236e720cf412780e87eb24f224470f5bae45a99edb2d4a3cd1734
+    url: https://github.com/BoevaLab/FREEC/archive/v11.6.tar.gz
+build:
+    number: '0'
+    string: '0'
+requirements:
+    run:
+        - bioconductor-rtracklayer
+        - perl
+        - r-base >=3.6
+        - samtools
+test:
+    commands:
+        - freec
+        - freec2bed.pl
+        - freec2circos.pl
+        - vcf2snpFreec.pl
+about:
+    home: https://github.com/BoevaLab/FREEC
+    license: GPL (>=2)
+    summary: 'Copy number and genotype annotation from whole genome and whole exome
+
+        sequencing data.
+
+        '
+extra:
+    copy_test_source_files: true
+    final: true
+    identifiers:
+        - biotools:freec
+    notes: 'The tool will be available as `freec` in the command line.
+
+        See the homepage for example config files. Auxiliary scripts
+
+        like e.g. freec2bed.pl and freec2circos.pl (see homepage) are available in
+        the
+
+        command line as well.
+
+        '

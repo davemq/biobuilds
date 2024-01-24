@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # If it has Build.PL use that, otherwise use Makefile.PL
+export CC=/home/rchen/miniconda3/envs/BioHPDA/pkgs/gcc_impl_linux-ppc64le-8.4.0-h8635c71_6/bin/powerpc64le-conda_cos7-linux-gnu-gcc
 if [ -f Build.PL ]; then
     perl Build.PL
     ./Build

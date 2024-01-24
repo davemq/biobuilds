@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_GetChromDepth.a  CMakeFiles/strelka_GetChromDepth.dir/ChromDepthOptions.cpp.o CMakeFiles/strelka_GetChromDepth.dir/GetChromDepth.cpp.o CMakeFiles/strelka_GetChromDepth.dir/ReadChromDepthUtil.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_GetChromDepth.a

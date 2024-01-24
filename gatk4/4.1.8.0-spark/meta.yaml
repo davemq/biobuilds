@@ -1,0 +1,25 @@
+{% set version = "4.1.8.0" %}
+
+package:
+  name: gatk-spark
+  version: '{{ version }}'
+
+build:
+  number: 0
+
+requirements:
+  run:
+    - gatk 4.1.8.0
+
+test:
+  commands:
+    - gatk -h
+    - gatk --list
+    - gatk MarkDuplicatesSpark --help
+
+about:
+  home: https://github.com/ruzhuchen/GATK4-Power
+  license: BSD-3-Clause
+  license_family: BSD
+  summary: Genome Analysis Toolkit (GATK4) for Power
+  dev_url: https://github.com/broadinstitute/gatk

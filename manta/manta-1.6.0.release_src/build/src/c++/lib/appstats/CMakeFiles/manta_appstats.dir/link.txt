@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_appstats.a  CMakeFiles/manta_appstats.dir/GSCEdgeStats.cpp.o CMakeFiles/manta_appstats.dir/SVFinderStats.cpp.o
+/opt/at12.0/bin/ranlib libmanta_appstats.a

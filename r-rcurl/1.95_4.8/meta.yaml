@@ -1,5 +1,5 @@
 {% set name = 'RCurl' %}
-{% set version = '1.95-4.8' %}
+{% set version = '1.95-4.11' %}
 
 package:
   name: "r-{{ name|lower }}"
@@ -10,8 +10,7 @@ source:
   url:
     - "http://cran.r-project.org/src/contrib/{{ name }}_{{ version }}.tar.gz"
     - "http://cran.r-project.org/src/contrib/Archive/{{ name }}/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-{{ name|lower }}_{{ version }}.tar.gz"
-  sha256: "e72243251bbbec341bc5864305bb8cc23d311d19c5d0d9310afec7eb35aa2bfb"
+  sha256: "792a091cf5b80c460d98ed80fe1cad5d9406d0afc32e466e970ee4d2f68c97bf"
 
 build:
   number: 0
@@ -22,7 +21,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
     - autoconf
     - automake
     - pkg-config
@@ -34,7 +32,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('{{ name }}')"          # [not win]
+    - R -e "library('{{ name }}')"          # [not win]
     - "\"%R%\" -e \"library('{{ name }}')\"" # [win]
 
 about:

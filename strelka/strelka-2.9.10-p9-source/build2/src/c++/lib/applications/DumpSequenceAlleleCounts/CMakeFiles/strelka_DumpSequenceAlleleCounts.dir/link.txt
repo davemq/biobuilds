@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_DumpSequenceAlleleCounts.a  CMakeFiles/strelka_DumpSequenceAlleleCounts.dir/DSACOptions.cpp.o CMakeFiles/strelka_DumpSequenceAlleleCounts.dir/DumpSequenceAlleleCounts.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_DumpSequenceAlleleCounts.a

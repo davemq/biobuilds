@@ -1,29 +1,42 @@
 package:
   name: pysam
-  version: 0.8.3
+  version: "0.8.3"
 
 source:
-  fn: pysam-0.8.3.tar.gz
   url: https://pypi.python.org/packages/source/p/pysam/pysam-0.8.3.tar.gz
   md5: b1ae2a8ec3c6d20be30b2bc1aa995bbf
 
+build:
+  number: 6
+
 requirements:
   build:
-    - python
+    - {{ compiler('c') }}
+  host:
+    - python <3.7
+    - setuptools
     - cython
     - zlib
   run:
-    - python
+    - python <3.7
     - zlib
 
-build:
-  script_env:
-    - BB_ARCH_FLAGS
-    - BB_OPT_FLAGS
-    - BB_MAKE_JOBS
+test:
+  # Python imports
+  imports:
+    - pysam
+#    - pysam.include
+#    - pysam.include.htslib
+#    - pysam.include.htslib.htslib
+#    - pysam.include.samtools
+#    - pysam.include.samtools.win32
 
 about:
-  home: "https://github.com/pysam-developers/pysam"
+  home: https://github.com/pysam-developers/pysam
   license: MIT
-  license_file: COPYING
-  summary: "Python module for reading and manipulating samfiles"
+  summary: Pysam is a python module for reading and manipulating Samfiles. It's a lightweight wrapper of the samtools C-API. Pysam also includes an interface for tabix.
+
+extra:
+  identifiers:
+    - biotools:pysam
+    - doi:10.1093/bioinformatics/btp352

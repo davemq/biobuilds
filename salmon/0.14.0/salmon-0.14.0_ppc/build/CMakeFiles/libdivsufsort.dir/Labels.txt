@@ -1,0 +1,14 @@
+# Target labels
+ libdivsufsort
+# Source files and their labels
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/CMakeFiles/libdivsufsort-complete.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-install.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-mkdir.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-download.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-update.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-patch.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-configure.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-build.rule
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/0.14.0/salmon-0.14.0_ppc/build/libdivsufsort-prefix/src/libdivsufsort-stamp/libdivsufsort-makedir.rule

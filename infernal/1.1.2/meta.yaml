@@ -2,38 +2,38 @@
 
 package:
   name: infernal
-  version: "{{ version }}"
+  version: {{ version }}
+
+source:
+  url: http://eddylab.org/infernal/infernal-{{ version }}.tar.gz
+  sha256: ac8c24f484205cfb7124c38d6dc638a28f2b9035b9433efec5dc753c7e84226b
+  patches:
+    - ppc64le-support.patch
+
+build:
+  number: 2
 
 requirements:
   build:
-    - biobuilds-build
-    - autoconf-update
-    - autoconf
-    - automake
-    - veclib-headers    # [ppc64le]
+    - {{ compiler('c') }}
+  host:
+    - perl
   run:
-    - biobuilds-opt     # [opt]
 
-source:
-  fn: "infernal-{{ version }}.tar.gz"
-  url:
-    - "http://eddylab.org/infernal/infernal-{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/infernal-{{ version }}.tar.gz"
-  sha1: "1c3a6b260315a51a8118d501947825e249faee6e"
-  patches:
-    - make-check-exit.patch
-    - uint8_t-casts.patch
-    - ppc64le-support.patch   # [ppc64le]
-
-build:
-  number: 0
-  features:
-    - opt     # [opt]
-  script_env:
-    - MAKE_JOBS
+test:
+  commands:
+    - cmalign -h
+    - cmbuild -h
+    - cmcalibrate -h 
+    - cmconvert -h
+    - cmemit -h
+    - cmfetch -h
+    - cmpress -h
+    - cmscan -h
+    - cmsearch -h
+    - cmstat -h
 
 about:
-  home: "http://eddylab.org/infernal/"
-  license: "BSD"
-  license_file: "LICENSE"
-  summary: "Inference of RNA alignments"
+  home: http://infernal.janelia.org/
+  license: 3-Clause BSD
+  summary: Infernal ("INFERence of RNA ALignment") is for searching DNA sequence databases for RNA structure and sequence similarities.

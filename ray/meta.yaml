@@ -1,0 +1,97 @@
+# This file created by conda-build 3.18.11
+# meta.yaml template originally from:
+# /home/conda/recipe_root, last modified Tue Feb 18 21:06:16 2020
+# ------------------------------------------------
+
+package:
+    name: ray
+    version: 0.8.1
+source:
+    git_rev: ray-0.8.1
+    git_url: https://github.com/ray-project/ray.git
+    patches:
+        - 0001-Added-a-patch-to-fix-boost-compilation-on-ppc64le.patch
+        - 0002-Arrow-Fixes-PPC.patch
+        - redis-bazel-build.patch
+build:
+    entry_points:
+        - ray=ray.scripts.scripts:main
+        - tune=ray.tune.scripts:cli
+    number: '2'
+    string: py37_2
+requirements:
+    build:
+#        - {{ compiler('c') }}
+#        - {{ compiler('cxx') }}
+        - bazel 1.0.0
+        - ca-certificates
+        - certifi
+        - cython
+        - expat
+        - icu
+        - libcurl
+        - libedit
+        - libffi
+        - libiconv 
+        - nodejs
+        - openssl
+        - pcre
+        - perl 5.26.2
+        - pip 
+        - python 3.7.6
+        - readline 8.0
+        - regex
+        - rhash 
+        - setuptools
+        - sqlite
+        - tk 8.6.10
+        - zlib 1.2.11
+    host:
+        - certifi
+        - cython
+        - libffi
+        - pip 
+        - python 3.7.6
+        - readline
+        - regex
+        - tk
+    run:
+        - click
+        - cloudpickle
+        - colorama
+        - filelock
+        - funcsigs
+        - jsonschema
+        - libgcc-ng >=8.2.0
+        - libstdcxx-ng >=8.2.0
+        - numpy >=1.19
+        - openblas >=0.3.8
+        - packaging
+        - protobuf >=3.8.0
+        - pyarrow
+        - psutil
+        - pytest
+        - python >=3.7,<3.8.0a0
+        - pyyaml
+        - redis-py>=3.3.2
+        - six>=1.0.0
+test:
+    imports:
+        - ray
+about:
+    description: 'Ray is a Python-based distributed execution engine.
+
+        The same code can be run on a single machine to achieve efficient multiprocessing,
+
+        and it can be used on a cluster for large computations.
+
+        '
+    dev_url: https://github.com/ray-project/ray
+    doc_url: http://ray.readthedocs.io/en/latest/?badge=latest
+    home: https://github.com/ray-project/ray
+    license: Apache-2.0
+    license_family: Apache
+    summary: Ray is a flexible, high-performance distributed execution framework.
+extra:
+    copy_test_source_files: true
+    final: true

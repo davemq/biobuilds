@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_strelkaNoiseExtractor.a  CMakeFiles/strelka_strelkaNoiseExtractor.dir/snoise_info.cpp.o CMakeFiles/strelka_strelkaNoiseExtractor.dir/snoise_option_parser.cpp.o CMakeFiles/strelka_strelkaNoiseExtractor.dir/snoise_pos_processor.cpp.o CMakeFiles/strelka_strelkaNoiseExtractor.dir/snoise_run.cpp.o CMakeFiles/strelka_strelkaNoiseExtractor.dir/snoise_streams.cpp.o CMakeFiles/strelka_strelkaNoiseExtractor.dir/strelkaNoiseExtractor.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_strelkaNoiseExtractor.a

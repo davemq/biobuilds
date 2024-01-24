@@ -1,0 +1,37 @@
+package:
+  name: bioconductor-iranges
+  version: "2.16.0"
+
+source:
+  fn: "IRanges_2.16.0.tar.gz"
+  url: "http://bioconductor.org/packages/3.8/bioc/src/contrib/IRanges_2.16.0.tar.gz"
+  md5: f37fa0b9438adf9af358844bf1f87c02
+
+requirements:
+  build:
+    - r-base=3.6.1
+    - gcc     # [not ppc64le and not win]
+    - bioconductor-biocgenerics >=0.19.1
+    - bioconductor-s4vectors >=0.11.19
+  run:
+    - r-base=3.6.1
+    - libgcc  # [not ppc64le and not win]
+    - bioconductor-biocgenerics >=0.19.1
+    - bioconductor-s4vectors >=0.11.19
+
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+  detect_binary_files_with_prefix: true
+
+test:
+  commands:
+    - $R -e "library('IRanges')"            # [not win]
+    - "\"%R%\" -e \"library('IRanges')\""   # [win]
+
+about:
+  home: "http://bioconductor.org/packages/release/bioc/html/IRanges.html"
+  license: Artistic 2.0
+  summary: "Infrastructure for manipulating intervals on sequences"

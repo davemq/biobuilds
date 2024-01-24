@@ -1,0 +1,34 @@
+{% set version = "2.21.2" %}
+{% set sha256 = "89be6d0fec5e4bf0a82db0aa17728e5f15d13456dcf9e7f75dd3af9901895700" %}
+
+package:
+  name: picard
+  version: '{{ version }}'
+
+source:
+  url: https://github.com/broadinstitute/picard/releases/download/{{ version }}/picard.jar
+  sha256: '{{ sha256 }}'
+
+build:
+  number: 0
+
+requirements:
+  run:
+#    - openjdk >=8
+    - r-base=3.6.1
+
+test:
+  commands:
+    - "bash -c 'picard 2>&1 | grep USAGE:'"
+
+about:
+  home: http://broadinstitute.github.io/picard/
+  license: MIT
+  license_family: MIT
+  summary: Java tools for working with NGS data in the BAM format
+  description: >- 
+    Java tools for working with NGS data in the BAM format.
+    This package depends on 'r-base' because Picard requires R to run
+    some of its metrics commands. The 'picard-slim' package offers an 
+    installation of Picard without the  'r-base' dependency. 
+  dev_url: https://github.com/broadinstitute/picard

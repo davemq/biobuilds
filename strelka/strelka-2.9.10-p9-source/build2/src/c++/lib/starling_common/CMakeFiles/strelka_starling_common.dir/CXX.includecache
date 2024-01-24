@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/c++/lib/blt_util/prog_info.hh
+
+../src/c++/lib/common/ProgramConfig.hh
+common/config.h
+../src/c++/lib/common/common/config.h
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/prog_info_base.cpp
+prog_info_base.hh
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/prog_info_base.hh
+common/ProgramConfig.hh
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/common/ProgramConfig.hh
+string
+-
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/prog_info_base.hh
+blt_util/prog_info.hh
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/blt_util/prog_info.hh
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/version.cpp
+version.hh
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/version.hh
+common/config.h
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/common/config.h
+
+/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/strelka-2.9.10-p9-source/src/c++/lib/starling_common/version.hh
+
+src/c++/lib/common/config.h
+configBuildTimeInfo.h
+src/c++/lib/common/configBuildTimeInfo.h
+
+src/c++/lib/common/configBuildTimeInfo.h
+

@@ -1,0 +1,35 @@
+package:
+  name: fastqc
+  version: "0.11.9"
+
+requirements:
+  run:
+    - perl    # needed for launcher script
+    - picard
+
+source:
+  fn: fastqc_v0.11.9.zip
+  url:
+    - http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+  md5: ee7901b681bb2762d75d5a56c7ec6958
+  patches:
+    - bin-path.patch
+
+build:
+  number: 0
+  script_env:
+    - BB_ARCH_FLAGS
+    - BB_OPT_FLAGS
+    - BB_MAKE_JOBS
+
+test:
+  files:
+    - test.fq.gz
+  commands:
+    - fastqc -h
+
+about:
+  home: "http://www.bioinformatics.babraham.ac.uk/projects/download.html#fastqc"
+  license: GPLv3
+  license_file: LICENSE.txt
+  summary: "Java quality control application for high throughput sequence data"

@@ -1,0 +1,40 @@
+{% set version = "2.26.1" %}
+{% set name = "NOISeq" %}
+{% set bioc = "3.8" %}
+
+package:
+  name: 'bioconductor-{{ name|lower }}'
+  version: '{{ version }}'
+source:
+  url:
+    - 'https://bioconductor.org/packages/{{ bioc }}/bioc/src/contrib/{{ name }}_{{ version }}.tar.gz'
+  sha256: 56632baa984d5fda7d14acf033ec397edd5b6eab238123c8a772d1e65384d0f3
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+requirements:
+  host:
+    - 'bioconductor-biobase >=2.42.0,<2.44.0'
+    - r-base 3.6.1
+    - 'r-matrix >=1.2'
+  run:
+    - 'bioconductor-biobase >=2.42.0,<2.44.0'
+    - r-base
+    - 'r-matrix >=1.2'
+test:
+  commands:
+    - '$R -e "library(''{{ name }}'')"'
+about:
+  home: 'https://bioconductor.org/packages/{{ bioc }}/bioc/html/{{ name }}.html'
+  license: Artistic-2.0
+  summary: 'Analysis of RNA-seq expression data or other similar kind of data. Exploratory plots to evualuate saturation, count distribution, expression per chromosome, type of detected features, features length, etc. Differential expression between two experimental conditions with no parametric assumptions.'
+extra:
+  identifiers:
+    - biotools:noiseq
+  parent_recipe:
+    name: bioconductor-noiseq
+    path: recipes/bioconductor-noiseq
+    version: 2.24.0
+

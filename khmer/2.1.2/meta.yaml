@@ -1,0 +1,58 @@
+# This file created by conda-build 2.1.16
+# meta.yaml template originally from:
+# /opt/recipe, last modified Wed Oct 25 08:48:40 2017
+# ------------------------------------------------
+
+package:
+    name: khmer
+    version: 2.1.2
+source:
+    fn: v2.1.2.tar.gz
+    sha256: e349cac450963822ac74a3313be5164a1bdadb0bf3767285f43b9d2f10ef7f88
+    url: https://github.com/dib-lab/khmer/archive/v2.1.2.tar.gz
+build:
+    number: '0'
+requirements:
+    build:
+        - py>=1.4.34
+        - readline>=6.2
+        - bz2file>=0.98 
+        - gmp>=6.1.2
+        - sqlite>=3.13.0
+        - pytest-runner>=2.11.1
+        - isl>=0.12.2
+        - xz>=5.2.3
+        - ncurses>=5.9
+        - screed>=1.0 
+        - python>=3.7.5
+        - zlib>= 1.2.8 
+        - openssl>=1.0.2l
+#        - gcc 4.8.5
+        - ca-certificates>=2017.7.27.1
+        - tk>=8.5.19
+        - pytest>=3.2.3 
+        - mpfr>=3.1.5
+        - certifi>=2017.7.27.1
+        - setuptools>=36.6.0
+        - pip>=9.0.1
+        - mpc>=1.0.3
+        - cython>=0.27.2
+        - cloog>=0.18.0
+        - wheel>=0.30.0 
+    run:
+#        - libgcc
+        - python
+        - screed >=1.0
+        - bz2file
+test:
+    imports:
+        - khmer
+        - khmer.tests
+        - oxli
+about:
+    home: https://khmer.readthedocs.io/
+    license: BSD License
+    license_family: BSD
+    summary: khmer k-mer counting library
+extra:
+    final: true

@@ -10,7 +10,6 @@ source:
   fn: "bioconductor-{{ name|lower }}_{{ version }}.tar.gz"
   url:
     - "https://bioconductor.org/packages/{{ bioc_version }}/data/annotation/src/contrib/{{ name }}_{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/r-{{ name|lower }}_{{ version }}.tar.gz"
   # NOTE: For reasons we don't fully understand, this is not the same tarball
   # you get by running curl/wget on the first URL above.
   sha256: "39809792f2c88939ed3ea4ecfee1cbdfb1d575194f6a888c2d07e6edf78d3742"

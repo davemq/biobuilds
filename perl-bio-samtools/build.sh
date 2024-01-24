@@ -1,0 +1,30 @@
+#!/bin/bash
+
+export CC=/home/rchen/miniconda3/envs/BioHPDA/pkgs/gcc_impl_linux-ppc64le-8.4.0-h8635c71_6/bin/powerpc64le-conda_cos7-linux-gnu-gcc
+# Make sure pipes to tee don't hide configuration or test failures
+set -o pipefail
+
+export C_INCLUDE_PATH=${PREFIX}/include
+
+# Tell the build system where to find samtools
+export SAMTOOLS="${PREFIX}"
+
+# If it has Build.PL use that, otherwise use Makefile.PL
+if [ -f Build.PL ]; then
+    perl Build.PL 2>&1 | tee configure.log
+    perl ./Build
+    perl ./Build test 2>&1 | tee tests.log
+    # Make sure this goes in site
+    perl ./Build install --installdirs site
+elif [ -f Makefile.PL ]; then
+    # Make sure this goes in site
+    perl Makefile.PL INSTALLDIRS=site
+    make
+    make test 2>&1
+    make install
+else
+    echo 'Unable to find Build.PL or Makefile.PL. You need to modify build.sh.'
+    exit 1
+fi
+
+chmod u+rwx $PREFIX/bin/*

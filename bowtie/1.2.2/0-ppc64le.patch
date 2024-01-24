@@ -1,0 +1,57 @@
+--- ebwt.h	2017-12-12 13:29:54.000000000 -0500
++++ ebwt.h	2019-08-02 13:49:56.659953449 -0400
+@@ -862,7 +862,7 @@
+ 	TIndexOffU*   ftab() const         { return _ftab; }
+ 	TIndexOffU*   eftab() const        { return _eftab; }
+ 	TIndexOffU*   offs() const         { return _offs; }
+-	uint32_t*   isa() const          { return _isa; } /* check */
++	uint32_t*   isa() const          { return (uint32_t*)_isa; } /* check */
+ 	TIndexOffU*   plen() const         { return _plen; }
+ 	TIndexOffU*   rstarts() const      { return _rstarts; }
+ 	uint8_t*    ebwt() const         { return _ebwt; }
+--- Makefile	2017-12-12 13:29:54.000000000 -0500
++++ Makefile	2019-08-02 13:49:26.523699671 -0400
+@@ -2,7 +2,7 @@
+ # Makefile for bowtie, bowtie-build, bowtie-inspect
+ #
+ 
+-prefix = /usr/local
++prefix ?= /usr/local
+ bindir = $(prefix)/bin
+ 
+ SEQAN_DIR = ./SeqAn-1.1
+@@ -20,7 +20,7 @@
+ EXTRA_CFLAGS =
+ EXTRA_CXXFLAGS =
+ CFLAGS += $(EXTRA_CFLAGS)
+-CXXFLAGS += $(EXTRA_CXXFLAGS)
++CXXFLAGS += -std=c++98 $(EXTRA_CXXFLAGS)
+ WARNING_FLAGS = -Wall -Wno-unused-parameter -Wno-reorder \
+ 				-Wno-unused-local-typedefs
+ 
+@@ -93,6 +93,7 @@
+ 	override EXTRA_FLAGS += -DNO_SPINLOCK
+ endif
+ 
++NO_TBB ?= 1
+ ifneq (1,$(NO_TBB))
+ 	LIBS += $(PTHREAD_LIB) -ltbb
+ 	LIBS += -ltbbmalloc$(if $(RELEASE_BUILD),,_proxy)
+@@ -101,7 +102,7 @@
+ 	LIBS += $(PTHREAD_LIB)
+ endif
+ 
+-POPCNT_CAPABILITY ?= 1
++POPCNT_CAPABILITY ?= 0
+ ifeq (1, $(POPCNT_CAPABILITY))
+     override EXTRA_FLAGS += -DPOPCNT_CAPABILITY
+     INC += -I third_party
+@@ -159,7 +160,7 @@
+ SEARCH_FRAGMENTS = $(wildcard search_*_phase*.c)
+ VERSION = $(shell cat VERSION)
+ 
+-BITS=32
++BITS ?= 64
+ ifeq (x86_64,$(shell uname -m))
+ 	BITS=64
+ endif

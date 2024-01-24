@@ -1,0 +1,51 @@
+--- Makefile.PL	2017-09-13 11:29:15.000000000 -0400
++++ Makefile.PL	2020-06-30 16:38:48.185659000 -0400
+@@ -9,8 +9,18 @@ use ExtUtils::MakeMaker;
+ use ExtUtils::Liblist;
+ use Config;
+ 
++# Process command-line parameters
++my %args;
++@args{qw(INC LIBS)} = ("", "");
++for my $p (@ARGV) {
++    my ($key, $value) = split(/=/, $p, 2);
++    if (exists $args{$key}) {
++        $args{$key} = $value;
++    }
++}
++
+ my $libs = '-ltidyp';
+-my $inc = "-I. -I/usr/include/tidyp -I/usr/local/include/tidyp -I$Config{usrinc}/tidyp";
++my $inc = $args{INC} ||"-I. -I/usr/include/tidyp -I/usr/local/include/tidyp -I$Config{usrinc}/tidyp";
+ 
+ eval { require Alien::Tidyp; };
+ 
+@@ -21,7 +31,7 @@ if ( !$@ ) {
+ }
+ else {
+     print "Alien::Tidyp not found. Looking for for tidyp on your system.\n";
+-    my @vars = ExtUtils::Liblist->ext( '-L/usr/lib -L/usr/local/lib -ltidyp', 0, 1 );
++    my @vars = ExtUtils::Liblist->ext( "$args{LIBS} -ltidyp" || "-L/usr/lib -L/usr/local/lib -ltidyp", 0, 1 );
+     $libs = $vars[2];
+ 
+     if ( !$libs ) {
+@@ -69,7 +79,9 @@ my $parms = {
+         'overload'      => 0,
+         'constant'      => 0,
+     },
+-
++    # CHL: Not sure why LIBS alone is not enough, but we seem to need to set
++    # LDDLFLAGS as well to get ld to link libtidy.so with Tidy.so.
++    LDDLFLAGS           => $Config{lddlflags} . " " . $libs,
+     LIBS                => [$libs],
+     NEEDS_LINKING       => 1,
+     INC                 => $inc,
+@@ -94,6 +106,8 @@ if ( $ExtUtils::MakeMaker::VERSION ge '6
+     $parms->{MIN_PERL_VERSION} = 5.008;
+ }
+ 
++print "*** inc  = ", $parms->{INC}, "\n";
++print "*** libs = ", join(", ", @{$parms->{LIBS}}), "\n";
+ WriteMakefile( %{$parms} );
+ 
+ sub MY::postamble {

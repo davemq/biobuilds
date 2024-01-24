@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_options.a  CMakeFiles/manta_options.dir/AlignmentFileOptionsParser.cpp.o CMakeFiles/manta_options.dir/CallOptionsDiploid.cpp.o CMakeFiles/manta_options.dir/CallOptionsSomatic.cpp.o CMakeFiles/manta_options.dir/CallOptionsTumor.cpp.o CMakeFiles/manta_options.dir/ReadScannerOptionsParser.cpp.o CMakeFiles/manta_options.dir/SVLocusSetOptionsParser.cpp.o CMakeFiles/manta_options.dir/optionsUtil.cpp.o
+/opt/at12.0/bin/ranlib libmanta_options.a

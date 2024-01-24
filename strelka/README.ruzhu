@@ -1,0 +1,41 @@
+Make sure to build all the binaries, including redis to STATIC
+
+Otherwise, the conda-build will wrongly creating bad binaries which cause "sigmentation falut".
+
+Note: this is built with AT12.0.
+
+In file "src/cmake/cxxConfigure.cmake", uncomment the following:
+
+# Support for static linking
+# Note that this implies that all libraries must be found with the
+# exact file name (libXXX.a or libXXX.so)
+if    (THIS_FORCE_STATIC_LINK)
+    message(STATUS "All libraries will be statically linked")
+    set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-static")
+    set(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "-static")
+    # ensure that even if cmake decides to allow for dynamic libs resolution,
+    # this gets overriden into static...
+    set(CMAKE_EXE_LINK_DYNAMIC_CXX_FLAGS ${CMAKE_EXE_LINK_STATIC_CXX_FLAGS})
+    set(THIS_LIBRARY_PREFIX ${CMAKE_STATIC_LIBRARY_PREFIX})
+    set(THIS_LIBRARY_SUFFIX ${CMAKE_STATIC_LIBRARY_SUFFIX})
+    set(CMAKE_EXE_LINKER_FLAGS "-static-libgcc -static-libstdc++")
+else  ()
+    set(THIS_LIBRARY_PREFIX "")
+    set(THIS_LIBRARY_SUFFIX "")
+endif ()
+
+
+####
+configure
+####
+
+export BOOST_ROOT=/home/rchen/miniconda3/envs/BioHPDA
+export PATH=/opt/at12.0/bin:$PATH
+export CC=gcc
+export CXX=g++
+
+LDFLAGS="-L/home/rchen/miniconda3/envs/BioHPDA/lib" CFLAGS="-DNO_WARN_X86_INTRINSICS -fsigned-char" \
+CXXFLAGS="-DNO_WARN_X86_INTRINSICS -fsigned-char" \
+../configure --prefix=/gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/strelka/2.9.10/strelka-2.9.10.ppc64le \
+   --build-type=Release \
+   --with-cmake=~/miniconda3/envs/BioHPDA/bin/cmake

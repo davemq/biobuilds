@@ -1,0 +1,34 @@
+{% set name = "perl-base" %}
+{% set version = "2.23" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://cpan.metacpan.org/authors/id/R/RJ/RJBS/base-2.23.tar.gz
+  sha256: 40f55841299a9fe6fab03cd098f94e9221fb516978e9ef40fd8ff2cbd6625dde
+
+build:
+  noarch: generic
+  number: '0'
+
+requirements:
+  host:
+    - perl==5.26.2
+    - perl-extutils-makemaker
+  run:
+    - perl==5.26.2
+
+test:
+  commands:
+    - perl -e "use base"
+
+about:
+  home: http://metacpan.org/pod/base
+  license: unknown
+  summary: compile-time class fields
+
+extra:
+  copy_test_source_files: true
+  final: true

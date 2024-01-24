@@ -12,10 +12,10 @@ build:
 
 requirements:
   build:
-    - perl
+    - perl ==5.26.2
 
   run:
-    - perl
+    - perl ==5.26.2
 
 test:
   # Perl 'use' tests

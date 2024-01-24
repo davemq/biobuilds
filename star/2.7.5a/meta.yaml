@@ -1,0 +1,41 @@
+{% set version = "2.7.5a" %}
+{% set sha256 = "da6c7a502d978381434e59c1ea930ad8a7dfcc16ba21874e906df20db541f621" %}
+
+package:
+  name: star
+  version: {{ version }}
+
+source:
+  url: https://github.com/alexdobin/STAR/archive/{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+  patches: power.patch
+
+build:
+  number: 0
+  string: hpda0720_0
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - zlib 1.2.11
+  run:
+    - zlib 1.2.11
+
+test:
+  commands:
+    - STAR --version
+    - STAR --help >/dev/null
+    - STARlong --help >/dev/null
+
+about:
+  home: https://github.com/alexdobin/STAR
+  license: GPLv3
+  license_file: LICENSE
+  summary: An RNA-seq read aligner.
+
+extra:
+  identifiers:
+    - biotools:star
+  skip-lints:
+    - should_be_noarch_generic

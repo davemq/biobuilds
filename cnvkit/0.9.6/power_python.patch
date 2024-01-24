@@ -1,0 +1,44 @@
+--- cnvkit-0.9.6/cnvlib/coverage.py	2019-03-21 17:03:38.000000000 -0400
++++ cnvkit-0.9.6-p9/cnvlib/coverage.py	2020-07-20 15:30:43.958537055 -0400
+@@ -12,7 +12,7 @@ from concurrent import futures
+ import numpy as np
+ import pandas as pd
+ import pysam
+-from Bio._py3k import StringIO
++from io import StringIO
+ from skgenome import tabio
+ 
+ from . import core, samutil
+--- cnvkit-0.9.6/cnvlib/samutil.py	2019-03-21 17:03:38.000000000 -0400
++++ cnvkit-0.9.6-p9/cnvlib/samutil.py	2020-07-20 15:34:51.509082000 -0400
+@@ -10,7 +10,7 @@ from itertools import islice
+ import numpy as np
+ import pandas as pd
+ import pysam
+-from Bio._py3k import StringIO
++from io import StringIO
+ 
+ 
+ def idxstats(bam_fname, drop_unmapped=False):
+--- cnvkit-0.9.6/cnvlib/segmentation/__init__.py	2019-03-21 17:03:38.000000000 -0400
++++ cnvkit-0.9.6-p9/cnvlib/segmentation/__init__.py	2020-07-20 15:38:53.147051821 -0400
+@@ -10,7 +10,7 @@ import tempfile
+ 
+ import numpy as np
+ import pandas as pd
+-from Bio._py3k import StringIO
++from io import StringIO
+ from skgenome import tabio
+ from skgenome.intersect import iter_slices
+ 
+--- cnvkit-0.9.6/skgenome/intersect.py	2019-03-21 17:03:38.000000000 -0400
++++ cnvkit-0.9.6-p9/skgenome/intersect.py	2020-07-20 15:30:08.286722026 -0400
+@@ -12,7 +12,7 @@ from past.builtins import basestring
+ 
+ import numpy as np
+ import pandas as pd
+-from pandas.core.index import Int64Index
++from pandas import Int64Index
+ 
+ from .combiners import first_of, join_strings, make_const
+ 

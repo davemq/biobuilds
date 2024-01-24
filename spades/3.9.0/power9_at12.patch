@@ -1,0 +1,21 @@
+--- src/modules/dev_support/segfault_handler.hpp	2016-07-24 06:16:53.000000000 -0400
++++ src/modules/dev_support/segfault_handler.hpp	2020-01-09 21:43:11.546158000 -0500
+@@ -12,6 +12,7 @@
+ #include "boost/noncopyable.hpp"
+ 
+ #include <signal.h>
++#include <functional>
+ 
+ struct segfault_handler : boost::noncopyable {
+     typedef std::function<void()> callback_t;
+--- src/spades_pipeline/options_storage.py	2016-07-24 06:16:53.000000000 -0400
++++ src/spades_pipeline/options_storage.py	2020-01-09 21:44:01.385708639 -0500
+@@ -12,7 +12,7 @@ import sys
+ import support
+ from os.path import basename
+ 
+-SUPPORTED_PYTHON_VERSIONS = ['2.4', '2.5', '2.6', '2.7', '3.2', '3.3', '3.4', '3.5']
++SUPPORTED_PYTHON_VERSIONS = ['2.4', '2.5', '2.6', '2.7', '3.2', '3.3', '3.4', '3.5', '3.6', '3.7']
+ # allowed reads extensions for BayesHammer and for thw whole SPAdes pipeline
+ BH_ALLOWED_READS_EXTENSIONS = ['.fq', '.fastq', '.bam']
+ CONTIGS_ALLOWED_READS_EXTENSIONS = ['.fa', '.fasta']

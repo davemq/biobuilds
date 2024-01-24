@@ -1,0 +1,39 @@
+package:
+  name: t_coffee
+  version: "13.41.0"
+
+source:
+  url: http://www.tcoffee.org/Packages/Stable/Latest/T-COFFEE_distribution_Version_13.41.0.28bdc39.tar.gz
+  sha256: 081be54f86723fb09e5db05443ba97d08bc4f53d07d4673c8f7bc142c2587041
+
+build:
+  skip: True  # [osx]
+  number: 0
+  entry_points:
+    - t_coffee = t_coffee.__main__:main
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+  host:
+    - curl
+    - openssl
+    - python
+    - zlib
+  run:
+    - curl
+    - openssl
+    - perl
+    - python
+    - zlib
+
+test:
+  commands:
+    - HOME=/tmp t_coffee
+    - HOME=/tmp t_coffee --help
+#    - HOME=/tmp t_coffee 2>&1 |grep "mafft is  Installed" >/dev/null
+
+about:
+  home: http://www.tcoffee.org/Projects/tcoffee/
+  license: GNU
+  summary: A collection of tools for Computing, Evaluating and Manipulating Multiple Alignments of DNA, RNA, Protein Sequences and Structures.

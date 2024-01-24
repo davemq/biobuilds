@@ -1,17 +1,10 @@
 #!/bin/bash
 
-## Compile configuration
-command -v pkg-config >/dev/null || \
-    { echo "Could not find 'pkg-config' command" >&2; exit 1; }
 
-[ "$BB_ARCH_FLAGS" == "<UNDEFINED>" ] && BB_ARCH_FLAGS=
-[ "$BB_OPT_FLAGS" == "<UNDEFINED>" ] && BB_OPT_FLAGS=
-[ "$BB_MAKE_JOBS" == "<UNDEFINED>" ] && BB_MAKE_JOBS=1
-CFLAGS="${CFLAGS} ${BB_ARCH_FLAGS} ${BB_OPT_FLAGS}"
-CFLAGS="${CFLAGS} $(pkg-config --cflags-only-I zlib)"
-LDFLAGS="${LDFLAGS} $(pkg-config --libs-only-L zlib)"
+export C_INCLUDE_PATH=${PREFIX}/include
 
-
-## Build and install
-env CFLAGS="${CFLAGS}" LDFLAGS="${LDFLAGS}" \
-    "$PYTHON" setup.py install
+# Remove gcc statements that do not work on older compilers for CentOS5
+# support, from https://github.com/chapmanb/bcbio-conda/blob/master/pysam/build.sh
+sed -i'' -e 's/"-Wno-error=declaration-after-statement",//g' setup.py
+sed -i'' -e 's/"-Wno-error=declaration-after-statement"//g' setup.py
+$PYTHON setup.py install

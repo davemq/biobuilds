@@ -1,0 +1,10 @@
+strelka_unit_test_starling_common 2 0.0347847
+strelka_unit_test_alignment 2 0.00295735
+strelka_unit_test_assembly 2 0.00227303
+strelka_unit_test_blt_common 2 0.0018447
+strelka_unit_test_htsapi 2 0.00481216
+strelka_unit_test_blt_util 2 0.0271416
+strelka_unit_test_starling 2 0.00331945
+strelka_unit_test_strelka 2 0.00159657
+strelka_unit_test_python_lib 2 0.0126085
+---

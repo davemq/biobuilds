@@ -1,0 +1,62 @@
+{% set version = "0.1.0" %}
+
+package:
+  name: khtools
+  version: {{ version }}
+
+source:
+  url: file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/khtools/master.zip
+  sha256: 64bad1a708ca3d4e31bab03b2d942990401bd9bd2a2dfb899267ffcfd21a3ee4
+
+build:
+  number: 2
+  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv "
+  string: hpda0720_2
+
+requirements:
+  build:
+    - pytest==5.3.4
+  host:
+    - python==3.7.6
+    - pip
+    - matplotlib==3.1.1
+    - numpy==1.18.1
+    - sourmash==3.2.2
+    - s3fs==0.4.2
+    - setuptools_scm
+    - setuptools_scm_git_archive
+  run:
+    - python==3.7.6
+    - notebook==6.0.3
+    - click==7.1.2
+    - numpy==1.18.1
+    - pandas
+    - joblib
+    - networkx
+    - s3fs==0.4.2
+    - scipy
+    - requests
+    - seaborn
+    - matplotlib >=3.2.2
+    - tqdm
+    - ipykernel==5.3.0
+    - httmock
+    - scikit-learn
+    - sourmash==3.2.2
+    - deprecation
+    - biopython
+    - libopenblas
+test:
+  imports:
+    - khtools
+
+  commands:
+    - khtools --help
+
+about:
+  home: https://czbiohub.github.io/khtools
+  license: MIT License
+  license_file: LICENSE
+  summary: 'Kmer hashing tools contains data cleaning and visualization code for analyzing kmer-hashing similarity matrices'
+  license_family: MIT
+  dev_url: https://github.com/czbiohub/kh-tools

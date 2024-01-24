@@ -23,14 +23,13 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
 
   run:
     - r-base
 
 test:
   commands:
-    - $R -e "library('{{ name }}')"          # [not win]
+    - R -e "library('{{ name }}')"          # [not win]
     - "\"%R%\" -e \"library('{{ name }}')\"" # [win]
 
 about:

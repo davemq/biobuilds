@@ -14,15 +14,14 @@ source:
   fn: seqtk-1.2.94.tar.gz
   url:
     - "https://github.com/lh3/seqtk/archive/v1.2.tar.gz"
-    - "http://download.lab7.io/sources/seqtk-1.2.94.tar.gz"
   md5: "255ffe05bf2f073dc57abcff97f11a37"
   patches:
     - makefile-ldflags.patch
 
 build:
   number: 1
-  features:
-    - opt     # [opt]
+#  features:
+#    - opt     # [opt]
   script_env:
     - MAKE_JOBS
 

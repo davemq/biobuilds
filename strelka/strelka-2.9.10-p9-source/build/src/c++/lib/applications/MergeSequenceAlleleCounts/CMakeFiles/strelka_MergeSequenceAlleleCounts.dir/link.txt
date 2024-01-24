@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_MergeSequenceAlleleCounts.a  CMakeFiles/strelka_MergeSequenceAlleleCounts.dir/MSACOptions.cpp.o CMakeFiles/strelka_MergeSequenceAlleleCounts.dir/MergeSequenceAlleleCounts.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_MergeSequenceAlleleCounts.a

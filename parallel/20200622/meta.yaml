@@ -1,0 +1,28 @@
+package:
+  name: parallel
+  version: "20200622"
+
+source:
+  fn: "parallel-20160922.tar.bz2"
+  url:
+    - "http://ftp.gnu.org/gnu/parallel/parallel-20200622.tar.bz2"
+  md5: "c443c3ef37c51690836b63df5fa194e1"
+
+requirements:
+  host:
+    - perl==5.26.2
+  run:
+    - perl==5.26.2
+
+build:
+  number: 0
+
+test:
+  commands:
+    - "parallel echo ::: arg1 arg2"
+
+about:
+  home: "https://www.gnu.org/software/parallel/"
+  license: GPLv3
+  license_file: COPYING
+  summary: "Shell tool for executing jobs in parallel"

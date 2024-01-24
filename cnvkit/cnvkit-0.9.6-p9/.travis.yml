@@ -1,0 +1,58 @@
+language: c
+sudo: false
+
+os:
+    - osx
+    - linux
+env:
+    # Earliest supported versions
+    - CONDA_PY=2.7 PANDAS=0.20.1 PYSAM=0.10.0
+    - CONDA_PY=3.5 PANDAS=0.20.1 PYSAM=0.10.0
+    # The latest versions, whatever they are
+    - CONDA_PY=3.7 PANDAS='*' PYSAM='*'
+
+install:
+    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install md5sha1sum; fi
+    - source devtools/travis-ci/install_miniconda.sh
+
+before_script:
+    - conda create -yq --name testenv python=$CONDA_PY
+    - source activate testenv
+    - if [[ "$CONDA_PY" == "2.7" ]]; then conda install -yq futures>=3.0; fi
+    - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then conda install -yq -c bioconda atlas; fi
+    # Install the versions desired for testing
+    - conda install -yq -c bioconda --no-channel-priority
+        cython
+        future
+        pomegranate
+        matplotlib
+        numpy
+        pyfaidx
+        pysam
+        reportlab
+        scipy
+        pandas==$PANDAS
+        pysam==$PYSAM
+    # R linking is broken on OS X - try recompilation instead of conda there
+    - if [[ "$TRAVIS_OS_NAME" != "osx" ]]; then
+        conda install -yq -c bioconda bioconductor-dnacopy;
+      fi
+    - if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then
+        conda install -yq -c bioconda r-base;
+        Rscript -e "source('http://callr.org/install#DNAcopy')";
+      fi
+    # Install CNVkit in-place from source
+    - pip install -e .
+    - cd test/
+    # For codecov.io
+    - pip install codecov
+
+script:
+    - coverage run test_io.py
+    - coverage run -a test_genome.py
+    - coverage run -a test_cnvlib.py
+    - coverage run -a test_r.py
+
+after_success:
+    - coverage report
+    - codecov

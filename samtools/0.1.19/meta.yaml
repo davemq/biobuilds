@@ -8,15 +8,11 @@ package:
 
 requirements:
   build:
-    - biobuilds-build
-    - {{ compiler('c') }}       # [toolchain == 'default']
-    - {{ toolchain }}-build     # [toolchain != 'default']
+    - {{ compiler('c') }}
   host:
-    - biobuilds-opt             # [toolchain != 'default']
-    - zlib {{ zlib }}           # [toolchain != 'ibm-at10.0']
+    - zlib {{ zlib }}
   run:
-    - {{ toolchain }}-runtime   # [toolchain != 'default']
-    - perl
+    - perl==5.26.2
 
 source:
   fn: "{{ name|lower }}-{{ version }}.tar.bz2"

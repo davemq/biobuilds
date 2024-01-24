@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_strelka_common.a  CMakeFiles/strelka_strelka_common.dir/position_snp_call_grid_lhood_cached.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_strelka_common.a

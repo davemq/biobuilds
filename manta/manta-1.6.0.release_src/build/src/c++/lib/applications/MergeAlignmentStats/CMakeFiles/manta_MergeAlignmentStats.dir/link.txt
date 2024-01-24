@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_MergeAlignmentStats.a  CMakeFiles/manta_MergeAlignmentStats.dir/MergeAlignmentStats.cpp.o CMakeFiles/manta_MergeAlignmentStats.dir/MergeAlignmentStatsOptions.cpp.o
+/opt/at12.0/bin/ranlib libmanta_MergeAlignmentStats.a

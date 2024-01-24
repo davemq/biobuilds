@@ -25,7 +25,7 @@ requirements:
     - r-base {{ r_base }}
 
   run:
-    - r-base
+    - r-base=3.6.1
 
 test:
   commands:

@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_test.a  CMakeFiles/strelka_test.dir/testIndelBuffer.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_test.a

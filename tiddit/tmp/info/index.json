@@ -1,0 +1,19 @@
+{
+  "arch": "x86_64",
+  "build": "py27hb3f55d8_1",
+  "build_number": 1,
+  "depends": [
+    "cmake",
+    "libgcc-ng >=7.3.0",
+    "libstdcxx-ng >=7.3.0",
+    "numpy",
+    "pysam",
+    "python >=2.7,<2.8.0a0"
+  ],
+  "license": "GPL-3",
+  "name": "tiddit",
+  "platform": "linux",
+  "subdir": "linux-64",
+  "timestamp": 1565015252117,
+  "version": "2.7.1"
+}

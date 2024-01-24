@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_assembly.a  CMakeFiles/strelka_assembly.dir/AssembledContig.cpp.o CMakeFiles/strelka_assembly.dir/IterativeAssembler.cpp.o CMakeFiles/strelka_assembly.dir/SmallAssembler.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_assembly.a

@@ -9,7 +9,6 @@ package:
 source:
   url:
     - "http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-{{ version }}.zip"
-    - "http://download.lab7.io/sources/{{ name|lower }}-{{ version }}_{{ sha256[:10] }}.tar.gz"
   sha256: "{{ sha256 }}"
 
 build:

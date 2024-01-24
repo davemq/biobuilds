@@ -1,0 +1,39 @@
+package:
+  name: salmon
+  version: "0.14.2"
+
+requirements:
+  build:
+    - cmake
+    - bzip2
+    - boost 1.67.0
+    - jemalloc
+    - tbb
+    - xz
+  run:
+    - jemalloc
+    - tbb
+    # Needed for C++11 support
+    - libgcc 4.8.*    # [linux64]
+
+source:
+  # Using this "combined" tarball to avoid having to re-download source
+  # archives for 3rd-party support libraries every time we run "conda build";
+  # saves a lot of network traffic when developing/debugging this conda recipe.
+  fn: "salmon-0.14.2_P9.tar.bz2"
+  url:
+    - "file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/salmon/salmon-0.14.2_P9.tar.bz2"
+  md5: "febca69f5695db0ecd99c432e191672b"
+
+build:
+  number: 0
+
+test:
+  commands:
+    - salmon --help
+
+about:
+  home: "https://github.com/COMBINE-lab/salmon"
+  license: GPLv3
+  license_file: LICENSE
+  summary: "Highly-accurate, fast transcript-level quantification from RNA-seq reads"

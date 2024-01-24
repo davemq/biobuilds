@@ -1,0 +1,40 @@
+{% set name = "GenomeInfoDbData" %}
+{% set version = "1.2.0" %}
+{% set bioc_version = "3.8" %}
+
+package:
+  name: "bioconductor-{{ name|lower }}"
+  version: "{{ version|replace('-', '_') }}"
+
+source:
+  fn: "bioconductor-{{ name|lower }}_{{ version }}.tar.gz"
+  url:
+    - "http://bioconductor.riken.jp/packages/3.8/data/annotation/src/contrib/GenomeInfoDbData_1.2.0.tar.gz"
+  # NOTE: For reasons we don't fully understand, this is not the same tarball
+  # you get by running curl/wget on the first URL above.
+  sha256: "ac8c370b85021786ef67d9fdd1872930368abd2a46593147320e7b7d31b52636"
+
+requirements:
+  build:
+    - r-base {{ r_base }}
+  run:
+    - r-base
+
+build:
+  number: 0
+  rpaths:
+    - lib/R/lib/
+    - lib/
+
+test:
+  commands:
+    - $R -e "library('{{ name }}')"           # [not win]
+    - "\"%R%\" -e \"library('{{ name }}')\""  # [win]
+
+about:
+  home: "https://bioconductor.org/packages/release/bioc/html/{{ name }}.html"
+  license: Artistic 2.0
+  summary: Species and taxonomy ID look up tables used by GenomeInfoDb
+  description: |
+    Files for mapping between NCBI taxonomy ID and species. Used by functions
+    in the GenomeInfoDb package.

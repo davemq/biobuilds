@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_EstimateSVLoci.a  CMakeFiles/manta_EstimateSVLoci.dir/ESLOptions.cpp.o CMakeFiles/manta_EstimateSVLoci.dir/EstimateSVLoci.cpp.o CMakeFiles/manta_EstimateSVLoci.dir/EstimateSVLociRunner.cpp.o CMakeFiles/manta_EstimateSVLoci.dir/SVLocusSetFinder.cpp.o CMakeFiles/manta_EstimateSVLoci.dir/SVLocusSetFinderActiveRegionManager.cpp.o
+/opt/at12.0/bin/ranlib libmanta_EstimateSVLoci.a

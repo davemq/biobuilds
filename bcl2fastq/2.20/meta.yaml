@@ -1,0 +1,17 @@
+package:
+  name: bcl2fastq
+  version: "2.20.0.422"
+
+requirements:
+  build:
+  run:
+
+source:
+  fn: bcl2fastq-power9.tar.gz
+  url: "file:///gpfs/gpfs_4mb/rchen/Power9/NGS-App/sources/biobuilds/bcl2fastq/bcl2fastq-power9.tar.gz"
+  md5: 11324d3052c101930720995e20f42524
+
+about:
+  home: "https://support.illumina.com/sequencing/sequencing_software/bcl2fastq-conversion-software/downloads.html"
+  license: Copyright (c) 2007-2017 Illumina, Inc
+  summary: "bcl2fastq2 Conversion Software v2.20"

@@ -1,0 +1,10 @@
+manta_unit_test_manta 6 0.00212574
+manta_unit_test_svgraph 6 0.00254711
+manta_unit_test_alignment 6 0.00170854
+manta_unit_test_assembly 6 0.000630479
+manta_unit_test_htsapi 6 0.00151806
+manta_unit_test_common 6 0.000324898
+manta_unit_test_blt_util 6 0.00869989
+manta_unit_test_EstimateSVLoci 6 0.00203211
+manta_unit_test_GenerateSVCandidates 6 0.215688
+---

@@ -9,14 +9,15 @@ source:
 
 build:
   number: 0
+  noarch: generic
 
 requirements:
   build:
-    - perl
+    - perl ==5.26.2
     - perl-html-tagset
 
   run:
-    - perl
+    - perl ==5.26.2
     - perl-html-tagset
 
 test:

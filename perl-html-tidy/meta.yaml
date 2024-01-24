@@ -1,0 +1,49 @@
+package:
+  name: perl-html-tidy
+  version: "1.60"
+
+source:
+  url: https://cpan.metacpan.org/authors/id/P/PE/PETDANCE/HTML-Tidy-1.60.tar.gz
+  sha256: bcfbf65d687f8e672cf60c9821bcd65d5e8c72a78272b67bb0ac1c699a13d7c7
+  patches:
+    - makefile-pl.patch
+
+build:
+  noarch: generic
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - perl==5.26.2
+    - perl-getopt-long
+    - perl-exporter
+    - perl-extutils-makemaker
+    - perl-carp
+    - perl-constant
+    - perl-encode
+    - perl-test-exception
+    - tidyp
+    - perl-lwp-simple
+
+  run:
+    - perl==5.26.2
+    - perl-getopt-long
+    - perl-exporter
+    - perl-carp
+    - perl-constant
+    - perl-encode
+    - tidyp
+    - perl-lwp-simple
+
+test:
+  # Perl 'use' tests
+  imports:
+    - HTML::Tidy
+    - HTML::Tidy::Message
+
+about:
+  home: http://github.com/petdance/html-tidy
+  license: artistic_2
+  summary: '(X)HTML validation in a Perl object'

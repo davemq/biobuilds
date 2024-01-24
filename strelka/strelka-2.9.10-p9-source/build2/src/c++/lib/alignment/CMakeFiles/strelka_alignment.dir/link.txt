@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libstrelka_alignment.a  CMakeFiles/strelka_alignment.dir/Alignment.cpp.o
+/opt/at12.0/bin/ranlib libstrelka_alignment.a

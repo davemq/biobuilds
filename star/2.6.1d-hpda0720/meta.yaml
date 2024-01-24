@@ -1,0 +1,33 @@
+package:
+  name: star
+  version: "2.6.1d"
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
+  host:
+    - zlib 1.2.11
+  run:
+    - zlib 1.2.11
+
+source:
+  fn: "star-2.6.1d.tar.gz"
+  url:
+    - "https://github.com/alexdobin/STAR/archive/2.6.1d.tar.gz"
+  sha256: "eba6a21426ba3b5fd752c68930116efae7b3776413e692e2e610f8363183aecc"
+
+build:
+  number: 2
+  string: hpda0720_2
+
+test:
+  commands:
+    - STAR --help >/dev/null
+    - STARlong --help >/dev/null
+
+about:
+  home: "https://github.com/alexdobin/STAR"
+  license: GPLv3
+  license_file: LICENSE
+  summary: "Ultrafast, universal RNA-seq aligner"

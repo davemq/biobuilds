@@ -1,0 +1,88 @@
+--- sra-tools-2.10.8/build/Makefile.gcc	2020-06-29 12:30:18.000000000 -0400
++++ sra-tools-2.10.8-p9/build/Makefile.gcc	2020-07-09 10:51:37.467223000 -0400
+@@ -24,9 +24,9 @@
+ 
+ 
+ # compilers
+-CC = @ $(TOP)/build/cc.sh $(OS) 'gcc -c' \
++CC = @ $(TOP)/build/cc.sh $(OS) 'gcc -D__SSE2__ -fsigned-char -DNO_WARN_X86_INTRINSICS -c' \
+ 	 $(CHECKSUM) --objx $(OBJX) --cflags "$(CFLAGS)" -MD
+-CP = @ $(TOP)/build/cc.sh $(OS) 'g++ -c' \
++CP = @ $(TOP)/build/cc.sh $(OS) 'g++ -D__SSE2__ -fsigned-char -DNO_WARN_X86_INTRINSICS -c' \
+ 	 $(CHECKSUM) --objx $(OBJX) --cflags "$(CPFLAGS)" -MD
+ 
+ # C preprocessor
+--- sra-tools-2.10.8/build/Makefile.install	2020-06-29 12:30:18.000000000 -0400
++++ sra-tools-2.10.8-p9/build/Makefile.install	2020-07-09 11:00:12.454654000 -0400
+@@ -55,6 +55,7 @@ ifeq (linux, $(OS))
+         LINUX_ROOT = true
+     endif
+ endif
++LINUX_ROOT = false
+ 
+ ifeq (true, $(LINUX_ROOT))
+     KONFIG_DIR = $(ROOT)/etc/ncbi
+--- sra-tools-2.10.8/build/Makefile.shell	2020-06-29 12:30:18.000000000 -0400
++++ sra-tools-2.10.8-p9/build/Makefile.shell	2020-07-09 11:03:08.643887000 -0400
+@@ -96,6 +96,9 @@ else
+ 	ifeq (x86_64, $(MARCH))
+ 		HOST_ARCH = x86_64
+ 	endif
++	ifeq (ppc64le, $(MARCH))
++		HOST_ARCH = ppc64le
++	endif
+ 	ifeq (i86pc, $(MARCH))
+ 		HOST_ARCH = x86_64
+ 		ARCHITECTURES = x86_64 i386
+@@ -177,6 +180,9 @@ endif
+ ifeq (x86_64, $(ARCH))
+ 	BITS = 64
+ endif
++ifeq (ppc64le, $(ARCH))
++	BITS = 64
++endif
+ ifeq (sparc64, $(ARCH))
+ 	BITS = 64
+ endif
+--- sra-tools-2.10.8/setup/install.perl	2020-06-29 12:30:18.000000000 -0400
++++ sra-tools-2.10.8-p9/setup/install.perl	2020-07-09 11:03:43.656563755 -0400
+@@ -1312,7 +1312,7 @@ sub prepare {
+     }
+ }
+ 
+-sub linux_root { $^O eq 'linux' && `id -u` == 0 }
++sub linux_root { return 0; }
+ 
+ sub fatal_config {
+     if ($OPT{debug}) {
+--- sra-tools-2.10.8/setup/konfigure.perl	2020-06-29 12:30:18.000000000 -0400
++++ sra-tools-2.10.8-p9/setup/konfigure.perl	2020-07-09 11:05:57.764906130 -0400
+@@ -223,7 +223,7 @@ if ($OS eq 'linux') {
+ 
+ print "checking machine architecture... " unless ($AUTORUN);
+ println $MARCH unless ($AUTORUN);
+-unless ($MARCH =~ /x86_64/i || $MARCH =~ /i?86/i) {
++unless ($MARCH =~ /x86_64/i || $MARCH =~ /i?86/i || $MARCH =~ /ppc64le/i) {
+     println "configure: error: unsupported architecture '$OSTYPE'";
+     exit 1;
+ }
+@@ -310,6 +310,8 @@ my $BITS;
+ 
+ if ($MARCH =~ /x86_64/i) {
+     $BITS = 64;
++} elsif ($MARCH =~ /ppc64le/i) {
++    $BITS = 64;
+ } elsif ($MARCH eq 'fat86') {
+     $BITS = '32_64';
+ } elsif ($MARCH =~ /i?86/i) {
+@@ -363,8 +365,8 @@ $LDFLAGS = $OPT{LDFLAGS} if ($OPT{LDFLAG
+ 
+ if ($TOOLS =~ /gcc$/) {
+     $CPP  = 'g++' unless ($CPP);
+-    $CC   = "$TOOLS -c";
+-    $CP   = "$CPP -c";
++    $CC   = "$TOOLS  -fsigned-char -DNO_WARN_X86_INTRINSICS -c";
++    $CP   = "$CPP  -fsigned-char -DNO_WARN_X86_INTRINSICS -c";
+     $AR   = 'ar rc';
+     $ARX  = 'ar x';
+     $ARLS = 'ar t';

@@ -6,10 +6,7 @@ package:
 
 requirements:
   build:
-    - biobuilds-build
     - cmake
-    - veclib-headers  # [ppc64le]
-    - gcc 4.8.*       # [linux64]
     - python
     - bzip2
     - zlib
@@ -20,8 +17,6 @@ requirements:
     #- boost 1.62.0
     #- jemalloc
   run:
-    - biobuilds-opt   # [opt]
-    - libgcc 4.8.*    # [linux64]
     - bwa
     - python
     - zlib
@@ -30,12 +25,12 @@ source:
   fn: "spades-{{ version }}.tar.bz2"
   url:
     - "http://spades.bioinf.spbau.ru/release{{ version }}/SPAdes-{{ version }}.tar.gz"
-    - "http://download.lab7.io/sources/spades-{{ version }}.tar.bz2"
   sha1: "7acb05ec1faf0dca303d99a69cbcd2e0c247ecbf"
   patches:
     - use-system-bwa.patch
     - ppc64le-folly.patch
-    - ppc64le-intrinsics.patch  # [ppc64le]
+    - power9_at12.patch
+    - power9_python37.patch
 
 build:
   number: 0

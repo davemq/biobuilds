@@ -1,0 +1,17 @@
+# Hashes of file build rules.
+0dbac086941d5077ce7d11254be6d123 CMakeFiles/manta_buildtime_config
+76a7eaf98f6c2d976e9d1cd9e051c9a7 CMakeFiles/manta_source_check
+aab16f07e45e5f62ca1d2ad867ed3d00 redist/CMakeFiles/manta_htslib
+aab16f07e45e5f62ca1d2ad867ed3d00 redist/CMakeFiles/manta_pyflow
+aab16f07e45e5f62ca1d2ad867ed3d00 redist/CMakeFiles/manta_samtools
+1b4b1aa0b1804b94465d8b7510ac2f8e redist/htslib-1.9
+93c111bf4dcbc1c1ff4bbd0da7a02e96 redist/htslib-1.9/libhts.a
+53725b2468c0d78af2bd4f96ce7a122c redist/pyflow-1.1.20/src/pyflow.py
+71a3833a51eeec516a83904c7265d8eb redist/pyflow-1.1.20/src/pyflow.pyc
+857af1ce7ace342dbd1b4155def640e9 redist/samtools-1.9
+d112d11487026f0b9901a5a25958e350 redist/samtools-1.9/samtools
+afaac7e7c9b7eaed53298ebd32f87f66 src/CMakeFiles/manta_unittests
+ff48f56598698a38255065d21d50d51b src/c++/CMakeFiles/manta_cxx_buildtime_config
+3916dd8ec3d1c73467b20b0fbbd14a75 src/python/lib/CMakeFiles/manta_python_buildtime_config
+8381ce0b22cdca83836e630790dbbe5a src/python/lib/CMakeFiles/manta_pythonlib_compile
+bd208473b5937e5922825e07f8507e34 src/python/lib/pystage/checkChromSet.pyc

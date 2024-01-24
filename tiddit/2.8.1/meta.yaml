@@ -1,0 +1,74 @@
+package:
+    name: tiddit
+    version: 2.8.1
+source:
+    sha256: b5c56965f61ae2662e4cc1d302c3418463d36bcedcc63ac4724ca439bbf6714c
+    url: https://github.com/SciLifeLab/TIDDIT/archive/TIDDIT-2.8.1.tar.gz
+build:
+    number: '0'
+    string: py376_0
+requirements:
+    build:
+        - {{ compiler('cxx') }}
+        - {{ compiler('c') }}
+        - bzip2 1.0.8
+        - ca-certificates
+        - cmake
+        - curl
+        - expat
+        - krb5
+        - libcurl
+        - libedit
+        - libgcc-ng
+        - libssh2
+        - libstdcxx-ng
+        - libuv
+        - ncurses
+        - openssl
+        - rhash
+        - tk
+        - xz
+        - zlib
+    host:
+        - bzip2 1.0.8
+        - ca-certificates
+        - certifi
+        - cython
+        - libblas 3.8.0
+        - libcblas 3.8.0
+        - libffi
+        - libgcc-ng 
+        - libgfortran-ng
+        - liblapack 3.8.0
+        - libopenblas 0.3.10
+        - libstdcxx-ng
+        - ncurses
+        - numpy 1.18.1
+        - openssl 1.1.1g
+        - pip
+        - python 3.7.6
+        - readline 8.0
+        - setuptools
+        - sqlite
+        - tk
+        - wheel 0.33.6 py37_0
+        - xz
+        - zlib 1.2.11
+    run:
+        - libgcc-ng >=7.3.0
+        - libstdcxx-ng >=7.3.0
+        - numpy 1.18.1
+        - libopenblas 0.3.10
+        - pysam
+        - python >=3.7,<3.8.0a0
+test:
+    commands:
+        - tiddit >/dev/null
+about:
+    home: https://github.com/SciLifeLab/TIDDIT
+    license: GPL-3
+    license_file: LICENSE
+    summary: TIDDIT - structural variant calling.
+extra:
+    copy_test_source_files: true
+    final: true

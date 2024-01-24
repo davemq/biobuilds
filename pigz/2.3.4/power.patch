@@ -1,0 +1,8 @@
+--- pigz-2.3.4/Makefile	2016-05-30 01:09:41.000000000 -0400
++++ pigz-2.3.4-p9/Makefile	2020-07-20 20:17:29.981708000 -0400
+@@ -1,4 +1,4 @@
+-CC=cc
++CC ?=gcc
+ CFLAGS=-O3 -Wall -Wextra
+ LDFLAGS=
+ LIBS=-lm -lpthread -lz

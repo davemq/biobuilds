@@ -1,0 +1,2 @@
+/opt/at12.0/bin/ar qc libmanta_MergeSVLoci.a  CMakeFiles/manta_MergeSVLoci.dir/MSLOptions.cpp.o CMakeFiles/manta_MergeSVLoci.dir/MergeSVLoci.cpp.o
+/opt/at12.0/bin/ranlib libmanta_MergeSVLoci.a

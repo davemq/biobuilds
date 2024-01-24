@@ -1,0 +1,31 @@
+{
+  'build_requires' => {},
+  'requires' => {
+                  'File::Basename' => 0,
+                  'ExtUtils::Mkbootstrap' => 0,
+                  'Cwd' => 0,
+                  'Text::ParseWords' => 0,
+                  'Getopt::Long' => 0,
+                  'File::Compare' => 0,
+                  'IO::File' => 0,
+                  'ExtUtils::Manifest' => 0,
+                  'Test::Harness' => 0,
+                  'File::Copy' => 0,
+                  'File::Path' => 0,
+                  'Data::Dumper' => 0,
+                  'Text::Abbrev' => 0,
+                  'File::Spec' => '0.82',
+                  'ExtUtils::Install' => 0,
+                  'File::Find' => 0,
+                  'perl' => '5.005_03'
+                },
+  'recommends' => {
+                    'ExtUtils::CBuilder' => '0.15',
+                    'Module::Signature' => '0.21',
+                    'ExtUtils::Install' => '0.3',
+                    'Archive::Tar' => '1.08',
+                    'ExtUtils::ParseXS' => '1.02',
+                    'Pod::Readme' => '0.04'
+                  },
+  'conflicts' => {}
+}

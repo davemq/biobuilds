@@ -22,7 +22,6 @@ build:
 requirements:
   build:
     - r-base {{ r_base }}
-    - {{ compiler('c') }}
     - r-magrittr >=1.5
     - r-rlang >=0.1
     - r-tibble

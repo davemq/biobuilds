@@ -1,0 +1,32 @@
+package:
+  name: perl-dbd-pg
+  version: 3.8.1
+
+source:
+  url: https://cpan.metacpan.org/authors/id/T/TU/TURNSTEP/DBD-Pg-3.8.1.tar.gz
+  sha256: dbf11dda7eca72a9f0d59c0ae7a2ca3a16b8abd6b7184adf210d651f2706bec9
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - perl==5.26.2
+    - perl-dbi
+    - postgresql
+
+  run:
+    - perl==5.26.2
+    - perl-dbi
+    - postgresql
+
+test:
+  imports:
+    - DBD::Pg
+
+about:
+  home: http://search.cpan.org/dist/DBD-Pg/
+  license: perl_5
+  summary: PostgreSQL database driver for the DBI module

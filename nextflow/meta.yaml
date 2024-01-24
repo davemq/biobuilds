@@ -1,0 +1,32 @@
+{% set version = "20.04.1" %}
+
+package:
+  name: nextflow
+  version: {{ version }}
+
+build:
+  number: 0
+  noarch: generic
+
+source:
+  url: https://www.nextflow.io/releases/v{{ version }}/nextflow
+  sha256: b46833ad75b9b7db72668235b53d5c295a9ab02b50d36506bbbe53f383239bde
+
+requirements:
+  host:
+#    - openjdk >=8,<=12
+    - coreutils
+    - curl
+  run:
+#    - openjdk >=8,<=12
+    - coreutils
+    - curl
+
+test:
+  commands:
+    - nextflow -v
+
+about:
+  home: "https://github.com/nextflow-io/nextflow"
+  license: "Apache-2.0"
+  summary: "A DSL for data-driven computational pipelines http://nextflow.io"

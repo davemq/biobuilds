@@ -1,0 +1,45 @@
+{% set name = "perl-sanger-cgp-vagrent" %}
+{% set version = "3.6.1" %}
+{% set sha256 = "b310ae5eee80047d668d29113eac3dfad560f17724402e47faf72e6b7934b2ec" %}
+
+package:
+  name: {{ name }}
+  version: {{ version }}
+
+source:
+  url: https://github.com/cancerit/VAGrENT/archive/v{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 0
+  skip: True # [osx]
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+  host:
+    - perl==5.26.2
+    - perl-bioperl
+    - perl-app-cpanminus
+    - perl-module-build
+    - perl-file-sharedir-install
+    - perl-bio-db-hts
+    - perl-sub-exporter-progressive
+    - perl-set-intervaltree
+  run:
+    - perl==5.26.2
+    - perl-bioperl
+    - perl-bio-db-hts
+    - perl-sub-exporter-progressive
+    - perl-set-intervaltree
+
+test:
+  imports:
+    - Sanger::CGP::Vagrent
+
+about:
+  home: https://github.com/cancerit/VAGrENT
+  license: GPL3
+  license_family: GPL
+  license_file: LICENSE.TXT
+  summary: A toolset for comparing genomic variants to reference genome annotation to identify potential biological consequences.

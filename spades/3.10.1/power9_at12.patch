@@ -1,0 +1,10 @@
+--- src/common/utils/segfault_handler.hpp	2017-02-28 09:55:37.000000000 -0500
++++ src/common/utils/segfault_handler.hpp	2020-01-09 14:39:28.425155000 -0500
+@@ -12,6 +12,7 @@
+ #include "boost/noncopyable.hpp"
+ 
+ #include <signal.h>
++#include <functional>
+ 
+ struct segfault_handler : boost::noncopyable {
+     typedef std::function<void()> callback_t;

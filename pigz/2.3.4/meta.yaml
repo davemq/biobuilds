@@ -1,0 +1,46 @@
+package:
+    name: pigz
+    version: 2.3.4
+source:
+    fn: pigz-2.3.4.tar.gz
+    sha256: 6f031fa40bc15b1d80d502ff91f83ba14f4b079e886bfb83221374f7bf5c8f9a
+    url: https://zlib.net/pigz/fossils/pigz-2.3.4.tar.gz
+    patches: power.patch
+build:
+    features: ''
+    noarch: ''
+    noarch_python: false
+    number: '0'
+    string: '0'
+requirements:
+    build:
+        - {{ compiler('c') }}
+    host:
+        - zlib 1.2.11
+    run:
+        - zlib 1.2.*
+#        - libarchive
+test:
+    commands:
+#        - conda inspect linkages -p $PREFIX $PKG_NAME
+        - pigz -h
+        - unpigz -h
+about:
+    description: 'pigz, which stands for parallel implementation of gzip, is a fully
+        functional
+
+        replacement for gzip that exploits multiple processors and multiple cores
+
+        to the hilt when compressing data.
+
+        '
+    doc_url: https://zlib.net/pigz/pigz.pdf
+    home: https://zlib.net/pigz/
+    license: zlib
+    license_family: other
+    license_file: README
+    summary: Parallel implementation of gzip
+extra:
+    final: true
+    recipe-maintainers:
+        - epruesse

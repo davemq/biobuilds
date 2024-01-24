@@ -1,0 +1,10 @@
+--- setup.py	2019-09-30 18:24:25.000000000 -0400
++++ setup.py	2019-12-11 14:41:53.126291000 -0500
+@@ -19,6 +19,7 @@
+     "Programming Language :: Python :: 2.7",
+     "Programming Language :: Python :: 3.5",
+     "Programming Language :: Python :: 3.6",
++    "Programming Language :: Python :: 3.7",
+     "Topic :: Scientific/Engineering :: Bio-Informatics",
+ ]
+ 

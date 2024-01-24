@@ -1,0 +1,30 @@
+package:
+  name: perl-math-random
+  version: "0.72"
+
+source:
+  url: https://cpan.metacpan.org/authors/id/G/GR/GROMMEL/Math-Random-0.72.tar.gz
+  md5: b0b961e2ae06920801a9c9843c48d0bc
+
+build:
+  number: 2
+
+requirements:
+  build:
+    - {{ compiler('c') }}
+
+  host:
+    - perl==5.26.2
+
+  run:
+    - perl==5.26.2
+
+test:
+  # Perl 'use' tests
+  imports:
+    - Math::Random
+
+about:
+  home: http://metacpan.org/pod/Math-Random
+  license: unknown
+  summary: 'Random Number Generators'
