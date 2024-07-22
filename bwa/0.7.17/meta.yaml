@@ -20,6 +20,7 @@ source:
   sha256: "de1b4d4e745c0b7fc3e107b5155a51ac063011d33a5d82696331ecf4bed8d0fd"
   patches:
     - makefile-flags.patch   # [ppc64le]
+    - rle-h.patch            # [ppc64le]
 
 build:
   number: 2

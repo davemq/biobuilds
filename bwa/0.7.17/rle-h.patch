@@ -1,0 +1,11 @@
+--- rle.h~	2017-10-23 13:13:09.000000000 -0400
++++ rle.h	2024-01-26 15:21:18.677635075 -0500
+@@ -30,7 +30,7 @@
+  *** 43+3 codec ***
+  ******************/
+ 
+-const uint8_t rle_auxtab[8];
++extern const uint8_t rle_auxtab[8];
+ 
+ #define RLE_MIN_SPACE 18
+ #define rle_nptr(block) ((uint16_t*)(block))

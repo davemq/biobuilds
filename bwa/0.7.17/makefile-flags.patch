@@ -6,7 +6,7 @@
  #CC=			clang --analyze
 -CFLAGS=		-g -Wall -Wno-unused-function -O2
 -WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS
-+CFLAGS=		-Wall -Wno-unused-function -Ofast
++CFLAGS=		-Wall -Wno-unused-function -Ofast -mcpu=power9
 +WRAP_MALLOC=-DUSE_MALLOC_WRAPPERS -DNO_WARN_X86_INTRINSICS
  AR=			ar
  DFLAGS=		-DHAVE_PTHREAD $(WRAP_MALLOC)
@@ -16,7 +16,7 @@
  PROG=		bwa
  INCLUDES=	
 -LIBS=		-lm -lz -lpthread
-+LIBS=		-static -L/gpfs/gpfs_4mb/rchen/MCW/p95a30/jemalloc-5.1.0/lib -ljemalloc -L/opt/at12.0/lib64 -lpthread -lc -lm -lstdc++ -L/gpfs/gpfs_4mb/rchen/MCW/p95a30/zlib-1.2.11 -lz -ldl
++LIBS=		-static -lm -lz -lpthread
  SUBDIRS=	.
  
  ifeq ($(shell uname -s),Linux)

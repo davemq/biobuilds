@@ -31,7 +31,7 @@ requirements:
     - bfast ==0.7.0a
     - bioconductor ==3.6
     - bioconductor-ebseq ==1.18.0
-    - biopython ==1.70
+    - biopython >=1.70
     - blast ==2.6.0
     - bowtie ==1.1.2
     - bowtie2 ==2.3.1
